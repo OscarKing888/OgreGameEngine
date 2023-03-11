@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Service>
+  <CenterService>
+    <ip>127.0.0.1</ip>
+    <port>7788</port>
+    <maxClients>16</maxClients>
+    <globalIndex>888</globalIndex>
+
+    <requiredGatewayCount>1</requiredGatewayCount>
+    <requiredSpaceCount>1</requiredSpaceCount>
+  </CenterService>
+
+  <GlobalService>
+    <ip>127.0.0.1</ip>
+    <port>0</port>
+    <globalIndex>889</globalIndex>
+    <maxClients>4</maxClients>
+  </GlobalService>
+  
+  <LoginService>
+    <ip>127.0.0.1</ip>
+    <port>7789</port>
+    <maxClients>1024</maxClients>
+    <globalIndex>999</globalIndex>
+  </LoginService>
+
+  <DBService>
+    <ip>127.0.0.1</ip>
+    <port>7790</port>
+    <maxClients>12</maxClients>
+    <globalIndex>666</globalIndex>
+  </DBService>
+
+  <GatewayClientLinkMgr>
+    <maxClients>2048</maxClients>
+  </GatewayClientLinkMgr>
+
+  <SpaceService>
+    <maxClients>4</maxClients>
+  </SpaceService>
+</Service>
