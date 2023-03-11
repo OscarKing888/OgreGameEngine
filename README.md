@@ -4,6 +4,8 @@ Ogen- OGRE Game Engine,Build with MFC(in 2009).
 ![Image](OgenEditor.png)
 ![Image](OgenEditor2.png)
 ![Image](OgenEditor3.png)
+![Image](Game_PG_feixu.bmp)
+![Image](Game_XQ_zhucheng.bmp)
 
 ## 1.Install
 ### 1.1 VS2010
