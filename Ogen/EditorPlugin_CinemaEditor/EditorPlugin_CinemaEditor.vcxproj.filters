@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{c8a0fd0d-1c2b-41d8-8759-3013d7326bfa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{30532649-7ba5-401f-80b0-21cd3f330d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{0634f261-5fd3-47e9-8b44-a1d2f1a63038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Controller\TrackEditor">
+      <UniqueIdentifier>{b904767a-4b5d-485b-8d79-213cd2366304}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CinemaEditorDoc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorPlugin_CinemaEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_AddTrack.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_CreateKeyFrame.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="CinemaEditorFrame.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CinemaEditorView.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CinemaListPanel.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CinemaTrackCtrl.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="FloatValueDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditDlg.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackCtrl.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackView.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="CinemaEditActionCmd.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="CinemaEditor.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="CinemaEditorEvents.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewSyncMediator.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="ITrackEditor.cpp">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackEditor_Camera.cpp">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackEditor_FadeScreen.cpp">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackEditor_LightColour.cpp">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackEditor_Movement.cpp">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackEditor_Property.cpp">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EditorPlugin_CinemaEditor.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\AddTrack.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\cinema_toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CinemaEditor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CinemaEditor_Icon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CreateKeyFrame.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\EditorPlugin_CinemaEditor.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Pause.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Play.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Redo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\RemoveTrack.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Stop.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ToBegin.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ToEnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Undo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_AddTrack.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_CreateKeyFrame.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="CinemaEditorFrame.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CinemaListPanel.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CinemaTrackCtrl.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CinemaTrackView.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="FloatValueDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditDlg.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackCtrl.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackView.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="CinemaEditActionCmd.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="CinemaEditor.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="CinemaEditorDoc.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="CinemaEditorEvents.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="CinemaEditorExport.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewSyncMediator.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="ITrackEditor.h">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackEditor_Camera.h">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackEditor_FadeScreen.h">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackEditor_LightColour.h">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackEditor_Movement.h">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackEditor_Property.h">
+      <Filter>Controller\TrackEditor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EditorPlugin_CinemaEditor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuildStep Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </CustomBuildStep>
+  </ItemGroup>
+</Project>

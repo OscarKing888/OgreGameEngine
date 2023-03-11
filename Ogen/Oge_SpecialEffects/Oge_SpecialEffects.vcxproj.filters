@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Main">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{3ff9c01f-ce7e-46c9-99a6-fd9859424c97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SFX">
+      <UniqueIdentifier>{5e4d8883-f0eb-4526-83b3-8b8fcc5c63ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="OgeSpecialEffects.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffect.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractEffectElement.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectElement_BillBoard.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectElement_Entity.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectElement_Particle.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectElement_PointLight.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectElement_RibbonTrail.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="ISpecialEffects.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffects.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+    <ClCompile Include="SpecialEffectsManager.cpp">
+      <Filter>SFX</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OgeSpecialEffects.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="OgeSpecialEffectsPrerequisites.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffect.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractEffectElement.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectElement_BillBoard.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectElement_Entity.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectElement_Particle.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectElement_PointLight.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectElement_RibbonTrail.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="ISpecialEffects.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffects.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+    <ClInclude Include="SpecialEffectsManager.h">
+      <Filter>SFX</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

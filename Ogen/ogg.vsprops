@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="ogg"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalOptions="/wd4819"
+		AdditionalIncludeDirectories="$(SolutionDir)..\SDK\ogg\include;$(SolutionDir)..\SDK\vorbis\include"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="$(SolutionDir)..\SDK\ogg\Libs;$(SolutionDir)..\SDK\vorbis\Libs"
+	/>
+</VisualStudioPropertySheet>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="DX9"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="&quot;$(SolutionDir)..\SDK\DirectX SDK (February 2010)\Include&quot;"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="&quot;$(SolutionDir)..\SDK\DirectX SDK (February 2010)\Lib\x86&quot;"
+	/>
+</VisualStudioPropertySheet>

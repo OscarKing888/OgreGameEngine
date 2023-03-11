@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<testConfig>
+		<testFloat>3.14159</testFloat>
+		<testInt>888</testInt>
+		<testBool>true</testBool>
+		<testString>abc测试下中文ab三人斗地主c</testString>
+	</testConfig>
+</config>

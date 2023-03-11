@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="CommandX">
+      <UniqueIdentifier>{e6af18bd-267d-467a-9e09-c33125a3a9ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HeightEditState">
+      <UniqueIdentifier>{afd97700-7330-4b86-a3f4-60a4ff2b6457}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractTerrainEditState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorPlugin_Terrain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditState_TerrainHeight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditState_TerrainSurface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_TerrainBrush.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_TerrainBrush.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TerrainBrush.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_TerrainHeight.cpp">
+      <Filter>CommandX</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_TerrainSurface.cpp">
+      <Filter>CommandX</Filter>
+    </ClCompile>
+    <ClCompile Include="EditHeightState_DynamicElevate.cpp">
+      <Filter>HeightEditState</Filter>
+    </ClCompile>
+    <ClCompile Include="EditHeightState_FixedHeight.cpp">
+      <Filter>HeightEditState</Filter>
+    </ClCompile>
+    <ClCompile Include="EditHeightState_Smooth.cpp">
+      <Filter>HeightEditState</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractTerrainEditState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorPlugin_Terrain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditState_TerrainHeight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditState_TerrainSurface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_TerrainBrush.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditor_TerrainBrush.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainBrush.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TerrainEditorExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_TerrainHeight.h">
+      <Filter>CommandX</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_TerrainSurface.h">
+      <Filter>CommandX</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdTypes.h">
+      <Filter>CommandX</Filter>
+    </ClInclude>
+    <ClInclude Include="EditHeightState_DynamicElevate.h">
+      <Filter>HeightEditState</Filter>
+    </ClInclude>
+    <ClInclude Include="EditHeightState_FixedHeight.h">
+      <Filter>HeightEditState</Filter>
+    </ClInclude>
+    <ClInclude Include="EditHeightState_Smooth.h">
+      <Filter>HeightEditState</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EditorPlugin_TerrainEditor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ElevDown.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ElevUp.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\FixedHeight.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Flat.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Smooth.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Terrain.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\TerrainSurface.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

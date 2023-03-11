@@ -1,0 +1,949 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\Editor.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""          // 标准组件\r\n"
+    "#include ""l.CHS\\afxprint.rc""        // 打印/打印预览资源\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxribbon.rc""               // MFC 功能区和控件条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\Editor.ico"
+IDR_EditorTYPE          ICON                    "res\\EditorDoc.ico"
+IDI_FILE_VIEW           ICON                    "res\\file_view.ico"
+IDI_FILE_VIEW_HC        ICON                    "res\\file_view_hc.ico"
+IDI_CLASS_VIEW          ICON                    "res\\class_view.ico"
+IDI_CLASS_VIEW_HC       ICON                    "res\\class_view_hc.ico"
+IDI_OUTPUT_WND          ICON                    "res\\output_wnd.ico"
+IDI_OUTPUT_WND_HC       ICON                    "res\\output_wnd_hc.ico"
+IDI_PROPERTIES_WND      ICON                    "res\\properties_wnd.ico"
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+IDI_ICON_PROP           ICON                    "res\\Prop.ico"
+IDI_ICON_CAMSPEED_FAST  ICON                    "res\\CamSpeedFast.ico"
+IDI_ICON_CAMSPEED_NORMAL ICON                    "res\\CamSpeedNormal.ico"
+IDI_ICON_CAMSPEED_SLOW  ICON                    "res\\CamSpeedSlow.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+IDR_SORT                BITMAP                  "res\\sort.bmp"
+IDB_SORT_24             BITMAP                  "res\\sort_hc.bmp"
+IDB_FILE_VIEW           BITMAP                  "res\\fileview.bmp"
+IDB_FILE_VIEW_24        BITMAP                  "res\\fileview_hc.bmp"
+IDB_CLASS_VIEW          BITMAP                  "res\\classview.bmp"
+IDB_CLASS_VIEW_24       BITMAP                  "res\\classview_hc.bmp"
+IDR_EXPLORER            BITMAP                  "res\\explorer.bmp"
+IDB_EXPLORER_24         BITMAP                  "res\\explorer_hc.bmp"
+IDR_MENU_IMAGES         BITMAP                  "res\\menuimages.bmp"
+IDB_MENU_IMAGES_24      BITMAP                  "res\\menuimages_hc.bmp"
+IDR_PROPERTIES          BITMAP                  "res\\properties.bmp"
+IDB_PROPERTIES_HC       BITMAP                  "res\\properties_hc.bmp"
+IDB_BITMAP_ERROR        BITMAP                  "res\\error.bmp"
+IDB_BTN_PLAY            BITMAP                  "res\\BtnPlay.bmp"
+IDB_BTN_STOP            BITMAP                  "res\\BtnStop.bmp"
+IDB_BTN_PAUSE           BITMAP                  "res\\BtnPause.bmp"
+IDB_BTN_TOBEGIN         BITMAP                  "res\\BtnToBegin.bmp"
+IDB_BTN_TOEND           BITMAP                  "res\\BtnToEnd.bmp"
+IDB_TOOLBAR_MAIN        BITMAP                  "res\\Toolbar_Main.bmp"
+IDB_BITMAP_CAMERA_SPEED BITMAP                  "res\\CameraSpeed.bmp"
+IDB_BITMAP_SPLASH       BITMAP                  "res\\Splash.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_EDITSTATE_SELECT
+    BUTTON      ID_EDIT_MOVE
+    BUTTON      ID_EDIT_ROTATE
+    BUTTON      ID_EDIT_SCALE
+    BUTTON      ID_EDITSTATE_CREATE
+    BUTTON      ID_EDITSTATE_TERRAIN
+    BUTTON      ID_EDITSTATE_TERRAIN_SURFACE
+    BUTTON      ID_EDITSTATE_TERRAIN_PATH_FINDER
+    SEPARATOR
+    BUTTON      ID_VP_MAX
+    BUTTON      ID_VP_1x2
+    BUTTON      ID_VP_2x2
+    SEPARATOR
+    BUTTON      ID_SHOW_RES_MANAGER
+    BUTTON      ID_MATERIAL_DLG
+    BUTTON      ID_RESPANEL_TEXTURE
+    SEPARATOR
+    BUTTON      ID_SHOW_OBJECTS
+    SEPARATOR
+    BUTTON      ID_SHOW_BOUDNING_BOX
+    BUTTON      ID_SHOW_WIRE
+    BUTTON      ID_CAMERA_SPEED
+    BUTTON      ID_PICK_FILTER
+    BUTTON      ID_CLAMP_ON_TERRAIN
+    BUTTON      ID_ALIGN_TERRAIN_NORMAL
+    SEPARATOR
+    BUTTON      ID_APPLY_CAMERA
+    BUTTON      ID_VIEW_SELECT_CAMERA
+    SEPARATOR
+    BUTTON      ID_CURRENT_CAMERA
+    SEPARATOR
+    BUTTON      ID_MATERIAL_SCHEME
+    BUTTON      ID_COMPOSITOR
+    BUTTON      IDC_SNAPSHOT_MINIMAP
+    BUTTON      ID_SNAP_CONFIG
+    BUTTON      ID_SNAP_ANGLED
+END
+
+IDR_SORT TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_SORT_MENU
+    BUTTON      ID_NEW_FOLDER
+END
+
+IDR_EXPLORER TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_PROPERTIES
+END
+
+IDR_MENU_IMAGES TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_WINDOW_MANAGER
+    SEPARATOR
+    BUTTON      ID_WINDOW_CASCADE
+    BUTTON      ID_WINDOW_TILE_HORZ
+    BUTTON      ID_TOOLS_MACRO
+    BUTTON      ID_SORTING_SORTALPHABETIC
+    BUTTON      ID_SORTING_SORTBYTYPE
+    BUTTON      ID_SORTING_SORTBYACCESS
+    BUTTON      ID_SORTING_GROUPBYTYPE
+END
+
+IDR_PROPERTIES TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_EXPAND_ALL
+    BUTTON      ID_SORTPROPERTIES
+    BUTTON      ID_PROPERTIES1
+    BUTTON      ID_PROPERTIES2
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM "重做(R)\tCtrl+Y",               ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "场景物体结构图(&G)...",              ID_VIEW_SCENE_GRAPH
+        MENUITEM SEPARATOR
+        POPUP "工具栏和停靠窗口(&T)"
+        BEGIN
+            MENUITEM "<占位符>",                       ID_VIEW_TOOLBAR
+        END
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio.NET 2005(&5)",  ID_VIEW_APPLOOK_VS_2005
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "最大化视图(&1)\tAlt + 1",          ID_VP_MAX
+        MENUITEM "1x2分割(&2)\tAlt + 2",          ID_VP_1x2
+        MENUITEM "2x2分割(&3)\tAlt + 3",          ID_VP_2x2, CHECKED
+    END
+    POPUP "工具(&T)"
+    BEGIN
+        MENUITEM "粒子编辑器(&E)...",                ID_TOOLS_PARTICLEEDITOR
+        MENUITEM "模型编辑器(&D)...",                ID_SHOW_MODEL_EDITOR
+        MENUITEM "&Material Editor...",         ID_TOOLS_MATERIAL_EDITOR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 Editor(&A)...",            ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU 
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_POPUP_SORT MENU 
+BEGIN
+    POPUP "排序"
+    BEGIN
+        MENUITEM "按字母顺序排序(&S)",                 ID_SORTING_SORTALPHABETIC
+        MENUITEM "按类型排序(&T)",                   ID_SORTING_SORTBYTYPE
+        MENUITEM "按访问排序(&E)",                   ID_SORTING_SORTBYACCESS
+        MENUITEM "按类型分组(&Y)",                   ID_SORTING_GROUPBYTYPE
+    END
+END
+
+IDR_POPUP_EXPLORER MENU 
+BEGIN
+    POPUP "资源管理器"
+    BEGIN
+        MENUITEM "打开(&O)",                      ID_OPEN
+        MENUITEM "打开方式(&W)....",                ID_OPEN_WITH
+        MENUITEM SEPARATOR
+        MENUITEM "编译(&C)",                      ID_DUMMY_COMPILE
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "删除(&R)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "属性(&P)...",                   ID_PROPERTIES
+    END
+END
+
+IDR_OUTPUT_POPUP MENU 
+BEGIN
+    POPUP "弹出项"
+    BEGIN
+        MENUITEM "复制(&C)",                      ID_EDIT_COPY
+        MENUITEM "清除(&C)",                      ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "隐藏(&H)",                      ID_VIEW_OUTPUTWND
+    END
+END
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+IDR_MENU_CAMERA_SPEED MENU 
+BEGIN
+    POPUP "&CameraSpeed"
+    BEGIN
+        MENUITEM "慢速",                          ID_CAMERASPEED_SLOW
+        MENUITEM "正常",                          ID_CAMERASPEED_NORMAL
+        MENUITEM "最快",                          ID_CAMERASPEED_FAST
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    "2",            ID_VP_1x2,              VIRTKEY, ALT, NOINVERT
+    "3",            ID_VP_2x2,              VIRTKEY, ALT, NOINVERT
+    "1",            ID_VP_MAX,              VIRTKEY, ALT, NOINVERT
+    "W",            ID_EDIT_MOVE,           VIRTKEY, CONTROL, NOINVERT
+    "E",            ID_EDIT_ROTATE,         VIRTKEY, CONTROL, NOINVERT
+    "R",            ID_EDIT_SCALE,          VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Editor"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_EditorTYPE,IDC_STATIC,14,14,20,20
+    LTEXT           "OGE Editor，1.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008 - 2010",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_RENDER_WND DIALOGEX 0, 0, 185, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+END
+
+IDD_DIALOG_OBJECTS DIALOGEX 0, 0, 294, 367
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "场景物体列表"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TREE_OBJECTS,"SysTreeView32",TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | TVS_SHOWSELALWAYS | WS_HSCROLL | WS_TABSTOP,7,7,280,353,WS_EX_CLIENTEDGE
+END
+
+IDD_DIALOG_NEW_MAP DIALOGEX 0, 0, 258, 334
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Map"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_MAP_NAME,7,17,243,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_EDIT_MAP_WIDTH,11,61,106,61,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_WORLD_SIZE,137,61,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_TERRAIN_CNT_X,11,94,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_TERRAIN_CNT_Z,137,94,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_TEXTURE_WORLD_SIZE,11,148,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_BLENDMAP_SIZE,137,148,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_COLOURMAP_SIZE,11,180,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_LIGHTMAP_SIZE,137,180,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_COMPOSITEMAP_DISTANCE,11,233,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_SKIRT_SIZE,137,233,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_COMPOSITEMAP_SIZE,11,266,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_EDIT_MAX_PIXEL_ERROR,137,266,106,61,CBS_DROPDOWN | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,138,313,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,201,313,50,14
+    LTEXT           "Tile Vertex Count on Edge:",IDC_STATIC,13,52,87,8
+    LTEXT           "Map Name:",IDC_STATIC,7,7,37,8
+    LTEXT           "Terrain World Size:",IDC_STATIC,137,52,62,8
+    LTEXT           "Terrain X Count:",IDC_STATIC,11,84,54,8
+    LTEXT           "Terrain Z Count:",IDC_STATIC,137,84,54,8
+    LTEXT           "Default Layer Texture World Size:",IDC_STATIC,11,137,114,8
+    GROUPBOX        "Terrain",IDC_STATIC,7,38,244,82
+    LTEXT           "Composite Map Distance:",IDC_STATIC,11,222,96,8
+    LTEXT           "Skirt Size:",IDC_STATIC,137,222,64,8
+    LTEXT           "Max Pixel Error:",IDC_STATIC,137,254,55,8
+    CONTROL         "Casts Dynamic Shadows",IDC_CHECK_CAST_DYN_SHADOWS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,11,287,93,10
+    LTEXT           "Layer Blend Map Size:",IDC_STATIC,137,137,78,8
+    LTEXT           "Default Global Colour Map Size:",IDC_STATIC,11,169,103,8
+    LTEXT           "Light Map Size:",IDC_STATIC,137,169,55,8
+    LTEXT           "Composite Map Size:",IDC_STATIC,11,254,75,8
+    GROUPBOX        "Texture",IDC_STATIC,7,124,244,82
+    GROUPBOX        "Misc",IDC_STATIC,7,209,244,95
+END
+
+IDD_DIALOG_OPENMAP DIALOGEX 0, 0, 316, 180
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open Map"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,205,159,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,259,159,50,14
+    CONTROL         "",IDC_LIST_MAPLIST,"SysTreeView32",WS_BORDER | WS_HSCROLL | WS_TABSTOP,7,7,302,144
+END
+
+IDD_DIALOG_SPLASH DIALOGEX 0, 0, 696, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP
+EXSTYLE WS_EX_TOPMOST
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         365,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_REALSIZEIMAGE,7,7,418,285
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "Editor.exe"
+            VALUE "OriginalFilename", "Editor.exe"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_RENDER_WND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DIALOG_OBJECTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 287
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 360
+    END
+
+    IDD_DIALOG_NEW_MAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 327
+    END
+
+    IDD_DIALOG_OPENMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 309
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 173
+    END
+
+    IDD_DIALOG_SPLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 689
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 298
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_CUR_EDIT_SELECT     CURSOR                  "res\\Edit_Select.cur"
+IDC_CUR_EDIT_MOVE       CURSOR                  "res\\Edit_Move.cur"
+IDC_CUR_EDIT_ROTATE     CURSOR                  "res\\Edit_Rotate.cur"
+IDC_CURSOR_EDIT_SCALE   CURSOR                  "res\\Edit_Scale.cur"
+IDC_CUR_EDIT_MOVE_X     CURSOR                  "res\\Move_X.cur"
+IDC_CUR_EDIT_MOVE_Y     CURSOR                  "res\\Move_Y.cur"
+IDC_CUR_EDIT_MOVE_Z     CURSOR                  "res\\Move_Z.cur"
+IDC_CUR_EDIT_ROTATE_X   CURSOR                  "res\\Rotate_X.cur"
+IDC_CUR_EDIT_ROTATE_Y   CURSOR                  "res\\Rotate_Y.cur"
+IDC_CUR_EDIT_ROTATE_Z   CURSOR                  "res\\Rotate_Z.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。请确保 OLE 库是正确的版本。"
+    IDS_RIBBON_MAIN         "主工具\n主工具栏页面"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MODIFY_CAM_PROP      "设置相机属性"
+    IDR_PARTICLE_WND        "\nParticleEditor\n\n\n\n\n"
+END
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "Editor\n\nEditor\nEditor Files (*.ogremap)\n.ogremap\nEditor.Document\nEditor.Document"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Editor"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_PAGE_SETUP      "更改打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "更改打印机选项和打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_DIRECT    "使用当前选项打印活动文档\n快速打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消\n撤消"
+    ID_EDIT_REDO            "恢复\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预览"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1"
+    IDS_STATUS_PANE2        "窗格 2"
+    IDS_TOOLBAR_STANDARD    "标准"
+    IDS_TOOLBAR_CUSTOMIZE   "自定义..."
+    IDS_STATUS_PANE3        "Pane 1"
+    IDS_STATUS_PANE4        "Pane 2"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_FILE_VIEW           "资源管理"
+    IDS_CLASS_VIEW          "游戏对象"
+    IDS_OUTPUT_WND          "输出"
+    IDS_PROPERTIES_WND      "属性"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EXPLORER            "资源管理器"
+    IDS_EDIT_MENU           "编辑"
+    ID_RESPANEL_TEXTURE     "显示贴图资源管理器\n贴图材质资源管理器"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_STYLE_DESC   "Choose one of the Office 2007 themes"
+    IDS_RIBBON_STATUSBAR    "状态栏"
+    IDS_RIBBON_VIEW         "视图"
+    IDS_BUILD_TAB           "Log"
+    IDS_DEBUG_TAB           "调试"
+    IDS_FIND_TAB            "查找"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VP_MAX               "最大化视图\n最大"
+    ID_VP_1x2               "1x2分割视图\n1x2分割"
+    ID_VP_2x2               "2x2分割视图\n2x2分割"
+    ID_SCENE_SKY_BOX        "编辑天空盒参数\nSky"
+    ID_SCENE_ENVIRONMENT    "编辑场景环境参数\n环境"
+    ID_EDIT_MOVE            "移动选中物体\n移动"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDITSTATE_SELECT     "激活选择物体模式\n选择"
+    ID_EDITSTATE_CREATE     "激活选择创建模式\n创建"
+    ID_EDITSTATE_TERRAIN    "地形编辑模式\n地形"
+    ID_EDITSTATE_TERRAIN_SURFACE "地表刷编辑模式\n地表"
+    ID_EDITSTATE_TERRAIN_PATH_FINDER "进行寻路数据涂刷\n寻路笔刷"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_ROTATE          "旋转选中物体\n旋转"
+    ID_EDIT_SCALE           "缩放选中物体\n缩放"
+    ID_SHOW_RES_MANAGER     "显示模型资源管理器\n模型材质资源管理器"
+    ID_SHOW_BOUDNING_BOX    "物体包围盒\n包围盒"
+    ID_SHOW_WIRE            "物体线框\n线框"
+    ID_CLAMP_ON_TERRAIN     "贴地形表面移动\n贴地"
+    ID_SCENE_TERRAIN        "编辑地形参数\n地形"
+    ID_SCENE_UPDATE_TERRAIN "更新地形参数,重新生成地形\n重新生成地形"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ALIGN_TERRAIN_NORMAL "自动对齐到地形法线\n对齐地形法线"
+    ID_SHOW_OBJECTS         "物体列表\n物体列表"
+    ID_APPLY_CAMERA         "应用当前镜头到选中相机\n应用相机"
+    ID_CURRENT_CAMERA       "相机属性\n当前相机"
+    ID_MATERIAL_SCHEME      "激活为当前的材质方案\n材质方案"
+    ID_VIEW_SELECT_CAMERA   "切换到选择相机观察\n切换相机"
+    ID_COMPOSITOR           "全屏特效\n全屏特效"
+    IDC_SNAPSHOT_MINIMAP    "生成小地图\n生成场景小地图"
+    IDM_PARTICLE_SAVE       "保存当前粒子模板"
+    IDM_PARTICLE_OPEN       "打开粒子模板进行编辑"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_TOOLS_PARTICLEEDITOR "打开粒子编辑器\n粒子编辑器"
+    ID_NEW_PARTICLE         "新建粒子模板\n新建"
+    ID_ADD_EMITTER          "添加发射器\n添加发射器"
+    ID_DELETE_EMITTER       "删除发射器\n删除发射器"
+    ID_ADD_AFFECTOR         "添加粒子影响器\n添加粒子影响器"
+    ID_REMOVE_AFFECTOR      "删除粒子影响器\n删除粒子影响器"
+    ID_EDIT_PARTICLE_ATTR   "编辑粒子属性\n粒子属性"
+    ID_EDIT_AFFECTOR_ATTR   "编辑粒子影响器属性\n粒子影响器属性"
+    ID_EDIT_EMITTER_ATTR    "编辑发射器属性\n发射器属性"
+    ID_SAVE_PARTICLE        "保存当前修改粒子\n保存修改"
+    ID_DELETE_PARTICLE      "删除当前修改模板\n删除模板"
+    ID_MATERIAL_DLG         "显示材质资源管理器\n材质资源管理器"
+    ID_PARTICLE_OPTION      "显示选项\n显示选项"
+    ID_CAMERA_SPEED         "切换相机速度\n相机速度"
+    ID_PICK_FILTER          "选择物体过滤器\n选择过滤"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_CAMERASPEED_SLOW     "慢"
+    ID_CAMERASPEED_NORMAL   "中"
+    ID_CAMERASPEED_FAST     "快"
+    ID_SAVE_ALL_PARTICLE    "保存所有粒子系统模板\n全部保存"
+    ID_EDIT_PARTICLE_RENDER "编辑粒子渲染器属性\n渲染器属性"
+    ID_SHOW_WIREFRAME       "线框渲染模式\n线框模式"
+    ID_SNAP_CONFIG          "截图设置\n截图设置"
+    ID_SNAP_ANGLED          "按指定参数截图\n截图"
+    ID_SHOW_MODEL_EDITOR    "打开模型编辑器\n模型编辑器"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MODEL_EDITOR_SAVE    "Save model\nSave"
+    ID_MODEL_EDITOR_SAVEAS  "Save model as OGRE_NEW file\nSave as..."
+    ID_MODEL_EDITOR_DELETE  "Delete mode file\nDelete"
+    ID_MODEL_EDITOR_OPTIONS "Options\nOptions"
+    ID_MODEL_EDITOR_BUILD_EDGELIST 
+                            "Build Edige List for shadow\nBuild EdigeList"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MATERIAL_OPEN        "Open a material to edit\nOpen a material"
+    ID_MATERIAL_EDITOR_OPEN "Open a material to edit\nOpen a material"
+    ID_TOOLS_MATERIAL_EDITOR "Launch material editor\nMaterial Editor"
+    ID_PARTICLE_VIEW_COMPOSITOR "Viewport compositor\nViewport compositor"
+    ID_BUTTON32887          "Viewport compositor\nViewport compositor"
+    ID_MESHEDIT_ADDLINKEDSKELETON "Add Linked Skeleton File"
+    ID_PARTICLE_EDITOR_CAPTURE "生成相应的资源管理器缩略图\n缩略图"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_FILE         "文件操作"
+    IDS_RIBBON_NEW          "新地图(&N)"
+    IDS_RIBBON_OPEN         "打开(&O)"
+    IDS_RIBBON_SAVE         "保存(&S)"
+    IDS_RIBBON_SAVEAS       "另存(&A)..."
+    IDS_RIBBON_CLOSE        "退出(&X)"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_RIBBON_RECENT_DOCS  "最近打开过的地图"
+    IDS_RIBBON_EXIT         "退出(&X)"
+    IDS_RIBBON_HOME         "主要工具(&H)"
+    IDS_RIBBON_CLIPBOARD    "Clipboard\nd"
+    IDS_RIBBON_PASTE        "粘贴\nv"
+    IDS_RIBBON_CUT          "剪切\nx"
+    IDS_RIBBON_COPY         "复制\nc"
+    IDS_RIBBON_WINDOW       "Window\nw"
+    IDS_RIBBON_WINDOWS      "Windows\ni"
+    IDS_RIBBON_STYLE        "视觉外观"
+    IDS_RIBBON_STYLE_TIP    "修改视觉外观"
+END
+
+STRINGTABLE 
+BEGIN
+    IDS_EDIT_STATE          "编辑状态"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WRITESMALL          BITMAP                  "res\\writesmall.bmp"
+IDB_WRITELARGE          BITMAP                  "res\\writelarge.bmp"
+IDB_PROPERTIES_HC       BITMAP                  "res\\properti.bmp"
+IDB_MAIN                BITMAP                  "res\\main.bmp"
+IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+IDB_BUTTONS             BITMAP                  "res\\buttons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_THEME_MENU MENU 
+BEGIN
+    MENUITEM "Office 2007 (&Blue Style)",   ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (B&lack Style)",  ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (&Silver Style)", ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (&Aqua Style)",   ID_VIEW_APPLOOK_OFF_2007_AQUA
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\Editor.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"          // 标准组件
+#include "l.CHS\afxprint.rc"        // 打印/打印预览资源
+#if !defined(_AFXDLL)
+#include "l.CHS\afxribbon.rc"               // MFC 功能区和控件条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

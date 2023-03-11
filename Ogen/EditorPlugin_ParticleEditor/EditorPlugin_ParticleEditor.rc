@@ -1,0 +1,200 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_PARTICLE_WND TOOLBAR  16, 16
+BEGIN
+    BUTTON      ID_NEW_PARTICLE
+    BUTTON      ID_SAVE_PARTICLE
+    SEPARATOR
+    BUTTON      ID_DELETE_PARTICLE
+    BUTTON      ID_ADD_EMITTER
+    BUTTON      ID_DELETE_EMITTER
+    BUTTON      ID_ADD_AFFECTOR
+    BUTTON      ID_REMOVE_AFFECTOR
+    SEPARATOR
+    BUTTON      ID_EDIT_PARTICLE_ATTR
+    BUTTON      ID_EDIT_PARTICLE_RENDER
+    BUTTON      ID_EDIT_EMITTER_ATTR
+    BUTTON      ID_EDIT_AFFECTOR_ATTR
+    SEPARATOR
+    BUTTON      ID_PARTICLE_OPTION
+    BUTTON      ID_SHOW_WIREFRAME
+    BUTTON      ID_PARTICLE_VIEW_COMPOSITOR
+    BUTTON      ID_PARTICLE_EDITOR_CAPTURE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_PARTICLE_WND        BITMAP                  "res\\toolbar_particleeditor.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_PARTICLE_WND MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "打开(&O)...",                   IDM_PARTICLE_OPEN
+        MENUITEM "保存(&S)",                      IDM_PARTICLE_SAVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_PROPERTIES_WND_HC   ICON                    "res\\properties_wnd_hc.ico"
+IDR_PARTICLE_WND        ICON                    "res\\ParticleEditor.ico"
+ID_PARTICLEEDIT_REDO    ICON                    "res\\Redo.ico"
+ID_PARTICLEEDIT_UNDO    ICON                    "res\\Undo.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_PARTICLE_COMPONENT DIALOGEX 0, 0, 189, 305
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_VISIBLE
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Emitter",IDC_STATIC,7,74,175,64
+    GROUPBOX        "Affector",IDC_STATIC,7,143,175,85
+    LISTBOX         IDC_LIST_AFFECTOR,15,155,159,50,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "IDC_BUTTON_ADD_AFFECTOR",IDC_BUTTON_ADD_AFFECTOR,15,210,73,14
+    PUSHBUTTON      "IDC_BUTTON_REMOVE_AFFECTOR",IDC_BUTTON_REMOVE_AFFECTOR,101,210,73,14
+    LISTBOX         IDC_LIST_EMITTER,15,84,159,29,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "IDC_BUTTON_ADD_EMITTER",IDC_BUTTON_ADD_EMITTER,15,118,73,14
+    PUSHBUTTON      "IDC_BUTTON_REMOVE_EMITTER",IDC_BUTTON_REMOVE_EMITTER,101,118,73,14
+    PUSHBUTTON      "IDC_BUTTON_EDIT_PARTICLESYS_PROP",IDC_BUTTON_EDIT_PARTICLESYS_PROP,20,18,148,20
+    GROUPBOX        "Main",IDC_STATIC,7,7,175,62
+    PUSHBUTTON      "IDC_BUTTON_EDIT_PARTICLERENDERER_PROP",IDC_BUTTON_EDIT_PARTICLERENDERER_PROP,20,43,148,20
+    GROUPBOX        "Renderer",IDC_STATIC,7,234,175,64
+    LISTBOX         IDC_LIST_PARTICLE_SYS_RENDERER,15,245,159,47,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_PARTICLE_COMPONENT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 298
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "EditorPlugin_ParticleEditor"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

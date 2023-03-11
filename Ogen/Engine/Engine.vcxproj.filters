@@ -1,0 +1,633 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{d7167f3a-247d-42a5-bcd7-8d2c03359515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sripts">
+      <UniqueIdentifier>{ae298521-6c83-453c-8ad4-1442b69b8712}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Sound">
+      <UniqueIdentifier>{a7acc2b3-04a7-462d-8d73-085608f1534d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Property">
+      <UniqueIdentifier>{ee467a24-42e9-4036-aed7-1c20e60ca78c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Game">
+      <UniqueIdentifier>{f6bed04b-3aa2-4fe7-b181-c6bd258f1934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memento">
+      <UniqueIdentifier>{5bc6548f-f12c-4392-9a2e-90ee18173bcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3DGeometry">
+      <UniqueIdentifier>{d6ebcbdd-cbd0-422f-a534-ba4dc013b891}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject">
+      <UniqueIdentifier>{cfa22d15-afa0-430f-b871-0895d46bfc70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameObject\Test">
+      <UniqueIdentifier>{e2ac558b-78d2-448a-ad79-6beeed6c17d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{fe7fb673-2209-49a5-bfd7-f675ff4a84b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Input">
+      <UniqueIdentifier>{7e1fda93-aaad-4dce-8e44-fd6c14784a0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIController">
+      <UniqueIdentifier>{d6c52cbd-a615-41b0-ad46-8cb4790ace7a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathFinder">
+      <UniqueIdentifier>{3cef7fdb-9d3d-4d9f-ad76-f543d166b038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathFinder\2D">
+      <UniqueIdentifier>{8bbe0698-62eb-4ba3-a834-7ba69139151a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathFinder\Graph">
+      <UniqueIdentifier>{1d44fb66-c762-464b-90db-ee86b348a05c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PathFinder\Misc">
+      <UniqueIdentifier>{7cd67672-8f01-4598-b874-0d78c220f98e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2DText">
+      <UniqueIdentifier>{9d55f575-22dc-454f-94de-b1583b098127}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SmallEffect">
+      <UniqueIdentifier>{f9e2754a-1289-455b-8630-df92e39b7128}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ActorController">
+      <UniqueIdentifier>{7a67fa3f-d6d9-45a7-89ce-3b6060a79e80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Camera">
+      <UniqueIdentifier>{8e8c91f4-82f1-48e9-8bf1-23b7c66bc225}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Options">
+      <UniqueIdentifier>{3b9b2ccb-4e25-4242-afb6-10754934e983}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Action">
+      <UniqueIdentifier>{6b11a131-7842-43fc-acff-180c06c5143c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassUtil.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplayDevice.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DisplaySettings.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ICommandX.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="IMemento.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="IState.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="MathUtil.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="PlatformAPI.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ISound.cpp">
+      <Filter>Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_ColourValue.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_GameObject.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_Material.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_MeshFile.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_Quaternion.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_Radian.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_Vector3.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_XGUID.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractGame.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Events.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GameApp.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneralGame.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="LoadingListener.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="OgePlugin.cpp">
+      <Filter>Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicLines.cpp">
+      <Filter>3DGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="DynamicRenderable.cpp">
+      <Filter>3DGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformedMesh.cpp">
+      <Filter>3DGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="WireBox.cpp">
+      <Filter>3DGeometry</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractGameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Actor.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationModel.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="AssembledActor.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectFactoryManager.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="IGameObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="IGameObjectFactory.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="LogicObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshDataManager.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSys.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="PlacementObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneEnvironment.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneInfo.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="SkyBox.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound3D.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="StaticModel.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Teleport.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Tile.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Trigger.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="VisualObject.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="WaypointPath.cpp">
+      <Filter>GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameAnimation.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionMapManager.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="OISInputManager.cpp">
+      <Filter>Input</Filter>
+    </ClCompile>
+    <ClCompile Include="2D\Vector2d.cpp">
+      <Filter>PathFinder\2D</Filter>
+    </ClCompile>
+    <ClCompile Include="misc\FrameCounter.cpp">
+      <Filter>PathFinder\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectCompositor.cpp">
+      <Filter>SmallEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectManager.cpp">
+      <Filter>SmallEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectTimeDurative.cpp">
+      <Filter>SmallEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="EffectUpdateOneWay.cpp">
+      <Filter>SmallEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractActorController.cpp">
+      <Filter>ActorController</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractCameraController.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="FreeCameraController.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="GameCamera.cpp">
+      <Filter>Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="HelperLogics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLightStates.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorComponent_Light.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorComponent_Mesh.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActorComponent_ParticleSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameComponent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OgreLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassUtil.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugConfig.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplayDevice.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DisplaySettings.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineConfig.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineExport.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EnginePrerequisites.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ICommandX.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IMemento.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="IState.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="PlatformAPI.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ISound.h">
+      <Filter>Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_ColourValue.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_GameObject.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_Material.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_MeshFile.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_Quaternion.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_Radian.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_Vector3.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_XGUID.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractGame.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Events.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameApp.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralGame.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="IGame.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="LoadingListener.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="OgePlugin.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="UnitScale.h">
+      <Filter>Game</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicLines.h">
+      <Filter>3DGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="DynamicRenderable.h">
+      <Filter>3DGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformedMesh.h">
+      <Filter>3DGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="WireBox.h">
+      <Filter>3DGeometry</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractGameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Actor.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationModel.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="AssembledActor.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonTypes.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectFactoryManager.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="IGameObjectFactory.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="IUpdateAble.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="LogicObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshDataManager.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSys.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="PlacementObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneEnvironment.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneInfo.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="SkyBox.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound3D.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="StaticModel.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Teleport.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Tile.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Trigger.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="VisualObject.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="WaypointPath.h">
+      <Filter>GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameAnimation.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionMapManager.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="OISInputManager.h">
+      <Filter>Input</Filter>
+    </ClInclude>
+    <ClInclude Include="2D\C2DMatrix.h">
+      <Filter>PathFinder\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="2D\geometry.h">
+      <Filter>PathFinder\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="2D\InvertedAABBox2D.h">
+      <Filter>PathFinder\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="2D\Transformations.h">
+      <Filter>PathFinder\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="2D\Vector2D.h">
+      <Filter>PathFinder\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="2D\Wall2D.h">
+      <Filter>PathFinder\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="2D\WallIntersectionTests.h">
+      <Filter>PathFinder\2D</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\AStarHeuristicPolicies.h">
+      <Filter>PathFinder\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\GraphAlgorithms.h">
+      <Filter>PathFinder\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\GraphEdgeTypes.h">
+      <Filter>PathFinder\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\GraphNodeTypes.h">
+      <Filter>PathFinder\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\HandyGraphFunctions.h">
+      <Filter>PathFinder\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\NodeTypeEnumerations.h">
+      <Filter>PathFinder\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="Graph\SparseGraph.h">
+      <Filter>PathFinder\Graph</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\autolist.h">
+      <Filter>PathFinder\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\CellSpacePartition.h">
+      <Filter>PathFinder\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\ConsoleUtils.h">
+      <Filter>PathFinder\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\FrameCounter.h">
+      <Filter>PathFinder\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\PriorityQueue.h">
+      <Filter>PathFinder\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\Smoother.h">
+      <Filter>PathFinder\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\Stream_Utility_Functions.h">
+      <Filter>PathFinder\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\TypeToString.h">
+      <Filter>PathFinder\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="misc\utils.h">
+      <Filter>PathFinder\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectCompositor.h">
+      <Filter>SmallEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectManager.h">
+      <Filter>SmallEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectTimeDurative.h">
+      <Filter>SmallEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="EffectUpdateOneWay.h">
+      <Filter>SmallEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="IEffect.h">
+      <Filter>SmallEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractActorController.h">
+      <Filter>ActorController</Filter>
+    </ClInclude>
+    <ClInclude Include="IActorController.h">
+      <Filter>ActorController</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractCameraController.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="FreeCameraController.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="GameCamera.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="ICameraController.h">
+      <Filter>Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="HelperLogics.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLightStates.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorComponent_Light.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorComponent_Mesh.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActorComponent_ParticleSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameComponent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

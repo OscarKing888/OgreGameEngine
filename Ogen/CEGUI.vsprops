@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="CEGUI"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalOptions="/wd4819"
+		AdditionalIncludeDirectories="&quot;$(SolutionDir)..\SDK\CEGUI-0.7.2_VC2010\dependencies\include&quot;;&quot;$(SolutionDir)..\SDK\CEGUI-0.7.2_VC2010\cegui\include&quot;"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="&quot;$(SolutionDir)..\SDK\CEGUI-0.7.2_VC2010\dependencies\lib&quot;;&quot;$(SolutionDir)..\SDK\CEGUI-0.7.2_VC2010\lib\ReleaseWithSymbols&quot;"
+	/>
+</VisualStudioPropertySheet>

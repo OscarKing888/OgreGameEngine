@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="EditState">
+      <UniqueIdentifier>{c54f4a91-9c2a-4bd0-8a8f-b82958665b60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditorObject">
+      <UniqueIdentifier>{6ff68937-cbef-478a-9c3c-7c6e9fae165a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Memento">
+      <UniqueIdentifier>{17d1d768-8acb-4725-ae04-7b8ab7dab18c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditCommand">
+      <UniqueIdentifier>{6a8bc95d-76be-490a-908d-1b7ea7183c9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{d6c59a27-488f-46a7-8c87-06dd1fc0b16a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameResourceEditor">
+      <UniqueIdentifier>{e5b28ba8-f00b-4a7a-8983-1919e4116ccc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFCCommon">
+      <UniqueIdentifier>{b17871fa-fe61-4c79-b37a-4bd81cdeaa20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PanelViews">
+      <UniqueIdentifier>{9212e190-eb90-4e28-8dc1-7272f40709ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MFCCameraController.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenMapDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PathFinderHelper.cpp">
+      <Filter>EditorObject</Filter>
+    </ClCompile>
+    <ClCompile Include="Memento_ShowHideObject.cpp">
+      <Filter>Memento</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_Material.cpp">
+      <Filter>EditCommand</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultView.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Editor.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorConfig.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorDoc.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorGameApp.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorView.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="NewMapDlg.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>PanelViews</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>PanelViews</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectListDlg.cpp">
+      <Filter>PanelViews</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>PanelViews</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>PanelViews</Filter>
+    </ClCompile>
+    <ClCompile Include="SplashDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MFCCameraController.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenMapDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PathFinderHelper.h">
+      <Filter>EditorObject</Filter>
+    </ClInclude>
+    <ClInclude Include="Memento_ShowHideObject.h">
+      <Filter>Memento</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_Material.h">
+      <Filter>EditCommand</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultView.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Editor.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorConfig.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorDoc.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorGameApp.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorView.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="NewMapDlg.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>PanelViews</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>PanelViews</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectListDlg.h">
+      <Filter>PanelViews</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>PanelViews</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>PanelViews</Filter>
+    </ClInclude>
+    <ClInclude Include="SplashDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bitmap1.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\bitmap2.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BtnPause.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BtnPlay.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BtnStop.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BtnToBegin.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\BtnToEnd.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\buttons.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CameraSpeed.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CamSpeedFast.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CamSpeedNormal.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\CamSpeedSlow.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\class_view.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\class_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\classview.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\classview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Edit_Move.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Edit_Rotate.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Edit_Scale.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Edit_Select.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Editor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Editor.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\EditorDoc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\error.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\explorer.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\explorer_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\file_view.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\file_view_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fileview.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\fileview_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\icon2.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\main.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MaterialEditor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\menuimages_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\MeshInfoIcon.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelEditor.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelEditor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ModelEditorToolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Move_X.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Move_Y.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Move_Z.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\output_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\ParticleEditor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Prop.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properti.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Rotate_X.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Rotate_Y.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Rotate_Z.cur">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\sort_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar_Main.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Toolbar_MaterialEditor.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar_particleeditor.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="UserImages.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\writelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\writesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Editor.reg" />
+    <None Include="ReadMe.txt" />
+    <None Include="res\Splash.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Editor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

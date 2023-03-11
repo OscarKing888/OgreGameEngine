@@ -1,0 +1,9 @@
+#pragma once
+#include "Cinema.h"
+#include "CinemaTrack_Movement.h"
+#include "CinemaTrack_FadeScreen.h"
+#include "CinemaTrack_Camera.h"
+#include "CinemaTrack_Property.h"
+#include "CinemaTrack_LightColour.h"
+#include "CinemaTrack_MainLightColour.h"
+#include "CinemaTrack_AmbientLightColour.h"

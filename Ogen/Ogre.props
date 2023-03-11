@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalOptions>-Zm1024 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(SolutionDir)../SDK/Ogre1.71_VC2010/Dependencies/include;$(SolutionDir)../SDK/Ogre1.71_VC2010/Build/include;$(SolutionDir)../SDK/Ogre1.71_VC2010/OgreMain/include;$(SolutionDir)../SDK/Ogre1.71_VC2010/Samples/Common/include;$(SolutionDir)../SDK/Ogre1.71_VC2010/bin/include;$(SolutionDir)../SDK/Ogre1.71_VC2010/Components/Terrain/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\SDK\Ogre1.71_VC2010\Dependencies\lib\$(Configuration);$(SolutionDir)..\SDK\Ogre1.71_VC2010\build\lib\Debug;$(SolutionDir)..\SDK\Ogre1.71_VC2010\build\lib\RelWithDebInfo;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

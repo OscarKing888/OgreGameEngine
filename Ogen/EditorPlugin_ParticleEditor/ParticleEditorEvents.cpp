@@ -1,0 +1,35 @@
+#include "stdafx.h"
+#include "ParticleEditorEvents.h"
+
+IMPL_PARTICLE_EVENT(AddEmitter)
+IMPL_PARTICLE_EVENT(RemoveEmitter)
+IMPL_PARTICLE_EVENT(UpdateRemoveEmitterUI)
+
+IMPL_PARTICLE_EVENT(AddAffector)
+IMPL_PARTICLE_EVENT(RemoveAffector)
+IMPL_PARTICLE_EVENT(UpdateRemoveAffectorUI)
+
+IMPL_PARTICLE_EVENT(ChangeParticleSysRenderer)
+
+IMPL_PARTICLE_EVENT(SelectEmitter)
+IMPL_PARTICLE_EVENT(SelectAffector)
+
+IMPL_PARTICLE_EVENT(SelectParticleSysProp)
+IMPL_PARTICLE_EVENT(SelectParticleSysRendererProp)
+
+IMPL_PARTICLE_EVENT(NewParticleSystem)
+IMPL_PARTICLE_EVENT(EditParticleSystem)
+IMPL_PARTICLE_EVENT(EditParticleSystemInstance)
+
+IMPL_PARTICLE_EVENT(Undo)
+IMPL_PARTICLE_EVENT(Redo)
+
+IMPL_PARTICLE_EVENT(DestroyParticleSysInstance)
+
+IMPL_PARTICLE_EVENT(UpdateEmitterList)
+IMPL_PARTICLE_EVENT(UpdateAffectorList)
+IMPL_PARTICLE_EVENT(UpdateView)
+
+IMPL_PARTICLE_EVENT(ShowParticleObjectProp)
+IMPL_PARTICLE_EVENT(ClearObjectProp)
+IMPL_PARTICLE_EVENT(UpdateTimeLineEditor)

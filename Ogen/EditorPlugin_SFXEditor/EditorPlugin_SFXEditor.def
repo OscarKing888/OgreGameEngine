@@ -1,0 +1,6 @@
+; EditorPlugin_SFXEditor.def : Declares the module parameters for the DLL.
+
+LIBRARY      "EditorPlugin_SFXEditor"
+
+EXPORTS
+    ; Explicit exports can go here

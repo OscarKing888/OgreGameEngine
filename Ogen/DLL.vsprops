@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="DLL"
+	OutputDirectory="$(SolutionDir)..\Bin$(ConfigurationName)\"
+	IntermediateDirectory="$(SolutionDir)..\BuildTmp\$(ProjectName)\$(ConfigurationName)"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalIncludeDirectories="$(SolutionDir);$(SolutionDir)Core"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		OutputFile="$(SolutionDir)..\Bin$(ConfigurationName)\$(ProjectName)_$(ConfigurationName).dll"
+		AdditionalLibraryDirectories="$(SolutionDir)..\Lib"
+		GenerateDebugInformation="true"
+		ProgramDatabaseFile="$(SolutionDir)..\Bin$(ConfigurationName)\$(ProjectName)_$(ConfigurationName).pdb"
+		ImportLibrary="$(SolutionDir)..\Lib\$(ProjectName)_$(ConfigurationName).lib"
+	/>
+</VisualStudioPropertySheet>

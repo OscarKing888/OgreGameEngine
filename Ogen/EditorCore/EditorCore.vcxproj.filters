@@ -1,0 +1,257 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Property">
+      <UniqueIdentifier>{66ae43d0-eeaf-4c82-838b-9ad1432f0867}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CommandX">
+      <UniqueIdentifier>{14a6b5fc-18c1-4f54-8f75-0b7742fbc1a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditState">
+      <UniqueIdentifier>{d631b4bc-d4d3-4d24-9d7b-15375b13530e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MFCEx">
+      <UniqueIdentifier>{5f7aca9f-bf5d-459a-a1ae-5d53b1a7ea45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ResourceViewPanel">
+      <UniqueIdentifier>{42182bad-bd2b-4509-93f6-fc41a8243a6d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EditorApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorConfig.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorCore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCInputManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_Bool.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_ColourValue.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_Enum.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_Float.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_Material.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_MeshFile.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_Radian.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_StringMap.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyEditorBase.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyGrid.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="TypeUIEditorFactory.cpp">
+      <Filter>Property</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_SetProperty.cpp">
+      <Filter>CommandX</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractEditState.cpp">
+      <Filter>EditState</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController.cpp">
+      <Filter>MFCEx</Filter>
+    </ClCompile>
+    <ClCompile Include="InputDlg.cpp">
+      <Filter>MFCEx</Filter>
+    </ClCompile>
+    <ClCompile Include="ListSelectDlg.cpp">
+      <Filter>MFCEx</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCUtil.cpp">
+      <Filter>MFCEx</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderWnd.cpp">
+      <Filter>MFCEx</Filter>
+    </ClCompile>
+    <ClCompile Include="ResEditorBase.cpp">
+      <Filter>MFCEx</Filter>
+    </ClCompile>
+    <ClCompile Include="ResViewPanel.cpp">
+      <Filter>ResourceViewPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="ResViewPanelBase.cpp">
+      <Filter>ResourceViewPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ColourLerpWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeBlock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EditorApp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCoreExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorCorePrerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EditorUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCInputManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditor_Bool.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditor_ColourValue.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditor_Enum.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditor_Float.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditor_Material.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditor_MeshFile.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditor_Radian.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditor_StringMap.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyEditorBase.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyGrid.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="TypeUIEditorFactory.h">
+      <Filter>Property</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_SetProperty.h">
+      <Filter>CommandX</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractEditState.h">
+      <Filter>EditState</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController.h">
+      <Filter>MFCEx</Filter>
+    </ClInclude>
+    <ClInclude Include="InputDlg.h">
+      <Filter>MFCEx</Filter>
+    </ClInclude>
+    <ClInclude Include="ListSelectDlg.h">
+      <Filter>MFCEx</Filter>
+    </ClInclude>
+    <ClInclude Include="MemDC.h">
+      <Filter>MFCEx</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCUtil.h">
+      <Filter>MFCEx</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderWnd.h">
+      <Filter>MFCEx</Filter>
+    </ClInclude>
+    <ClInclude Include="ResEditorBase.h">
+      <Filter>MFCEx</Filter>
+    </ClInclude>
+    <ClInclude Include="ResViewPanel.h">
+      <Filter>ResourceViewPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="ResViewPanelBase.h">
+      <Filter>ResourceViewPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ColourLerpWnd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeBlock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EditorCore.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\properties.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_hc.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

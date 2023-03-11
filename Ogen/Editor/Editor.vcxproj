@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0E5E7E9B-4674-4200-BD1D-F7F82EF2D8DB}</ProjectGuid>
+    <RootNamespace>Editor</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+    <Import Project="..\ogg.props" />
+    <Import Project="..\Ogre.props" />
+    <Import Project="..\Exe.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\boost.props" />
+    <Import Project="..\ogg.props" />
+    <Import Project="..\Ogre.props" />
+    <Import Project="..\Exe.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm1024 /Zm1024 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>false</EnableDPIAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <AdditionalOptions>-Zm1024 /Zm1024 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level4</WarningLevel>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <FixedBaseAddress>false</FixedBaseAddress>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Manifest>
+      <EnableDPIAwareness>false</EnableDPIAwareness>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="MFCCameraController.cpp" />
+    <ClCompile Include="OpenMapDlg.cpp" />
+    <ClCompile Include="PathFinderHelper.cpp" />
+    <ClCompile Include="Memento_ShowHideObject.cpp" />
+    <ClCompile Include="Cmd_Material.cpp" />
+    <ClCompile Include="DefaultView.cpp" />
+    <ClCompile Include="Editor.cpp" />
+    <ClCompile Include="EditorConfig.cpp" />
+    <ClCompile Include="EditorDoc.cpp" />
+    <ClCompile Include="EditorGameApp.cpp" />
+    <ClCompile Include="EditorView.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="NewMapDlg.cpp" />
+    <ClCompile Include="SplashDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="ObjectListDlg.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MFCCameraController.h" />
+    <ClInclude Include="OpenMapDlg.h" />
+    <ClInclude Include="PathFinderHelper.h" />
+    <ClInclude Include="Memento_ShowHideObject.h" />
+    <ClInclude Include="Cmd_Material.h" />
+    <ClInclude Include="DefaultView.h" />
+    <ClInclude Include="Editor.h" />
+    <ClInclude Include="EditorConfig.h" />
+    <ClInclude Include="EditorDoc.h" />
+    <ClInclude Include="EditorGameApp.h" />
+    <ClInclude Include="EditorView.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="NewMapDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SplashDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="ObjectListDlg.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="ViewTree.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bitmap2.bmp" />
+    <None Include="res\BtnPause.bmp" />
+    <None Include="res\BtnPlay.bmp" />
+    <None Include="res\BtnStop.bmp" />
+    <None Include="res\BtnToBegin.bmp" />
+    <None Include="res\BtnToEnd.bmp" />
+    <None Include="res\buttons.bmp" />
+    <None Include="res\CameraSpeed.bmp" />
+    <None Include="res\CamSpeedFast.ico" />
+    <None Include="res\CamSpeedNormal.ico" />
+    <None Include="res\CamSpeedSlow.ico" />
+    <None Include="res\class_view.ico" />
+    <None Include="res\class_view_hc.ico" />
+    <None Include="res\classview.bmp" />
+    <None Include="res\classview_hc.bmp" />
+    <None Include="res\Edit_Move.cur" />
+    <None Include="res\Edit_Rotate.cur" />
+    <None Include="res\Edit_Scale.cur" />
+    <None Include="res\Edit_Select.cur" />
+    <None Include="res\Editor.ico" />
+    <None Include="res\Editor.rc2" />
+    <None Include="res\EditorDoc.ico" />
+    <None Include="res\error.bmp" />
+    <None Include="res\explorer.bmp" />
+    <None Include="res\explorer_hc.bmp" />
+    <None Include="res\file_view.ico" />
+    <None Include="res\file_view_hc.ico" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\fileview.bmp" />
+    <None Include="res\fileview_hc.bmp" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\icon2.ico" />
+    <None Include="res\main.bmp" />
+    <None Include="res\MaterialEditor.ico" />
+    <None Include="res\menuimages.bmp" />
+    <None Include="res\menuimages_hc.bmp" />
+    <None Include="res\MeshInfoIcon.bmp" />
+    <None Include="res\ModelEditor.bmp" />
+    <None Include="res\ModelEditor.ico" />
+    <None Include="res\ModelEditorToolbar.bmp" />
+    <None Include="res\Move_X.cur" />
+    <None Include="res\Move_Y.cur" />
+    <None Include="res\Move_Z.cur" />
+    <None Include="res\output_wnd.ico" />
+    <None Include="res\output_wnd_hc.ico" />
+    <None Include="res\ParticleEditor.ico" />
+    <None Include="res\Prop.ico" />
+    <None Include="res\properti.bmp" />
+    <None Include="res\properties.bmp" />
+    <None Include="res\properties_hc.bmp" />
+    <None Include="res\properties_wnd.ico" />
+    <None Include="res\properties_wnd_hc.ico" />
+    <None Include="res\Rotate_X.cur" />
+    <None Include="res\Rotate_Y.cur" />
+    <None Include="res\Rotate_Z.cur" />
+    <None Include="res\sort.bmp" />
+    <None Include="res\sort_hc.bmp" />
+    <None Include="res\Splash.bmp" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\Toolbar_Main.bmp" />
+    <None Include="res\Toolbar_MaterialEditor.bmp" />
+    <None Include="res\toolbar_particleeditor.bmp" />
+    <None Include="UserImages.bmp" />
+    <None Include="res\writelarge.bmp" />
+    <None Include="res\writesmall.bmp" />
+    <None Include="Editor.reg" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Editor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EditorCore\EditorCore.vcxproj">
+      <Project>{8c710a48-866b-44ce-8094-dd66acfafa55}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{ea5e5381-38a5-493b-8fc8-1f0c5fbc5e17}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="Editor.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Emitter">
+      <UniqueIdentifier>{f5015ae1-fa5f-4bae-81fa-74dbc352327d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Affector">
+      <UniqueIdentifier>{7b5a1a0d-2245-4a1e-9338-d2ad44094ec5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{20e5ee6d-1614-4b87-8fcc-653cf2eec265}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OgreEx">
+      <UniqueIdentifier>{d4f1d30b-78b2-40bc-99f1-1d3778733c1b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Plugin_OgreEx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OgrePolarEmitter.cpp">
+      <Filter>Emitter</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreColourFadingAffector.cpp">
+      <Filter>Affector</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreMeshAnimationAffector.cpp">
+      <Filter>Affector</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreMeshRotationAffector.cpp">
+      <Filter>Affector</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreMovementAffector.cpp">
+      <Filter>Affector</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreRevolutionAffector.cpp">
+      <Filter>Affector</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreScaleInterpolatorAffector.cpp">
+      <Filter>Affector</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreMeshParticleRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreMeshParticleVisualData.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreRibbonRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreTexCoordBillboardParticleRenderer.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreProjector.cpp">
+      <Filter>OgreEx</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreRibbonSet.cpp">
+      <Filter>OgreEx</Filter>
+    </ClCompile>
+    <ClCompile Include="OgreAnimationRibbon.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OgreExPrerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Plugin_OgreEx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OgrePolarEmitter.h">
+      <Filter>Emitter</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreColourFadingAffector.h">
+      <Filter>Affector</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreMeshAnimationAffector.h">
+      <Filter>Affector</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreMeshRotationAffector.h">
+      <Filter>Affector</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreMovementAffector.h">
+      <Filter>Affector</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreRevolutionAffector.h">
+      <Filter>Affector</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreScaleInterpolatorAffector.h">
+      <Filter>Affector</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreMeshParticleRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreMeshParticleVisualData.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreRibbonRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreTexCoordBillboardParticleRenderer.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreProjector.h">
+      <Filter>OgreEx</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreRibbonSet.h">
+      <Filter>OgreEx</Filter>
+    </ClInclude>
+    <ClInclude Include="OgreAnimationRibbon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

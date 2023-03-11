@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Controller">
+      <UniqueIdentifier>{47e8da9d-c1e7-467b-970d-a52da6fb6636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Command">
+      <UniqueIdentifier>{4ae3ffac-e1b2-4406-9036-4c55fde297a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UIController">
+      <UniqueIdentifier>{1fef8269-2bc5-4d17-bcbe-79803f9d3223}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI">
+      <UniqueIdentifier>{f41ce0ac-c87a-4500-8b14-fec5dcd39603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UI\TimeBlock">
+      <UniqueIdentifier>{8579412f-ba20-4d94-a178-f6b2f9ee7d01}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EditorPlugin_SFXEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXEditActionCmd.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXEditor.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXEditorEvents.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXEditorMsgHandler.cpp">
+      <Filter>Controller</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_AddElement.cpp">
+      <Filter>Command</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeLinePanelController.cpp">
+      <Filter>UIController</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXEditorFrm.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="SFXElementListPanel.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeLinePanel.cpp">
+      <Filter>UI</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractSFXTimeblock.cpp">
+      <Filter>UI\TimeBlock</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EditorPlugin_SFXEditor.def">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="res\EditorPlugin_SFXEditor.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Property.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Redo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\SFXEditor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar_sfx.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Undo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXEditorExports.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXEditActionCmd.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXEditor.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXEditorEvents.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXEditorMsgHandler.h">
+      <Filter>Controller</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_AddElement.h">
+      <Filter>Command</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeLinePanelController.h">
+      <Filter>UIController</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXEditorFrm.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="SFXElementListPanel.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeLinePanel.h">
+      <Filter>UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractSFXTimeblock.h">
+      <Filter>UI\TimeBlock</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EditorPlugin_SFXEditor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

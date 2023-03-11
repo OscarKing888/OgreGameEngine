@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8C710A48-866B-44CE-8094-DD66ACFAFA55}</ProjectGuid>
+    <RootNamespace>EditorCore</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="..\boost.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\ogg.props" />
+    <Import Project="..\Ogre.props" />
+    <Import Project="..\DLL.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="..\boost.props" />
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\ogg.props" />
+    <Import Project="..\Ogre.props" />
+    <Import Project="..\DLL.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-Zm1024 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_AFXEXT;EDITORCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions>-Zm1024 %(AdditionalOptions)</AdditionalOptions>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_AFXEXT;EDITORCORE_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <BrowseInformation>
+      </BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="EditorApp.cpp" />
+    <ClCompile Include="EditorConfig.cpp" />
+    <ClCompile Include="EditorCore.cpp" />
+    <ClCompile Include="EditorUtil.cpp" />
+    <ClCompile Include="MFCInputManager.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="PropertyEditor_Bool.cpp" />
+    <ClCompile Include="PropertyEditor_ColourValue.cpp" />
+    <ClCompile Include="PropertyEditor_Enum.cpp" />
+    <ClCompile Include="PropertyEditor_Float.cpp" />
+    <ClCompile Include="PropertyEditor_Material.cpp" />
+    <ClCompile Include="PropertyEditor_MeshFile.cpp" />
+    <ClCompile Include="PropertyEditor_Radian.cpp" />
+    <ClCompile Include="PropertyEditor_StringMap.cpp" />
+    <ClCompile Include="PropertyEditorBase.cpp" />
+    <ClCompile Include="PropertyGrid.cpp" />
+    <ClCompile Include="TypeUIEditorFactory.cpp" />
+    <ClCompile Include="Cmd_SetProperty.cpp" />
+    <ClCompile Include="CommandManager.cpp" />
+    <ClCompile Include="AbstractEditState.cpp" />
+    <ClCompile Include="CameraController.cpp" />
+    <ClCompile Include="ColourLerpWnd.cpp" />
+    <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="GridCtrl.cpp" />
+    <ClCompile Include="InputDlg.cpp" />
+    <ClCompile Include="ListSelectDlg.cpp" />
+    <ClCompile Include="MFCUtil.cpp" />
+    <ClCompile Include="RenderWnd.cpp" />
+    <ClCompile Include="ResEditorBase.cpp" />
+    <ClCompile Include="TimeBlock.cpp" />
+    <ClCompile Include="ResViewPanel.cpp" />
+    <ClCompile Include="ResViewPanelBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EditorApp.h" />
+    <ClInclude Include="EditorConfig.h" />
+    <ClInclude Include="EditorCore.h" />
+    <ClInclude Include="EditorCoreExports.h" />
+    <ClInclude Include="EditorCorePrerequisites.h" />
+    <ClInclude Include="EditorUtil.h" />
+    <ClInclude Include="MFCInputManager.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="PropertyEditor_Bool.h" />
+    <ClInclude Include="PropertyEditor_ColourValue.h" />
+    <ClInclude Include="PropertyEditor_Enum.h" />
+    <ClInclude Include="PropertyEditor_Float.h" />
+    <ClInclude Include="PropertyEditor_Material.h" />
+    <ClInclude Include="PropertyEditor_MeshFile.h" />
+    <ClInclude Include="PropertyEditor_Radian.h" />
+    <ClInclude Include="PropertyEditor_StringMap.h" />
+    <ClInclude Include="PropertyEditorBase.h" />
+    <ClInclude Include="PropertyGrid.h" />
+    <ClInclude Include="TypeUIEditorFactory.h" />
+    <ClInclude Include="Cmd_SetProperty.h" />
+    <ClInclude Include="CommandManager.h" />
+    <ClInclude Include="AbstractEditState.h" />
+    <ClInclude Include="CameraController.h" />
+    <ClInclude Include="ColourLerpWnd.h" />
+    <ClInclude Include="Grid.h" />
+    <ClInclude Include="GridCtrl.h" />
+    <ClInclude Include="InputDlg.h" />
+    <ClInclude Include="ListSelectDlg.h" />
+    <ClInclude Include="MemDC.h" />
+    <ClInclude Include="MFCUtil.h" />
+    <ClInclude Include="RenderWnd.h" />
+    <ClInclude Include="ResEditorBase.h" />
+    <ClInclude Include="TimeBlock.h" />
+    <ClInclude Include="ResViewPanel.h" />
+    <ClInclude Include="ResViewPanelBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EditorCore.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\properties.bmp" />
+    <None Include="res\properties_hc.bmp" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{ea5e5381-38a5-493b-8fc8-1f0c5fbc5e17}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

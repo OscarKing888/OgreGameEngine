@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{f5a34637-ccfc-4e9a-b263-c50751315f8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EditorProxy">
+      <UniqueIdentifier>{54dcd686-e68f-4896-8a0c-7a369f46e650}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EditorPlugin_ParticleEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEditorFrm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEditorMsgHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSerializer.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleUtil.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleAffectorEditor.cpp">
+      <Filter>EditorProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEditorProxy.cpp">
+      <Filter>EditorProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEmitterEditor.cpp">
+      <Filter>EditorProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleRenderEditor.cpp">
+      <Filter>EditorProxy</Filter>
+    </ClCompile>
+    <ClCompile Include="ColourInterpolatorAffector_TimeLineEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AffectorTimeLineEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeLinePanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEditorEvents.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystemEditor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystemProxy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_AddAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_AddEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_RemoveAffector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_RemoveEmitter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Cmd_SetParticleRenderer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleEditActionCmd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ComponentPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ParticleSystemListPanel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EditorPlugin_ParticleEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEditorFrm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEditorMsgHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSerializer.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleUtil.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleAffectorEditor.h">
+      <Filter>EditorProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEditorProxy.h">
+      <Filter>EditorProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEmitterEditor.h">
+      <Filter>EditorProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleRenderEditor.h">
+      <Filter>EditorProxy</Filter>
+    </ClInclude>
+    <ClInclude Include="ColourInterpolatorAffector_TimeLineEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AffectorTimeLineEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeLinePanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEditorEvents.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystemEditor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystemProxy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_AddAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_AddEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_RemoveAffector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_RemoveEmitter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Cmd_SetParticleRenderer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleEditActionCmd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ComponentPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ParticleSystemListPanel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EditorPlugin_ParticleEditor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ParticleEditor.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\properties_wnd_hc.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\toolbar_particleeditor.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="ReadMe.txt" />
+    <None Include="res\filelarge.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Redo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\Undo.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

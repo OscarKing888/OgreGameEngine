@@ -1,0 +1,29 @@
+#pragma once
+
+#define DECL_PARTICLE_EVENT(x)	static String x;
+#define IMPL_PARTICLE_EVENT(x)	String CinemaEditorEvents::x = #x;
+
+struct CinemaEditorEvents
+{
+	DECL_PARTICLE_EVENT(NewCinema)
+	DECL_PARTICLE_EVENT(SaveAll)
+	DECL_PARTICLE_EVENT(AddTrack)
+	DECL_PARTICLE_EVENT(RemoveTrack)
+	DECL_PARTICLE_EVENT(EditCinema)	
+	DECL_PARTICLE_EVENT(CreateKeyFrame)
+
+	DECL_PARTICLE_EVENT(ShowCinemaPropObject)
+	DECL_PARTICLE_EVENT(ClearCinemaPropObject)
+
+	DECL_PARTICLE_EVENT(Play)
+	DECL_PARTICLE_EVENT(Pause)
+	DECL_PARTICLE_EVENT(Stop)
+	DECL_PARTICLE_EVENT(ToBegin)
+	DECL_PARTICLE_EVENT(ToEnd)
+
+	DECL_PARTICLE_EVENT(UpdateUI_CinemaList)
+	DECL_PARTICLE_EVENT(UpdateUI_CinemaCtrl)
+	DECL_PARTICLE_EVENT(UpdateUI_AddTrack)
+	DECL_PARTICLE_EVENT(UpdateUI_RemoveTrack)
+	DECL_PARTICLE_EVENT(UpdateUI_CreateKeyFrame)
+};

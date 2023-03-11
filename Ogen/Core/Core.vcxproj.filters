@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="tinyxml">
+      <UniqueIdentifier>{88a0c446-d8cf-4bfb-aafd-a505a1b782bf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{4ae62750-0569-4ac2-9625-1a21f772438f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ObjectSystem">
+      <UniqueIdentifier>{c92ff24a-3eff-4b2f-a241-117abbb151c1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tinystr.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxml.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlerror.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="tinyxmlparser.cpp">
+      <Filter>tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="ByteStream.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugUtil.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="File.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="OSAPI.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="TClassUtil.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="TString.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="XML.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLConfigReader.cpp">
+      <Filter>Main</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumDescriptorManager.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="IProperty.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Property.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_Bool.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_Enum.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_Float.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_Int.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_String.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_StringMap.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Property_StringVector.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyObject.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="RefObject.cpp">
+      <Filter>ObjectSystem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tinystr.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="tinyxml.h">
+      <Filter>tinyxml</Filter>
+    </ClInclude>
+    <ClInclude Include="ByteStream.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Core.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreConfig.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreExport.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="CorePrerequisites.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugUtil.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="File.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="OSAPI.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SingletonMyers.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TClassUtil.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TString.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="UTFString.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="XML.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLConfigReader.h">
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumDescriptorManager.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="IEnumDescriptor.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="IProperty.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Property.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_Bool.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_Enum.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_Float.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_Int.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_String.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_StringMap.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Property_StringVector.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyObject.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="PropMacros.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="RefObject.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="SmartPtr.h">
+      <Filter>ObjectSystem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+</Project>

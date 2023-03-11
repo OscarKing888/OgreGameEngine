@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>$(SolutionDir)..\Bin$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)..\BuildTmp\$(ProjectName)\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)_$(Configuration)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir);$(SolutionDir)Core;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <OutputFile>$(SolutionDir)..\Bin$(Configuration)\$(ProjectName)_$(Configuration).dll</OutputFile>
+      <AdditionalLibraryDirectories>$(SolutionDir)..\Lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>$(SolutionDir)..\Bin$(Configuration)\$(ProjectName)_$(Configuration).pdb</ProgramDatabaseFile>
+      <ImportLibrary>$(SolutionDir)..\Lib\$(ProjectName)_$(Configuration).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+</Project>

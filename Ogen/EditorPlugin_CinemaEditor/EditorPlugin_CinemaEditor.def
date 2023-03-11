@@ -1,0 +1,6 @@
+; EditorPlugin_CinemaEditor.def : Declares the module parameters for the DLL.
+
+LIBRARY      "EditorPlugin_CinemaEditor"
+
+EXPORTS
+    ; Explicit exports can go here

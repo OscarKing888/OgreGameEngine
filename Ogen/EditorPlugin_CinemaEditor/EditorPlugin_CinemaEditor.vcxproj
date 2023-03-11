@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{51EB3279-F3DA-46EE-910F-78D88942B2B8}</ProjectGuid>
+    <RootNamespace>EditorPlugin_CinemaEditor</RootNamespace>
+    <SccProjectName>
+    </SccProjectName>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccProvider>
+    </SccProvider>
+    <Keyword>MFCDLLProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DLL.props" />
+    <Import Project="..\Ogre.props" />
+    <Import Project="..\ogg.props" />
+    <Import Project="..\boost.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\DLL.props" />
+    <Import Project="..\Ogre.props" />
+    <Import Project="..\ogg.props" />
+    <Import Project="..\boost.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_AFXEXT;CINEMAEDITOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_AFXEXT;CINEMAEDITOR_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <ModuleDefinitionFile>
+      </ModuleDefinitionFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="CinemaEditorDoc.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+    </ClCompile>
+    <ClCompile Include="EditorPlugin_CinemaEditor.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Cmd_AddTrack.cpp" />
+    <ClCompile Include="Cmd_CreateKeyFrame.cpp" />
+    <ClCompile Include="CinemaEditorFrame.cpp" />
+    <ClCompile Include="CinemaEditorView.cpp" />
+    <ClCompile Include="CinemaListPanel.cpp" />
+    <ClCompile Include="CinemaTrackCtrl.cpp" />
+    <ClCompile Include="FloatValueDlg.cpp" />
+    <ClCompile Include="PropertyEditDlg.cpp" />
+    <ClCompile Include="TrackCtrl.cpp" />
+    <ClCompile Include="TrackView.cpp" />
+    <ClCompile Include="CinemaEditActionCmd.cpp" />
+    <ClCompile Include="CinemaEditor.cpp" />
+    <ClCompile Include="CinemaEditorEvents.cpp" />
+    <ClCompile Include="ViewSyncMediator.cpp" />
+    <ClCompile Include="ITrackEditor.cpp" />
+    <ClCompile Include="TrackEditor_Camera.cpp" />
+    <ClCompile Include="TrackEditor_FadeScreen.cpp" />
+    <ClCompile Include="TrackEditor_LightColour.cpp" />
+    <ClCompile Include="TrackEditor_Movement.cpp" />
+    <ClCompile Include="TrackEditor_Property.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EditorPlugin_CinemaEditor.def" />
+    <None Include="res\AddTrack.ico" />
+    <None Include="res\cinema_toolbar.bmp" />
+    <None Include="res\CinemaEditor.ico" />
+    <None Include="res\CinemaEditor_Icon.bmp" />
+    <None Include="res\CreateKeyFrame.ico" />
+    <None Include="res\EditorPlugin_CinemaEditor.rc2" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\Pause.ico" />
+    <None Include="res\Play.ico" />
+    <None Include="res\Redo.ico" />
+    <None Include="res\RemoveTrack.ico" />
+    <None Include="res\Stop.ico" />
+    <None Include="res\ToBegin.ico" />
+    <None Include="res\ToEnd.ico" />
+    <None Include="res\Undo.ico" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h" />
+    <CustomBuildStep Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Cmd_AddTrack.h" />
+    <ClInclude Include="Cmd_CreateKeyFrame.h" />
+    <ClInclude Include="CinemaEditorFrame.h" />
+    <ClInclude Include="CinemaListPanel.h" />
+    <ClInclude Include="CinemaTrackCtrl.h" />
+    <ClInclude Include="CinemaTrackView.h" />
+    <ClInclude Include="FloatValueDlg.h" />
+    <ClInclude Include="PropertyEditDlg.h" />
+    <ClInclude Include="TrackCtrl.h" />
+    <ClInclude Include="TrackView.h" />
+    <ClInclude Include="CinemaEditActionCmd.h" />
+    <ClInclude Include="CinemaEditor.h" />
+    <ClInclude Include="CinemaEditorDoc.h" />
+    <ClInclude Include="CinemaEditorEvents.h" />
+    <ClInclude Include="CinemaEditorExport.h" />
+    <ClInclude Include="ViewSyncMediator.h" />
+    <ClInclude Include="ITrackEditor.h" />
+    <ClInclude Include="TrackEditor_Camera.h" />
+    <ClInclude Include="TrackEditor_FadeScreen.h" />
+    <ClInclude Include="TrackEditor_LightColour.h" />
+    <ClInclude Include="TrackEditor_Movement.h" />
+    <ClInclude Include="TrackEditor_Property.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="EditorPlugin_CinemaEditor.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Oge_EnginePlugin\Oge_EnginePlugin.vcxproj">
+      <Project>{3f62c1a0-9f68-4afb-93b3-e16e26ee1fbc}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="EditorPlugin_CinemaEditor.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

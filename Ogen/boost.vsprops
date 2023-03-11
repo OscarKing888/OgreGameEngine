@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="boost"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalOptions="/wd4819"
+		AdditionalIncludeDirectories="$(SolutionDir)..\SDK\boost_1_44_0"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="$(SolutionDir)..\SDK\boost_1_44_0\lib"
+	/>
+</VisualStudioPropertySheet>

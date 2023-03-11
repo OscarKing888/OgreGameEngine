@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioPropertySheet
+	ProjectType="Visual C++"
+	Version="8.00"
+	Name="Ogre"
+	>
+	<Tool
+		Name="VCCLCompilerTool"
+		AdditionalOptions="-Zm1024"
+		AdditionalIncludeDirectories="&quot;$(SolutionDir)../SDK/Ogre1.71_VC2010/Dependencies/include&quot;;&quot;$(SolutionDir)../SDK/Ogre1.71_VC2010/OgreMain/include&quot;;&quot;$(SolutionDir)../SDK/Ogre1.71_VC2010/Samples/Common/include&quot;;&quot;$(SolutionDir)../SDK/Ogre1.71_VC2010/bin/include&quot;;&quot;$(SolutionDir)../SDK/Ogre1.71_VC2010/Components/Terrain/include&quot;"
+	/>
+	<Tool
+		Name="VCLinkerTool"
+		AdditionalLibraryDirectories="&quot;$(SolutionDir)..\SDK\Ogre1.71_VC2010\Dependencies\lib\$(ConfigurationName)&quot;;&quot;$(SolutionDir)..\SDK\Ogre1.71_VC2010\build\lib\Debug&quot;;&quot;$(SolutionDir)..\SDK\Ogre1.71_VC2010\build\lib\RelWithDebInfo&quot;"
+	/>
+</VisualStudioPropertySheet>
