@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cegui">
+      <UniqueIdentifier>{2c74a385-972b-4020-bd5b-e25c11a91ba5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\src">
+      <UniqueIdentifier>{4e732d9e-5fb8-4dee-a6d5-ab52a2f640c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\src\ImageCodecModules">
+      <UniqueIdentifier>{0e26f78f-22c3-49ff-8977-7fbe56d31a6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\src\ImageCodecModules\TGAImageCodec">
+      <UniqueIdentifier>{1cc9a48d-cf84-4a23-b953-5e9e52c4c6b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\include">
+      <UniqueIdentifier>{a7d9ba5f-fdea-4bc9-89a5-3e12ea65dbf6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\include\ImageCodecModules">
+      <UniqueIdentifier>{89c71079-c7f4-4864-b3d8-1a581200f6d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\include\ImageCodecModules\TGAImageCodec">
+      <UniqueIdentifier>{c77534fc-0332-4fba-b63c-cf7e44605556}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\cegui\src\ImageCodecModules\TGAImageCodec\CEGUITGAImageCodec.cpp">
+      <Filter>cegui\src\ImageCodecModules\TGAImageCodec</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cegui\src\ImageCodecModules\TGAImageCodec\CEGUITGAImageCodecModule.cpp">
+      <Filter>cegui\src\ImageCodecModules\TGAImageCodec</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\cegui\include\ImageCodecModules\TGAImageCodec\CEGUITGAImageCodec.h">
+      <Filter>cegui\include\ImageCodecModules\TGAImageCodec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\ImageCodecModules\TGAImageCodec\CEGUITGAImageCodecModule.h">
+      <Filter>cegui\include\ImageCodecModules\TGAImageCodec</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

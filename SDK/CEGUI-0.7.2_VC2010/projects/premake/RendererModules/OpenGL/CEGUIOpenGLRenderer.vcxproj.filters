@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cegui">
+      <UniqueIdentifier>{3d4f2bb8-01c9-4c2c-b00a-2862a7e4e916}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\src">
+      <UniqueIdentifier>{f74d3f02-b1a3-49a9-96f5-080813cc0918}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\src\RendererModules">
+      <UniqueIdentifier>{b1a3a96e-ff2e-4028-bc13-8c5f81bf9eb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\src\RendererModules\OpenGL">
+      <UniqueIdentifier>{81eea835-36a3-40fe-aeeb-0950ad798d21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\src\RendererModules\OpenGL\GLEW">
+      <UniqueIdentifier>{2229d002-01d4-4e22-8b57-adc450a85e28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\src\RendererModules\OpenGL\GLEW\src">
+      <UniqueIdentifier>{b378fa6c-ec99-4f7f-bcd4-04db97176afa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\src\RendererModules\OpenGL\GLEW\GL">
+      <UniqueIdentifier>{0822c387-d16a-4637-8928-8d810de1c4b2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\include">
+      <UniqueIdentifier>{6bf9bfe5-973b-43f6-9527-71d94c590a15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\include\RendererModules">
+      <UniqueIdentifier>{8e513a82-7fc9-4c89-8c3b-4cefc1c393b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cegui\include\RendererModules\OpenGL">
+      <UniqueIdentifier>{1ade3ecd-b4c2-46a7-93b1-dea84a9d2a04}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\cegui\src\RendererModules\OpenGL\GLEW\src\glew.c">
+      <Filter>cegui\src\RendererModules\OpenGL\GLEW\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cegui\src\RendererModules\OpenGL\CEGUIOpenGLFBOTextureTarget.cpp">
+      <Filter>cegui\src\RendererModules\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cegui\src\RendererModules\OpenGL\CEGUIOpenGLGeometryBuffer.cpp">
+      <Filter>cegui\src\RendererModules\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cegui\src\RendererModules\OpenGL\CEGUIOpenGLRenderer.cpp">
+      <Filter>cegui\src\RendererModules\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cegui\src\RendererModules\OpenGL\CEGUIOpenGLRenderTarget.cpp">
+      <Filter>cegui\src\RendererModules\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cegui\src\RendererModules\OpenGL\CEGUIOpenGLTexture.cpp">
+      <Filter>cegui\src\RendererModules\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cegui\src\RendererModules\OpenGL\CEGUIOpenGLTextureTarget.cpp">
+      <Filter>cegui\src\RendererModules\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cegui\src\RendererModules\OpenGL\CEGUIOpenGLViewportTarget.cpp">
+      <Filter>cegui\src\RendererModules\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\cegui\src\RendererModules\OpenGL\CEGUIOpenGLWGLPBTextureTarget.cpp">
+      <Filter>cegui\src\RendererModules\OpenGL</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\cegui\src\RendererModules\OpenGL\GLEW\GL\glew.h">
+      <Filter>cegui\src\RendererModules\OpenGL\GLEW\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\src\RendererModules\OpenGL\GLEW\GL\glxew.h">
+      <Filter>cegui\src\RendererModules\OpenGL\GLEW\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\src\RendererModules\OpenGL\GLEW\GL\wglew.h">
+      <Filter>cegui\src\RendererModules\OpenGL\GLEW\GL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\RendererModules\OpenGL\CEGUIOpenGL.h">
+      <Filter>cegui\include\RendererModules\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\RendererModules\OpenGL\CEGUIOpenGLFBOTextureTarget.h">
+      <Filter>cegui\include\RendererModules\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\RendererModules\OpenGL\CEGUIOpenGLGeometryBuffer.h">
+      <Filter>cegui\include\RendererModules\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\RendererModules\OpenGL\CEGUIOpenGLRenderer.h">
+      <Filter>cegui\include\RendererModules\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\RendererModules\OpenGL\CEGUIOpenGLRenderTarget.h">
+      <Filter>cegui\include\RendererModules\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\RendererModules\OpenGL\CEGUIOpenGLTexture.h">
+      <Filter>cegui\include\RendererModules\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\RendererModules\OpenGL\CEGUIOpenGLTextureTarget.h">
+      <Filter>cegui\include\RendererModules\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\RendererModules\OpenGL\CEGUIOpenGLViewportTarget.h">
+      <Filter>cegui\include\RendererModules\OpenGL</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\cegui\include\RendererModules\OpenGL\CEGUIOpenGLWGLPBTextureTarget.h">
+      <Filter>cegui\include\RendererModules\OpenGL</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,108 @@
+# CMake generation dependency list for this directory.
+W:/SDK/Ogre1.71_VC2010/CMakeLists.txt
+W:/SDK/Ogre1.71_VC2010/Build/CMakeFiles/CMakeSystem.cmake
+W:/SDK/Ogre1.71_VC2010/Build/CMakeFiles/CMakeCCompiler.cmake
+W:/SDK/Ogre1.71_VC2010/Build/CMakeFiles/CMakeCXXCompiler.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/Windows-cl.cmake
+W:/SDK/Ogre1.71_VC2010/Build/CMakeFiles/CMakeCPlatform.cmake
+W:/SDK/Ogre1.71_VC2010/Build/CMakeFiles/CMakeCXXPlatform.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/Platform/cl.cmake
+W:/SDK/Ogre1.71_VC2010/Build/CMakeFiles/CMakeRCCompiler.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CMakeDependentOption.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CheckCXXCompilerFlag.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CheckCXXSourceCompiles.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/MacroLogFeature.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/OgreConfigTargets.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/PreprocessorUtils.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/OgreGetVersion.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/PreprocessorUtils.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/version.txt.in
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/TestBigEndian.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Dependencies.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindZLIB.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPkgConfig.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindZZip.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPkgConfig.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindFreeImage.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPkgConfig.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindFreetype.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindOpenGL.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindOpenGLES.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindDirectX.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindCg.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPkgConfig.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindBoost.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindBoost.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindPOCO.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPkgConfig.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindTBB.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindOIS.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPkgConfig.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindDoxygen.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPackageMessage.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Packages/FindCppUnit.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/FindPkgMacros.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/FindPkgConfig.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/InstallDependencies.cmake
+W:/SDK/Ogre1.71_VC2010/Dependencies/bin/debug/OIS_d.dll
+W:/SDK/Ogre1.71_VC2010/Dependencies/bin/release/OIS.dll
+W:/SDK/Ogre1.71_VC2010/Dependencies/bin/release/OIS.dll
+W:/SDK/Ogre1.71_VC2010/Dependencies/bin/release/OIS.dll
+W:/SDK/Ogre1.71_VC2010/Dependencies/bin/debug/cg.dll
+W:/SDK/Ogre1.71_VC2010/Dependencies/bin/release/cg.dll
+W:/SDK/Ogre1.71_VC2010/Dependencies/bin/release/cg.dll
+W:/SDK/Ogre1.71_VC2010/Dependencies/bin/release/cg.dll
+W:/SDK/Ogre1.71_VC2010/CMake/PrepareThreadingOptions.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/ConfigureBuild.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/OgreBuildSettings.h.in
+W:/SDK/Ogre1.71_VC2010/CMake/InstallResources.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/resources_d.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/resources.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/plugins_d.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/plugins.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/quakemap_d.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/quakemap.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/samples_d.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/samples.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/resources_d.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/resources.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/resources.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/resources.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/plugins_d.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/plugins.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/plugins.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/plugins.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/quakemap_d.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/quakemap.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/quakemap.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/quakemap.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/samples_d.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/samples.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/samples.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/samples.cfg.in
+W:/SDK/Ogre1.71_VC2010/CMake/Packaging.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Modules/CPack.cmake
+C:/Program Files/CMake 2.8/share/cmake-2.8/Templates/CPackConfig.cmake.in
+C:/Program Files/CMake 2.8/share/cmake-2.8/Templates/CPackConfig.cmake.in
+W:/SDK/Ogre1.71_VC2010/CMake/FeatureSummary.cmake

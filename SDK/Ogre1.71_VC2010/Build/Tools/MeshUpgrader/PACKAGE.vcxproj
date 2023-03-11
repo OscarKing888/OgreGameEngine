@@ -1,0 +1,126 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{0CEF134C-967A-4273-B26C-6A7521E34B19}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType></ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType></ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType></ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType></ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>cd ..\..
+W:
+"C:\Program Files\CMake 2.8\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>cd ..\..
+W:
+"C:\Program Files\CMake 2.8\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>cd ..\..
+W:
+"C:\Program Files\CMake 2.8\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>cd ..\..
+W:
+"C:\Program Files\CMake 2.8\bin\cpack.exe" -C $(Configuration) --config ./CPackConfig.cmake</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="CMakeFiles\PACKAGE_force.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">cd .</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">W:/SDK/Ogre1.71_VC2010/Build/Tools/MeshUpgrader/CMakeFiles/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">W:\SDK\Ogre1.71_VC2010\Build\Tools\MeshUpgrader\CMakeFiles\PACKAGE_force;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">cd .</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">W:/SDK/Ogre1.71_VC2010/Build/Tools/MeshUpgrader/CMakeFiles/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">W:\SDK\Ogre1.71_VC2010\Build\Tools\MeshUpgrader\CMakeFiles\PACKAGE_force;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">cd .</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">W:/SDK/Ogre1.71_VC2010/Build/Tools/MeshUpgrader/CMakeFiles/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">W:\SDK\Ogre1.71_VC2010\Build\Tools\MeshUpgrader\CMakeFiles\PACKAGE_force;%(Outputs)</Outputs>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"> </Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">cd .</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">W:/SDK/Ogre1.71_VC2010/Build/Tools/MeshUpgrader/CMakeFiles/PACKAGE_force.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">W:\SDK\Ogre1.71_VC2010\Build\Tools\MeshUpgrader\CMakeFiles\PACKAGE_force;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Components/Terrain/ALL_BUILD.vcxproj">
+      <Project>F4996B60-B726-474D-A3FE-B7D518A71737</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

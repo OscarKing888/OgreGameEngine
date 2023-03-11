@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Driver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11DriverList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11EngineDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11GpuProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11GpuProgramManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareBufferManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareIndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareOcclusionQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwarePixelBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareVertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgramFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Mappings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11MultiRenderTarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Plugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11RenderSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11RenderToVertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11RenderWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11TextureManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11VertexDeclaration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11VideoMode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11VideoModeList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreFixedFuncEmuShaderGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreFixedFuncEmuShaderManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreFixedFuncState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\RenderSystems\Direct3D11\src\OgreHlslFixedFuncEmuShaderGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11Device.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11Driver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11DriverList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11GpuProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11GpuProgramManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11HardwareBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11HardwareBufferManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11HardwareIndexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11HardwareOcclusionQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11HardwarePixelBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11HardwareVertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11HLSLProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11HLSLProgramFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11Mappings.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11MultiRenderTarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11Plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11Prerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11RenderSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11RenderToVertexBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11RenderWindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11Texture.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11TextureManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11VertexDeclaration.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11VideoMode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreD3D11VideoModeList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreFixedFuncEmuShaderGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreFixedFuncEmuShaderManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreFixedFuncState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\RenderSystems\Direct3D11\include\OgreHlslFixedFuncEmuShaderGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A28AD923-555B-420D-A36B-090502458782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1E89C200-C51B-4743-934E-FC279F338C4F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Device.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Driver.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11DriverList.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11EngineDll.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11GpuProgram.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11GpuProgramManager.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareBufferManager.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareIndexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareOcclusionQuery.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwarePixelBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HardwareVertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgram.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11HLSLProgramFactory.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Mappings.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11MultiRenderTarget.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Plugin.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11RenderSystem.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11RenderToVertexBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11RenderWindow.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11Texture.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11TextureManager.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11VertexDeclaration.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11VideoMode.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreD3D11VideoModeList.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreFixedFuncEmuShaderGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreFixedFuncEmuShaderManager.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreFixedFuncState.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\RenderSystems\Direct3D11\src\OgreHlslFixedFuncEmuShaderGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

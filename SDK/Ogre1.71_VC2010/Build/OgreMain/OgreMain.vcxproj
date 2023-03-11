@@ -1,0 +1,699 @@
+﻿<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AD707903-CBA4-4F0C-9F4B-DAABD9EB25BE}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">W:\SDK\Ogre1.71_VC2010\Build\bin\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OgreMain.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OgreMain_d</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">W:\SDK\Ogre1.71_VC2010\Build\bin\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OgreMain.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OgreMain</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">W:\SDK\Ogre1.71_VC2010\Build\bin\MinSizeRel\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">OgreMain.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">OgreMain</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">W:\SDK\Ogre1.71_VC2010\Build\bin\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OgreMain.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OgreMain</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>OgreStableHeaders.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_ALL_NO_LIB;OGRE_NONCLIENT_BUILD;FREEIMAGE_LIB;_MT;_USRDLL;CMAKE_INTDIR="Debug";OgreMain_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/Debug/OgreMain_d.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Dependencies\lib\debug\freetype2311_d.lib;W:\SDK\boost_1_44_0\lib\libboost_thread-vc100-mt-gd-1_44.lib;W:\SDK\boost_1_44_0\lib\libboost_date_time-vc100-mt-gd-1_44.lib;..\..\Dependencies\lib\debug\FreeImaged.lib;..\..\Dependencies\lib\debug\zziplibd.lib;..\..\Dependencies\lib\debug\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>W:/SDK/boost_1_44_0/lib;W:/SDK/boost_1_44_0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>W:/SDK/Ogre1.71_VC2010/Build/lib/Debug/OgreMain_d.lib</ImportLibrary>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/Debug/OgreMain_d.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>OgreStableHeaders.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;OGRE_NONCLIENT_BUILD;FREEIMAGE_LIB;_MT;_USRDLL;CMAKE_INTDIR="Release";OgreMain_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/Release/OgreMain.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Dependencies\lib\release\freetype2311.lib;W:\SDK\boost_1_44_0\lib\libboost_thread-vc100-mt-1_44.lib;W:\SDK\boost_1_44_0\lib\libboost_date_time-vc100-mt-1_44.lib;..\..\Dependencies\lib\release\FreeImage.lib;..\..\Dependencies\lib\release\zziplib.lib;..\..\Dependencies\lib\release\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>W:/SDK/boost_1_44_0/lib;W:/SDK/boost_1_44_0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>W:/SDK/Ogre1.71_VC2010/Build/lib/Release/OgreMain.lib</ImportLibrary>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/Release/OgreMain.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>OgreStableHeaders.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;OGRE_NONCLIENT_BUILD;FREEIMAGE_LIB;_MT;_USRDLL;CMAKE_INTDIR="MinSizeRel";OgreMain_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/MinSizeRel/OgreMain.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Dependencies\lib\release\freetype2311.lib;W:\SDK\boost_1_44_0\lib\libboost_thread-vc100-mt-1_44.lib;W:\SDK\boost_1_44_0\lib\libboost_date_time-vc100-mt-1_44.lib;..\..\Dependencies\lib\release\FreeImage.lib;..\..\Dependencies\lib\release\zziplib.lib;..\..\Dependencies\lib\release\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>W:/SDK/boost_1_44_0/lib;W:/SDK/boost_1_44_0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>W:/SDK/Ogre1.71_VC2010/Build/lib/MinSizeRel/OgreMain.lib</ImportLibrary>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/MinSizeRel/OgreMain.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>OgreStableHeaders.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;OGRE_NONCLIENT_BUILD;FREEIMAGE_LIB;_MT;_USRDLL;CMAKE_INTDIR="RelWithDebInfo";OgreMain_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/RelWithDebInfo/OgreMain.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/OgreMain/include/WIN32;W:/SDK/Ogre1.71_VC2010/OgreMain/src/nedmalloc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Dependencies\lib\release\freetype2311.lib;W:\SDK\boost_1_44_0\lib\libboost_thread-vc100-mt-1_44.lib;W:\SDK\boost_1_44_0\lib\libboost_date_time-vc100-mt-1_44.lib;..\..\Dependencies\lib\release\FreeImage.lib;..\..\Dependencies\lib\release\zziplib.lib;..\..\Dependencies\lib\release\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>W:/SDK/boost_1_44_0/lib;W:/SDK/boost_1_44_0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>W:/SDK/Ogre1.71_VC2010/Build/lib/RelWithDebInfo/OgreMain.lib</ImportLibrary>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/RelWithDebInfo/OgreMain.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\OgreMain\include\asm_math.h" />
+    <ClInclude Include="..\..\OgreMain\include\Ogre.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreAlignedAllocator.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreAnimable.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreAnimation.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreAnimationState.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreAnimationTrack.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreAny.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreArchive.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreArchiveFactory.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreArchiveManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreAtomicWrappers.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreAutoParamDataSource.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreAxisAlignedBox.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreBillboard.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreBillboardChain.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreBillboardParticleRenderer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreBillboardSet.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreBitwise.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreBlendMode.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreBone.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreBorderPanelOverlayElement.h" />
+    <ClInclude Include="..\include\OgreBuildSettings.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCamera.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCodec.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreColourValue.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCommon.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCompositionPass.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCompositionTargetPass.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCompositionTechnique.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCompositor.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCompositorChain.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCompositorLogic.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCompositorInstance.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCompositorManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreConfig.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreConfigDialog.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreConfigFile.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreConfigOptionMap.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreController.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreControllerManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreConvexBody.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreCustomCompositionPass.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreDataStream.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreDefaultHardwareBufferManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreDistanceLodStrategy.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreDynLib.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreDynLibManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreEdgeListBuilder.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreEntity.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreErrorDialog.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreException.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreExternalTextureSource.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreExternalTextureSourceManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreFactoryObj.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreFileSystem.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreFont.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreFontManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreFrameListener.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreFrustum.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreGpuProgram.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreGpuProgramManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreGpuProgramParams.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreGpuProgramUsage.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHardwareBuffer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHardwareBufferManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHardwareIndexBuffer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHardwareOcclusionQuery.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHardwarePixelBuffer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHardwareVertexBuffer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHeaderPrefix.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHeaderSuffix.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHighLevelGpuProgram.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreHighLevelGpuProgramManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreImage.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreImageCodec.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreInstancedGeometry.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreIteratorRange.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreIteratorWrapper.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreIteratorWrappers.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreKeyFrame.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreLight.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreLodListener.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreLodStrategy.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreLodStrategyManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreLog.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreLogManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreManualObject.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMaterial.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMaterialManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMaterialSerializer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMath.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMatrix3.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMatrix4.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMemoryAllocatedObject.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMemoryAllocatorConfig.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMemoryNedAlloc.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMemoryNedPooling.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMemoryStdAlloc.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMemorySTLAllocator.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMemoryTracker.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMesh.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMeshFileFormat.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMeshManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMeshSerializer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMeshSerializerImpl.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMovableObject.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreMovablePlane.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreNode.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreNumerics.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreOptimisedUtil.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreOverlay.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreOverlayContainer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreOverlayElement.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreOverlayElementCommands.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreOverlayElementFactory.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreOverlayManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePanelOverlayElement.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticle.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleAffector.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleAffectorFactory.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleEmitter.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleEmitterCommands.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleEmitterFactory.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleIterator.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleScriptCompiler.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleSystem.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleSystemManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreParticleSystemRenderer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePass.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePatchMesh.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePatchSurface.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePixelCountLodStrategy.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePixelFormat.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePlane.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePlaneBoundedVolume.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePlatform.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePlatformInformation.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePlugin.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePolygon.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePose.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePredefinedControllers.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePrefabFactory.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePrerequisites.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreProfiler.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreProgressiveMesh.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreQuaternion.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRadixSort.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRay.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRectangle.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRectangle2D.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderable.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderObjectListener.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderOperation.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderQueue.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderQueueInvocation.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderQueueListener.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderQueueSortingGrouping.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderSystem.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderSystemCapabilities.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderSystemCapabilitiesManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderSystemCapabilitiesSerializer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderTarget.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderTargetListener.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderTexture.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderToVertexBuffer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRenderWindow.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreResource.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreResourceBackgroundQueue.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreResourceGroupManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreResourceManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRibbonTrail.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRoot.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreRotationalSpline.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSceneManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSceneManagerEnumerator.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSceneNode.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSceneQuery.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreScriptCompiler.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreScriptLexer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreScriptLoader.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreScriptParser.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreScriptTranslator.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSearchOps.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSerializer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreShadowCameraSetup.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreShadowCameraSetupFocused.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreShadowCameraSetupLiSPSM.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreShadowCameraSetupPlaneOptimal.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreShadowCameraSetupPSSM.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreShadowCaster.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreShadowTextureManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreShadowVolumeExtrudeProgram.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSharedPtr.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSimpleRenderable.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSimpleSpline.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSingleton.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSkeleton.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSkeletonFileFormat.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSkeletonInstance.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSkeletonManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSkeletonSerializer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSphere.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSpotShadowFadePng.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreStableHeaders.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreStaticFaceGroup.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreStaticGeometry.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreStdHeaders.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreStreamSerialiser.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreString.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreStringConverter.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreStringInterface.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreStringVector.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSubEntity.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreSubMesh.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreTagPoint.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreTangentSpaceCalc.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreTechnique.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreTextAreaOverlayElement.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreTexture.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreTextureManager.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreTextureUnitState.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreTimer.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreUnifiedHighLevelGpuProgram.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreUserObjectBindings.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreUTFString.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreVector2.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreVector3.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreVector4.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreVertexBoneAssignment.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreVertexIndexData.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreViewport.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreWindowEventUtilities.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreWireBoundingBox.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreWorkQueue.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreFreeImageCodec.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreDDSCodec.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgrePVRTCCodec.h" />
+    <ClInclude Include="..\..\OgreMain\include\OgreZip.h" />
+    <ClCompile Include="..\..\OgreMain\src\OgreAlignedAllocator.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreAnimable.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreAnimation.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreAnimationState.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreAnimationTrack.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreArchiveManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreAutoParamDataSource.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreAxisAlignedBox.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreBillboard.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreBillboardChain.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreBillboardParticleRenderer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreBillboardSet.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreBone.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreBorderPanelOverlayElement.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCamera.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCodec.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreColourValue.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCommon.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCompositionPass.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCompositionTargetPass.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCompositionTechnique.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCompositor.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCompositorChain.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCompositorInstance.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreCompositorManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreConfigFile.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreControllerManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreConvexBody.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreDataStream.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreDefaultHardwareBufferManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreDefaultSceneQueries.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreDistanceLodStrategy.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreDynLib.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreDynLibManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreEdgeListBuilder.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreEntity.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreException.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreExternalTextureSource.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreExternalTextureSourceManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreFileSystem.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreFont.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreFontManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreFrustum.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreGpuProgram.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreGpuProgramManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreGpuProgramParams.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreGpuProgramUsage.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreHardwareBufferManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreHardwareIndexBuffer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreHardwareOcclusionQuery.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreHardwarePixelBuffer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreHardwareVertexBuffer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreHighLevelGpuProgram.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreHighLevelGpuProgramManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreImage.cpp" />
+    <ClInclude Include="..\..\OgreMain\src\OgreImageResampler.h" />
+    <ClCompile Include="..\..\OgreMain\src\OgreInstancedGeometry.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreKeyFrame.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreLight.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreLodStrategy.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreLodStrategyManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreLog.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreLogManager.cpp" />
+    <None Include="..\..\OgreMain\src\ogremain.map" />
+    <ClCompile Include="..\..\OgreMain\src\OgreManualObject.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMaterial.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMaterialManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMaterialSerializer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMath.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMatrix3.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMatrix4.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMemoryAllocatedObject.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMemoryNedAlloc.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMemoryNedPooling.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMemoryTracker.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMesh.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMeshManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMeshSerializer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMeshSerializerImpl.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMovableObject.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreMovablePlane.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreNode.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreNumerics.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreOptimisedUtil.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreOptimisedUtilGeneral.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreOptimisedUtilSSE.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreOverlay.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreOverlayContainer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreOverlayElement.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreOverlayElementCommands.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreOverlayManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePanelOverlayElement.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreParticle.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreParticleEmitter.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreParticleEmitterCommands.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreParticleIterator.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreParticleSystem.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreParticleSystemManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePass.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePatchMesh.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePatchSurface.cpp" />
+    <ClInclude Include="..\..\OgreMain\src\OgrePixelConversions.h" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePixelCountLodStrategy.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePixelFormat.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePlane.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePlatformInformation.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePolygon.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePose.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePrecompiledHeaders.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">OgreStableHeaders.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">OgreStableHeaders.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">OgreStableHeaders.h</PrecompiledHeaderFile>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">OgreStableHeaders.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="..\..\OgreMain\src\OgrePredefinedControllers.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePrefabFactory.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreProfiler.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreProgressiveMesh.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreQuaternion.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRectangle2D.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderQueue.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderQueueInvocation.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderQueueSortingGrouping.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderSystem.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderSystemCapabilities.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderSystemCapabilitiesManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderSystemCapabilitiesSerializer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderTarget.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderTexture.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderToVertexBuffer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRenderWindow.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreResource.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreResourceBackgroundQueue.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreResourceGroupManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreResourceManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRibbonTrail.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRoot.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreRotationSpline.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSceneManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSceneManagerEnumerator.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSceneNode.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSceneQuery.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreScriptCompiler.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreScriptLexer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreScriptParser.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreScriptTranslator.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSerializer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreShadowCameraSetup.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreShadowCameraSetupFocused.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreShadowCameraSetupLiSPSM.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreShadowCameraSetupPlaneOptimal.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreShadowCameraSetupPSSM.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreShadowCaster.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreShadowTextureManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreShadowVolumeExtrudeProgram.cpp" />
+    <ClInclude Include="..\..\OgreMain\src\OgreSIMDHelper.h" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSimpleRenderable.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSimpleSpline.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSkeleton.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSkeletonInstance.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSkeletonManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSkeletonSerializer.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreStaticGeometry.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreStreamSerialiser.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreString.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreStringConverter.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreStringInterface.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSubEntity.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreSubMesh.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreTagPoint.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreTangentSpaceCalc.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreTechnique.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreTextAreaOverlayElement.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreTexture.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreTextureManager.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreTextureUnitState.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreUnifiedHighLevelGpuProgram.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreUserObjectBindings.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreUTFString.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreVector2.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreVector3.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreVector4.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreVertexIndexData.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreViewport.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreWindowEventUtilities.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreWireBoundingBox.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreWorkQueue.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreFreeImageCodec.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreDDSCodec.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgrePVRTCCodec.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\OgreZip.cpp" />
+    <ClInclude Include="..\..\OgreMain\include\WIN32\OgreConfigDialogImp.h" />
+    <ClInclude Include="..\..\OgreMain\include\WIN32\OgreErrorDialogImp.h" />
+    <ClInclude Include="..\..\OgreMain\include\WIN32\OgreTimerImp.h" />
+    <ClInclude Include="..\..\OgreMain\include\WIN32\OgreMinGWSupport.h" />
+    <ClCompile Include="..\..\OgreMain\src\WIN32\OgreConfigDialog.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\WIN32\OgreErrorDialog.cpp" />
+    <ClCompile Include="..\..\OgreMain\src\WIN32\OgreTimer.cpp" />
+    <ClInclude Include="..\..\OgreMain\src\WIN32\resource.h" />
+    <ResourceCompile Include="..\..\OgreMain\src\WIN32\OgreWin32Resources.rc" />
+    <ClInclude Include="..\..\OgreMain\src\WIN32\winres.h" />
+    <ClInclude Include="..\..\OgreMain\include\Threading\OgreThreadDefines.h" />
+    <ClInclude Include="..\..\OgreMain\include\Threading\OgreThreadHeaders.h" />
+    <ClInclude Include="..\..\OgreMain\include\Threading\OgreDefaultWorkQueue.h" />
+    <ClInclude Include="..\..\OgreMain\include\Threading\OgreThreadDefinesBoost.h" />
+    <ClInclude Include="..\..\OgreMain\include\Threading\OgreThreadHeadersBoost.h" />
+    <ClInclude Include="..\..\OgreMain\include\Threading\OgreDefaultWorkQueueStandard.h" />
+    <ClCompile Include="..\..\OgreMain\src\Threading\OgreDefaultWorkQueueStandard.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

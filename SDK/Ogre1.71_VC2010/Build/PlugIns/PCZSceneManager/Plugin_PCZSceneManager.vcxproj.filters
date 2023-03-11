@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgreAntiPortal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgreCapsule.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgreDefaultZone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCPlane.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZCamera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZFrustum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZLight.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZone.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZoneFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZSceneManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZSceneManagerDll.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZSceneNode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZSceneQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePortal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePortalBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\PlugIns\PCZSceneManager\src\OgreSegment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgreAntiPortal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgreCapsule.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgreDefaultZone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCPlane.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZCamera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZFrustum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZoneFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZone.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZPlugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZPrerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZSceneManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZSceneNode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePCZSceneQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePortal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgrePortalBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\PlugIns\PCZSceneManager\include\OgreSegment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A28AD923-555B-420D-A36B-090502458782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1E89C200-C51B-4743-934E-FC279F338C4F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgreAntiPortal.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgreCapsule.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgreDefaultZone.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCPlane.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZCamera.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZFrustum.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZLight.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZone.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZoneFactory.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZSceneManager.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZSceneManagerDll.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZSceneNode.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePCZSceneQuery.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePortal.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgrePortalBase.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\PlugIns\PCZSceneManager\src\OgreSegment.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

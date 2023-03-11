@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+W:/SDK/Ogre1.71_VC2010/OgreMain/CMakeLists.txt
+W:/SDK/Ogre1.71_VC2010/CMake/Utils/PrecompiledHeader.cmake
+W:/SDK/Ogre1.71_VC2010/CMake/Templates/VisualStudioUserFile.vcproj.user.in

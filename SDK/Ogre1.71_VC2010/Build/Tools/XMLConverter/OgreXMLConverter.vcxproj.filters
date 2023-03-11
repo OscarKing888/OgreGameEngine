@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Tools\XMLConverter\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Tools\XMLConverter\src\OgreXMLMeshSerializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Tools\XMLConverter\src\OgreXMLSkeletonSerializer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Tools\XMLConverter\src\tinystr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Tools\XMLConverter\src\tinyxml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Tools\XMLConverter\src\tinyxmlerror.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Tools\XMLConverter\src\tinyxmlparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Tools\XMLConverter\include\OgreXMLMeshSerializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Tools\XMLConverter\include\OgreXMLPrerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Tools\XMLConverter\include\OgreXMLSkeletonSerializer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Tools\XMLConverter\include\tinystr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Tools\XMLConverter\include\tinyxml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A28AD923-555B-420D-A36B-090502458782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1E89C200-C51B-4743-934E-FC279F338C4F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Tools\XMLConverter\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Tools\XMLConverter\src\OgreXMLMeshSerializer.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Tools\XMLConverter\src\OgreXMLSkeletonSerializer.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Tools\XMLConverter\src\tinystr.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Tools\XMLConverter\src\tinyxml.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Tools\XMLConverter\src\tinyxmlerror.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Tools\XMLConverter\src\tinyxmlparser.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

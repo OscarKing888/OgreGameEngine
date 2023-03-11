@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{0E967196-4EE2-4987-9D7D-4ADB55BD9775}</ProjectGUID>
+    <SccProjectName />
+    <SccLocalPath />
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">W:\SDK\Ogre1.71_VC2010\Build\bin\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SampleBrowser.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">SampleBrowser_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">W:\SDK\Ogre1.71_VC2010\Build\bin\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SampleBrowser.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">SampleBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">W:\SDK\Ogre1.71_VC2010\Build\bin\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SampleBrowser.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">SampleBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">W:\SDK\Ogre1.71_VC2010\Build\bin\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SampleBrowser.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">SampleBrowser</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;BOOST_ALL_NO_LIB;USE_RTSHADER_SYSTEM;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Debug</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/Debug/SampleBrowser_d.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Debug\OgreMain_d.lib;..\..\lib\Debug\OgreRTShaderSystem_d.lib;..\..\..\Dependencies\lib\debug\OIS_d.lib;..\..\lib\Debug\OgreMain_d.lib;..\..\..\Dependencies\lib\debug\freetype2311_d.lib;W:\SDK\boost_1_44_0\lib\libboost_thread-vc100-mt-gd-1_44.lib;W:\SDK\boost_1_44_0\lib\libboost_date_time-vc100-mt-gd-1_44.lib;..\..\..\Dependencies\lib\debug\FreeImaged.lib;..\..\..\Dependencies\lib\debug\zziplibd.lib;..\..\..\Dependencies\lib\debug\zlibd.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>W:/SDK/boost_1_44_0/lib;W:/SDK/boost_1_44_0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>W:/SDK/Ogre1.71_VC2010/Build/lib/Debug/SampleBrowser_d.lib</ImportLibrary>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/Debug/SampleBrowser_d.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;USE_RTSHADER_SYSTEM;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>Release</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/Release/SampleBrowser.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\Release\OgreMain.lib;..\..\lib\Release\OgreRTShaderSystem.lib;..\..\..\Dependencies\lib\release\OIS.lib;..\..\lib\Release\OgreMain.lib;..\..\..\Dependencies\lib\release\freetype2311.lib;W:\SDK\boost_1_44_0\lib\libboost_thread-vc100-mt-1_44.lib;W:\SDK\boost_1_44_0\lib\libboost_date_time-vc100-mt-1_44.lib;..\..\..\Dependencies\lib\release\FreeImage.lib;..\..\..\Dependencies\lib\release\zziplib.lib;..\..\..\Dependencies\lib\release\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>W:/SDK/boost_1_44_0/lib;W:/SDK/boost_1_44_0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>W:/SDK/Ogre1.71_VC2010/Build/lib/Release/SampleBrowser.lib</ImportLibrary>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/Release/SampleBrowser.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;USE_RTSHADER_SYSTEM;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>MinSizeRel</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/MinSizeRel/SampleBrowser.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\MinSizeRel\OgreMain.lib;..\..\lib\MinSizeRel\OgreRTShaderSystem.lib;..\..\..\Dependencies\lib\release\OIS.lib;..\..\lib\MinSizeRel\OgreMain.lib;..\..\..\Dependencies\lib\release\freetype2311.lib;W:\SDK\boost_1_44_0\lib\libboost_thread-vc100-mt-1_44.lib;W:\SDK\boost_1_44_0\lib\libboost_date_time-vc100-mt-1_44.lib;..\..\..\Dependencies\lib\release\FreeImage.lib;..\..\..\Dependencies\lib\release\zziplib.lib;..\..\..\Dependencies\lib\release\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>W:/SDK/boost_1_44_0/lib;W:/SDK/boost_1_44_0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <ImportLibrary>W:/SDK/Ogre1.71_VC2010/Build/lib/MinSizeRel/SampleBrowser.lib</ImportLibrary>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/MinSizeRel/SampleBrowser.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> /Zm1000 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FloatingPointModel>Fast</FloatingPointModel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;BOOST_ALL_NO_LIB;USE_RTSHADER_SYSTEM;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>RelWithDebInfo</AssemblerListingLocation>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/RelWithDebInfo/SampleBrowser.pdb</ProgramDataBaseFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>W:/SDK/Ogre1.71_VC2010/OgreMain/include;W:/SDK/Ogre1.71_VC2010/Build/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include;W:/SDK/Ogre1.71_VC2010/Dependencies/include/OIS;W:/SDK/Ogre1.71_VC2010/Dependencies/include/Cg;W:/SDK/DirectX SDK (February 2010)/Include;W:/SDK/boost_1_44_0;W:/SDK/Ogre1.71_VC2010/Samples/Common/include;W:/SDK/Ogre1.71_VC2010/Components/RTShaderSystem/include;W:/SDK/Ogre1.71_VC2010/Samples/Browser/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\RelWithDebInfo\OgreMain.lib;..\..\lib\RelWithDebInfo\OgreRTShaderSystem.lib;..\..\..\Dependencies\lib\release\OIS.lib;..\..\lib\RelWithDebInfo\OgreMain.lib;..\..\..\Dependencies\lib\release\freetype2311.lib;W:\SDK\boost_1_44_0\lib\libboost_thread-vc100-mt-1_44.lib;W:\SDK\boost_1_44_0\lib\libboost_date_time-vc100-mt-1_44.lib;..\..\..\Dependencies\lib\release\FreeImage.lib;..\..\..\Dependencies\lib\release\zziplib.lib;..\..\..\Dependencies\lib\release\zlib.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>W:/SDK/boost_1_44_0/lib;W:/SDK/boost_1_44_0/lib/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ImportLibrary>W:/SDK/Ogre1.71_VC2010/Build/lib/RelWithDebInfo/SampleBrowser.lib</ImportLibrary>
+      <ProgramDataBaseFileName>W:/SDK/Ogre1.71_VC2010/Build/bin/RelWithDebInfo/SampleBrowser.pdb</ProgramDataBaseFileName>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Windows</SubSystem>
+      <Version>0.0</Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Samples\Browser\include\SampleBrowser.h" />
+    <ClInclude Include="..\..\..\Samples\Browser\include\FileSystemLayerImpl.h" />
+    <ClInclude Include="..\..\..\Samples\Common\include\Sample.h" />
+    <ClInclude Include="..\..\..\Samples\Common\include\SampleContext.h" />
+    <ClInclude Include="..\..\..\Samples\Common\include\SamplePlugin.h" />
+    <ClInclude Include="..\..\..\Samples\Common\include\SdkCameraMan.h" />
+    <ClInclude Include="..\..\..\Samples\Common\include\SdkSample.h" />
+    <ClInclude Include="..\..\..\Samples\Common\include\SdkTrays.h" />
+    <ClInclude Include="..\..\..\Samples\Common\include\OgreStaticPluginLoader.h" />
+    <ClInclude Include="..\..\..\Samples\Common\include\FileSystemLayer.h" />
+    <ClCompile Include="..\..\..\Samples\Browser\src\SampleBrowser.cpp" />
+    <ClCompile Include="..\..\..\Samples\Browser\src\FileSystemLayerImpl_WIN32.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Lighting/Sample_Lighting.vcxproj">
+      <Project>CF10AACA-8800-41F9-8ACB-42DE464123E3</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/OceanDemo/Sample_Ocean.vcxproj">
+      <Project>EF311542-9EF2-4BEB-808F-FBE0023EFE30</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/ParticleFX/Sample_ParticleFX.vcxproj">
+      <Project>05F5D297-905A-4426-A69C-1DF2BFADD767</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/ShaderSystem/Sample_ShaderSystem.vcxproj">
+      <Project>E0E92189-7A99-4A22-B35A-2DA42D5B3633</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Shadows/Sample_Shadows.vcxproj">
+      <Project>DB9579A2-DF06-4FA3-893F-4758D754F388</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/SkeletalAnimation/Sample_SkeletalAnimation.vcxproj">
+      <Project>553144B5-4118-48EA-83D9-7FA07D2EFBAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/SkyBox/Sample_SkyBox.vcxproj">
+      <Project>47C743C3-00C6-486B-9A7E-96FFE3B6CFF0</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/SkyDome/Sample_SkyDome.vcxproj">
+      <Project>173815AF-EF74-41EB-8D5C-CE8D41123A9A</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/SkyPlane/Sample_SkyPlane.vcxproj">
+      <Project>19ABED8B-47D3-490D-8E58-390D1252C334</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Smoke/Sample_Smoke.vcxproj">
+      <Project>BD632970-ABCB-480C-A08C-335D7DC27828</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/SphereMapping/Sample_SphereMapping.vcxproj">
+      <Project>F542F9B3-1442-4E3B-BF22-0CC1535EFC15</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Terrain/Sample_Terrain.vcxproj">
+      <Project>A9C894B5-EE12-426F-A7B8-8B34B721496E</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/TextureFX/Sample_TextureFX.vcxproj">
+      <Project>B7496C2D-B71B-4A38-858E-F7EA43A09FB1</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Transparency/Sample_Transparency.vcxproj">
+      <Project>1D23AFC2-2794-43C9-83C2-53D40AB96141</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/PlugIns/PCZSceneManager/Plugin_PCZSceneManager.vcxproj">
+      <Project>D4F1E2AA-6D4B-48E7-9BA9-BEA2DA715D0A</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/PlugIns/OctreeZone/Plugin_OctreeZone.vcxproj">
+      <Project>C621D32D-6E4F-489A-B5B0-D8047BC6796F</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Components/Paging/OgrePaging.vcxproj">
+      <Project>974EDB3D-8CE5-4663-A25A-413B258C5871</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Components/Terrain/OgreTerrain.vcxproj">
+      <Project>E73BE319-5303-463E-8024-A6EEF78A0110</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Components/RTShaderSystem/OgreRTShaderSystem.vcxproj">
+      <Project>A45B7B74-BF25-4E63-A6C0-2668F9D87A34</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/BezierPatch/Sample_BezierPatch.vcxproj">
+      <Project>41CB1D9F-4EFF-4C7C-809F-3275661347A9</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/CameraTrack/Sample_CameraTrack.vcxproj">
+      <Project>17905E6F-9C63-466D-B23B-FEDA210B878E</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Character/Sample_Character.vcxproj">
+      <Project>46130113-CDC2-428F-86E0-DD4B44B34EC5</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Compositor/Sample_Compositor.vcxproj">
+      <Project>A4ED9D11-55BC-4527-9186-21340FD50832</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/FacialAnimation/Sample_FacialAnimation.vcxproj">
+      <Project>F7B02DB6-3D8E-4E4F-8B80-BF36C7F51E1B</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Grass/Sample_Grass.vcxproj">
+      <Project>FC087325-E81E-4926-BC8E-470C4860999A</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Instancing/Sample_Instancing.vcxproj">
+      <Project>9270031D-9CA1-40E2-BB2F-CCE0BE26E087</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/OgreMain/OgreMain.vcxproj">
+      <Project>AD707903-CBA4-4F0C-9F4B-DAABD9EB25BE</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/RenderSystems/Direct3D9/RenderSystem_Direct3D9.vcxproj">
+      <Project>6C4969EA-A6C3-4955-88AC-041909E48CC6</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/RenderSystems/Direct3D10/RenderSystem_Direct3D10.vcxproj">
+      <Project>2EDE23E7-7C56-42A1-AB49-67E296F73ACC</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/RenderSystems/Direct3D11/RenderSystem_Direct3D11.vcxproj">
+      <Project>E3A3FEDC-7645-4556-A969-3EE49293DAE1</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/RenderSystems/GL/RenderSystem_GL.vcxproj">
+      <Project>A3C215DD-0BD1-44E8-A498-02268BD853D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/PlugIns/BSPSceneManager/Plugin_BSPSceneManager.vcxproj">
+      <Project>D31F7DB1-5583-42CD-AA53-2708ADAA86A6</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/PlugIns/OctreeSceneManager/Plugin_OctreeSceneManager.vcxproj">
+      <Project>90AF7F89-8833-4AE7-ACB9-B95500F49A22</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/PlugIns/CgProgramManager/Plugin_CgProgramManager.vcxproj">
+      <Project>751B5B0C-6653-4898-A7AE-FD05FF616BED</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/PlugIns/ParticleFX/Plugin_ParticleFX.vcxproj">
+      <Project>9BEC9DB1-B313-4E46-8A59-5928847B4B90</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/VolumeTex/Sample_VolumeTex.vcxproj">
+      <Project>248BD5E6-3A42-4724-A9F1-D34E1FF35C83</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Water/Sample_Water.vcxproj">
+      <Project>41F8106C-7DB4-49A6-AED5-B1C2F5632014</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/BSP/Sample_BSP.vcxproj">
+      <Project>6B9EA62F-4D23-480E-9BAF-FB80C02CB11D</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/CelShading/Sample_CelShading.vcxproj">
+      <Project>828BEFFC-1BE0-4FBE-9A3A-95018D7FF6D9</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/DeferredShading/Sample_DeferredShading.vcxproj">
+      <Project>B979BF45-ED13-4813-B83A-D2BF31FBC551</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/CubeMapping/Sample_CubeMapping.vcxproj">
+      <Project>FBEC7B67-485E-4897-B3CD-9A28626C79C0</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Dot3Bump/Sample_Dot3Bump.vcxproj">
+      <Project>8621ACF9-553D-4E3F-8426-374B2FB23168</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/DynTex/Sample_DynTex.vcxproj">
+      <Project>F9CDC6B0-4BA4-4811-A195-9D5F790DC138</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Fresnel/Sample_Fresnel.vcxproj">
+      <Project>B787893F-3648-42A8-8CBB-4C6E64B7211F</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/Isosurf/Sample_Isosurf.vcxproj">
+      <Project>7669D623-A40F-43C6-93D5-C5F2B4EA1E36</Project>
+    </ProjectReference>
+    <ProjectReference Include="W:/SDK/Ogre1.71_VC2010/Build/Samples/ParticleGS/Sample_ParticleGS.vcxproj">
+      <Project>2E4F87D9-A07F-49B0-A055-0036056A8046</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

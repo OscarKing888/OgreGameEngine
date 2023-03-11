@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPColour.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPFog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPLighting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPRenderStateBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPTexturing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPTransform.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFunctionAtom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderParameter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderRenderState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderSubRenderState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderExNormalMapLighting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderExPerPixelLighting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderExIntegratedPSSM3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderScriptTranslator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderMaterialSerializerListener.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderCGProgramProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderCGProgramWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderGLSLProgramProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderGLSLProgramWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramWriterManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderHLSLProgramProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Components\RTShaderSystem\src\OgreShaderHLSLProgramWriter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreRTShaderSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderPrerequisites.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderFFPColour.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderFFPFog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderFFPLighting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderFFPRenderState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderFFPRenderStateBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderFFPTexturing.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderFFPTransform.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderFunctionAtom.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderGenerator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderParameter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderProgramManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderProgramSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderProgramWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderRenderState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderSubRenderState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderExNormalMapLighting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderExPerPixelLighting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderExIntegratedPSSM3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderScriptTranslator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderMaterialSerializerListener.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderProgramProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderCGProgramProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderCGProgramWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderGLSLProgramProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderGLSLProgramWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderProgramWriterManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderHLSLProgramProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Components\RTShaderSystem\include\OgreShaderHLSLProgramWriter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{A28AD923-555B-420D-A36B-090502458782}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1E89C200-C51B-4743-934E-FC279F338C4F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPColour.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPFog.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPLighting.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPRenderStateBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPTexturing.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFFPTransform.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFunction.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderFunctionAtom.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderParameter.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgram.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramManager.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramSet.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramWriter.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderRenderState.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderSubRenderState.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderExNormalMapLighting.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderExPerPixelLighting.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderExIntegratedPSSM3.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderScriptTranslator.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderMaterialSerializerListener.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderCGProgramProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderCGProgramWriter.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderGLSLProgramProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderGLSLProgramWriter.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderProgramWriterManager.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderHLSLProgramProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+    <None Include="..\..\..\Components\RTShaderSystem\src\OgreShaderHLSLProgramWriter.cpp">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
