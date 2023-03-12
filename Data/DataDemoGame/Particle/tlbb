@@ -1,0 +1,91 @@
+material a_y_xiaoyao_03
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_write off
+			fog_override true none
+
+			texture_unit
+			{
+				texture png_huoba01.dds
+			}
+		}
+
+	}
+
+}
+
+material all_buff_bingdong_01
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			diffuse 0 0 0 1
+			scene_blend colour_blend
+			depth_write off
+			fog_override true none
+			texture_unit
+			{
+				texture jpg_特效冰.dds
+			}
+		}
+	}
+}
+
+material 特效冰块
+{
+	technique
+	{
+		pass
+		{
+			emissive 1 1 1 1
+			texture_unit
+			{
+				texture jpg_特效冰.dds
+			}
+		}
+	}
+}
+
+material 箭
+{
+	technique
+	{
+		pass
+		{
+			ambient 1.0 1.0 1.0
+			diffuse 1.0 1.0 1.0
+			specular 0.588235 0.588235 0.588235 0.0
+			emissive 0.0 0.0 0.0
+			texture_unit
+			{
+				texture jpg_dajiandimian02拷贝.dds
+			}
+		}
+	}
+}
+
+material g01_baihongguanri_01
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			diffuse 0 0 0 1
+			scene_blend add
+			depth_write off
+			fog_override true none
+			texture_unit
+			{
+				texture jpg_dajiandimian02拷贝.dds
+			}
+		}
+	}
+}
