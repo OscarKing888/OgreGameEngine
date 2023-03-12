@@ -9,9 +9,7 @@
 BuildTmp/
 **/Thumbview/*.bmp
 *.rar
-/SDK/**/*.htm
-/SDK/**/*.html
-/SDK/**/*.Html2
+
 
 # User-specific files
 *.rsuser
