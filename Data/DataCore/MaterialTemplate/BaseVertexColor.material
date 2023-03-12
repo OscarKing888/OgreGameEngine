@@ -1,0 +1,10 @@
+material BaseVertexColor
+{
+	technique
+	{
+		pass
+		{
+			ambient vertexcolour
+		}
+	}
+}

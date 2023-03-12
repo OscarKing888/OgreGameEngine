@@ -1,0 +1,29 @@
+fragment_program Editor/Light/HLSL hlsl
+{
+	source EditorLight.hlsl
+	entry_point LightColor_PS
+	target ps_2_0
+}
+
+
+material __EditorLight__
+{
+	technique
+	{
+		pass
+		{
+			fragment_program_ref Editor/Light/HLSL
+			{
+				param_named_auto surface_diffuse_colour surface_diffuse_colour
+			}
+
+			lighting off
+			
+			texture_unit
+			{
+				Light_Point.tga
+			}
+
+		}
+	}
+}

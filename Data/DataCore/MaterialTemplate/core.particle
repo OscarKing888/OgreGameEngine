@@ -1,0 +1,62 @@
+
+particle_system Core/Default
+{
+	quota	1
+	emit_emitter_quota	3
+
+	particle_width	5
+	particle_height	5
+	cull_each	false
+	renderer	billboard
+	sorted	false
+	local_space	true
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	point
+	billboard_origin	center
+	billboard_rotation_type	vertex
+	common_up_vector	0 1 0
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Point
+	{
+		angle	0
+		colour	0 0 0 1
+		colour_range_start	0 0 0 1
+		colour_range_end	0 0 0 1
+		direction	0 1 0
+		emission_rate	20
+		position	0 30 0
+		velocity	0
+		velocity_min	0
+		velocity_max	0
+		time_to_live	0.1
+		time_to_live_min	0.1
+		time_to_live_max	0.1
+		duration	0.1
+		duration_min	0.1
+		duration_max	0.1
+		repeat_delay	1
+		repeat_delay_min	1
+		repeat_delay_max	1
+		name	
+		emit_emitter	
+	}
+	
+	affector ColourInterpolator
+	{
+		colour0	0 0 0 1
+		time0	0
+		colour1	1 0.501961 0.25098 1
+		time1	0.2
+		colour2	1 0.501961 0 1
+		time2	0.4
+		colour3	1 0.827451 0.576471 1
+		time3	0.6
+		colour4	1 0.501961 0 1
+		time4	0.8
+		colour5	0 0 0 1
+		time5	1
+	}
+}

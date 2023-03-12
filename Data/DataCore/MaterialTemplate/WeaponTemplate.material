@@ -1,0 +1,61 @@
+material WeaponTemplate
+{
+	receive_shadows off
+	
+	technique
+    {
+        pass
+        {
+            ambient 1.0 1.0 1.0
+            diffuse 1.0 1.0 1.0
+            //emissive 0.7 0.7 0.7
+            texture_unit
+            {
+				texture <baseTex.jpg>
+				texture_alias <BaseTexture>
+            }
+            
+           	texture_unit
+			{
+				texture reflect.tga
+				tex_address_mode mirror
+
+				colour_op_ex add_smooth src_texture src_current
+				colour_op_multipass_fallback one one
+				env_map spherical
+			}
+        }
+    }
+}
+
+material WeaponTemplateAlpha
+{
+	receive_shadows off
+	technique
+    {
+        pass
+        {
+            ambient 1.0 1.0 1.0
+            diffuse 1.0 1.0 1.0
+            //emissive 0.7 0.7 0.7
+            
+            alpha_rejection greater 128
+            
+            texture_unit
+            {            	
+				texture <baseTex.jpg>
+				texture_alias <BaseTexture>
+            }
+            
+           	texture_unit
+			{
+				texture reflect.tga
+				tex_address_mode mirror
+
+				colour_op_ex add_smooth src_texture src_current
+				colour_op_multipass_fallback one one
+				env_map spherical
+			}
+        }
+    }
+}

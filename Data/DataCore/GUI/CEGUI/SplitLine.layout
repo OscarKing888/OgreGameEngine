@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+  <Window Type="WindowsLook/StaticImage" Name="SplitScreenLine" >
+    <Property Name="RiseOnClick" Value="False" />
+    <Property Name="FrameEnabled" Value="False" />
+    <Property Name="InheritsAlpha" Value="False" />
+    <Property Name="BackgroundEnabled" Value="False" />
+    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+    <Property Name="UnifiedAreaRect" Value="{{0.498,0},{0,0},{0.502,0},{1,0}}" />
+    <Property Name="Image" Value="set:Colors image:LightYellow"/>
+    
+  </Window>
+</GUILayout>

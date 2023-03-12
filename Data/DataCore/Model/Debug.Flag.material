@@ -1,0 +1,45 @@
+
+material Debug.Flag.Stick
+{
+	technique Default
+	{
+		pass Main
+		{
+			ambient 0.458824 0.458824 0.960784 1
+			specular 0.9 0.9 0.9 1 0.1
+		}
+
+	}
+
+}
+
+
+material Debug.Flag.Flag
+{
+	technique Default
+	{
+		pass Main
+		{
+			ambient 1 1 0 1
+			specular 0.9 0.9 0.9 1 0.1			
+		}
+
+	}
+
+}
+
+material Debug.Flag.Body
+{
+	technique Default
+	{
+		pass Main
+		{
+			ambient 1 0 0 1
+			specular 0.9 0.9 0.9 1 0.1
+
+			
+		}
+
+	}
+
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="CommandLineUI" >
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="WindowsLook/Combobox" Name="CommandLineUI/InputBox" >
+            <Property Name="Font" Value="SongTi" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.416016,307},{0,230}}" />
+            <Property Name="MaxEditTextLength" Value="1073741823" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,36 @@
+material Core/NodeMaterial
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_check off
+			depth_write off
+			cull_hardware none
+
+			texture_unit
+			{
+				texture axes.png
+			}
+		}
+	}
+}
+
+material Internal/Bone_Material
+{
+	technique
+	{
+		pass
+		{
+			emissive 1.0 0.0 1.0 1.0
+			ambient 1.0 0.0 1.0 1.0
+			scene_blend add
+			depth_check off
+			depth_write off
+			cull_hardware none
+		}
+	}
+}
+

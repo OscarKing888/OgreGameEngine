@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Imageset Name="Colors" Imagefile="Colors.png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true" >
+    <Image Name="Red" XPos="1" YPos="1" Width="2" Height="2" />
+    <Image Name="Blue" XPos="9" YPos="1" Width="2" Height="2" />
+    <Image Name="Black" XPos="9" YPos="5" Width="2" Height="2" />
+    <Image Name="Green" XPos="5" YPos="1" Width="2" Height="2" />
+    <Image Name="Yellow" XPos="13" YPos="1" Width="2" Height="2" />
+    <Image Name="DarkYellow" XPos="1" YPos="5" Width="2" Height="2" />
+    <Image Name="LightYellow" XPos="5" YPos="5" Width="2" Height="2" />
+</Imageset>

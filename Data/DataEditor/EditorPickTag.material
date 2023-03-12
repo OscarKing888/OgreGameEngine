@@ -1,0 +1,16 @@
+
+material Editor/PickTag
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.992157 0.956863 0 1
+			diffuse 0.992157 0.956863 0 1
+			specular 0 0 0 1 10
+			emissive 0.988235 0.835294 0 1
+		}
+
+	}
+
+}

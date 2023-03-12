@@ -1,0 +1,24 @@
+fragment_program Cinema/ScreenFade cg
+{
+	source ScreenFade.cg
+	entry_point FadeScreen_PS
+	profiles ps_1_1 arbfp1
+}
+
+
+material Cinema/ScreenFade
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend alpha_blend
+
+			fragment_program_ref Cinema/ScreenFade
+			{
+				param_named_auto surface_diffuse_colour surface_diffuse_colour
+			}			
+		}
+	}
+}

@@ -1,0 +1,11 @@
+MaterialGlyphyFont
+{
+	// Now this one I agree with ;)
+	// A Star Wars font :)
+	type 		truetype
+	source 		tahoma.ttf
+	size 		14
+	resolution 	96
+}
+
+

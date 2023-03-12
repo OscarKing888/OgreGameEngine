@@ -1,0 +1,740 @@
+vertex_program Character_HardwareSkinning_OneWeight_VS_1_1_PixelSpecular_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=1
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+		param_named_auto cameraPos				camera_position
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_OneWeight_VS_1_1_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=0;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=1
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_OneWeight_VS_2_0_PixelSpecular_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=1;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+		param_named_auto cameraPos				camera_position
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_OneWeight_VS_2_0_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=0;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=1;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_OneWeight_VS_1_1_Unlit_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=1
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_OneWeight_VS_2_0_Unlit_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=1;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_OneWeight_VS_1_1_AmbientOnly_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=1
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_OneWeight_VS_2_0_AmbientOnly_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=1;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+///////////////////////////////////////////////////////////////////////////
+
+vertex_program Character_HardwareSkinning_TwoWeight_VS_1_1_PixelSpecular_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=2
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+		param_named_auto cameraPos				camera_position
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_TwoWeight_VS_1_1_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=0;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=2
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_TwoWeight_VS_2_0_PixelSpecular_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=2;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+		param_named_auto cameraPos				camera_position
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_TwoWeight_VS_2_0_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=0;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=2;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_TwoWeight_VS_1_1_Unlit_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=2
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_TwoWeight_VS_2_0_Unlit_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=2;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_TwoWeight_VS_1_1_AmbientOnly_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=2
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_TwoWeight_VS_2_0_AmbientOnly_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=2;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+//////////////////////////////////////////////////////////////////
+
+vertex_program Character_HardwareSkinning_ThreeWeight_VS_1_1_PixelSpecular_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=3
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+		param_named_auto cameraPos				camera_position
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_ThreeWeight_VS_1_1_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=0;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=3
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_ThreeWeight_VS_2_0_PixelSpecular_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=3;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+		param_named_auto cameraPos				camera_position
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_ThreeWeight_VS_2_0_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=0;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=3;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_ThreeWeight_VS_1_1_Unlit_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=3
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_ThreeWeight_VS_2_0_Unlit_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=3;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_ThreeWeight_VS_1_1_AmbientOnly_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=3
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_ThreeWeight_VS_2_0_AmbientOnly_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=3;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+///////////////////////////////////////////////////////////////
+
+vertex_program Character_HardwareSkinning_FourWeight_VS_1_1_PixelSpecular_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=4
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+		param_named_auto cameraPos				camera_position
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_FourWeight_VS_1_1_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=0;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=4
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_FourWeight_VS_2_0_PixelSpecular_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=4;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+		param_named_auto cameraPos				camera_position
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_FourWeight_VS_2_0_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_LIGHTS=3;ENABLE_SPECULAR=0;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=4;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+        param_named_auto ambient				derived_scene_colour
+		param_named_auto lightPosition[0]		light_position					0
+		param_named_auto lightAttenuation[0]	light_attenuation				0
+		param_named_auto diffuseColour[0]		derived_light_diffuse_colour	0
+		param_named_auto lightPosition[1]		light_position					1
+		param_named_auto lightAttenuation[1]	light_attenuation				1
+		param_named_auto diffuseColour[1]		derived_light_diffuse_colour	1
+		param_named_auto lightPosition[2]		light_position					2
+		param_named_auto lightAttenuation[2]	light_attenuation				2
+		param_named_auto diffuseColour[2]		derived_light_diffuse_colour	2
+
+
+	}
+}
+
+vertex_program Character_HardwareSkinning_FourWeight_VS_1_1_Unlit_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=4
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_FourWeight_VS_2_0_Unlit_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=4;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_FourWeight_VS_1_1_AmbientOnly_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_1_1
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=4
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+vertex_program Character_HardwareSkinning_FourWeight_VS_2_0_AmbientOnly_hlsl hlsl
+{
+	source Character.cg
+	includes_skeletal_animation true
+	entry_point vp_main
+	target vs_2_0
+	column_major_matrices false
+	preprocessor_defines LIGHTING_AMBIENT=1;NUM_TEXCOORDS=1;MAX_BLEND_WEIGHTS=4;MAX_WORLD_MATRICES=75
+
+	default_params
+	{
+		param_named_auto worldMatrix3x4Array[0]	world_matrix_array_3x4
+		param_named_auto viewProjectionMatrix	viewproj_matrix
+	}
+}
+
+//////////////////////////////////////////////////////////////////////////////////////
+fragment_program Character_HardwareSkinning_PixelSpecular_PS_2_0_hlsl hlsl
+{
+	source Character.cg
+	entry_point fp_main
+	target ps_2_0
+
+	preprocessor_defines ENABLE_SPECULAR=1;NUM_TEXCOORDS=1
+
+    default_params
+	{
+		param_named_auto specularParameters surface_specular_colour
+		param_named_auto specularShininess surface_shininess
+	}
+}
+
+fragment_program Character_HardwareSkinning_PS_1_1_hlsl hlsl
+{
+	source Character.cg
+	entry_point fp_main
+	target ps_1_1
+
+	preprocessor_defines ENABLE_SPECULAR=0;NUM_TEXCOORDS=1  
+}

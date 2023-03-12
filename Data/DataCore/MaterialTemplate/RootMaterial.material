@@ -1,0 +1,420 @@
+//
+// 基类材质，所有材质必须继承自此材质，以便于扩展和控制渲染管线
+//
+
+vertex_program VS/AmbientOneTextureHLSL hlsl
+{
+	source Example_Basic.hlsl
+	entry_point ambientOneTexture_vp
+	target vs_1_1
+
+	default_params
+	{
+		param_named_auto worldViewProj worldviewproj_matrix
+		param_named_auto ambient ambient_light_colour
+	}
+}
+
+vertex_program VS/AmbientOneTexture unified
+{
+	delegate VS/AmbientOneTextureHLSL
+}
+
+//----------------------------------------------
+
+vertex_program VS/MultiPassDecalHLSL hlsl
+{
+	source Example_Basic.hlsl
+	entry_point VS_MultiPass
+	target vs_1_1
+    
+    default_params
+    {    
+        param_named_auto worldViewProj worldviewproj_matrix
+        
+        //param_named_auto camObjPos camera_position_object_space
+        
+        param_named_auto ambient ambient_light_colour
+        param_named_auto objSpaceLight light_position_object_space 0
+        param_named_auto lightColour light_diffuse_colour 0
+    }
+}
+
+vertex_program VS/MultiPassDecal unified
+{
+	delegate VS/MultiPassDecalHLSL
+}
+
+//----------------------------------------------
+
+vertex_program VS/MultiPassLightingHLSL hlsl
+{
+	source Example_Basic.hlsl
+	entry_point VS_MultiPass_Lighting
+	target vs_1_1
+    
+    default_params
+    {    
+        param_named_auto worldViewProj worldviewproj_matrix
+        
+        //param_named_auto camObjPos camera_position_object_space
+        
+        //param_named_auto ambient ambient_light_colour
+        param_named_auto objSpaceLight light_position_object_space 0
+        param_named_auto lightColour light_diffuse_colour 0
+    }
+}
+
+vertex_program VS/MultiPassLighting unified
+{
+	delegate VS/MultiPassLightingHLSL
+}
+
+fragment_program PS/MultiPassLightingHLSL hlsl
+{
+	source Example_Basic.hlsl
+	entry_point PS_MultiPass_Lighting
+	target ps_2_0
+    
+    default_params
+    {    
+    }
+}
+
+fragment_program PS/MultiPassLighting unified
+{
+	delegate PS/MultiPassLightingHLSL
+}
+
+//----------------------------------------------------------
+
+material TRoot
+{
+	technique NoAmbientTextured
+	{
+		scheme NoAmbientTextured
+		
+		pass
+		{
+			//scene_blend add
+			//iteration once_per_light			
+			ambient 0 0 0 0
+			//emissive 0.35 0.35 0.35 1
+			emissive 0.501961 0.501961 0.501961 1
+			texture_unit DiffuseMap
+			{
+				texture_alias  <DiffuseMap>
+				texture  <DiffuseMap>
+			}
+		}
+	}
+
+	technique AlphaBlend
+	{
+		scheme AlphaBlend
+		
+		pass
+		{
+			scene_blend alpha_blend			
+			ambient 0 0 0 0
+			diffuse 0.5 0.5 0.5 0.5
+			emissive 0.501961 0.501961 0.501961 1
+			texture_unit DiffuseMap
+			{
+				texture_alias  <DiffuseMap>
+				texture  <DiffuseMap>
+			}
+		}
+	}
+
+	technique AlphaBlendNoTexture
+	{
+		scheme AlphaBlendNoTexture
+		
+		pass
+		{
+			scene_blend alpha_blend			
+			ambient 0 0 0 0
+			diffuse 0.5 0.5 0.5 0.5
+			emissive 0.501961 0.501961 0.501961 1
+		}
+	}
+
+	technique Default
+	{
+		scheme Default
+		
+		pass
+		{
+			//scene_blend add
+			//iteration once_per_light			
+			//ambient 0 0 0 0
+			//emissive 0.25 0.25 0.25 1
+			texture_unit DiffuseMap
+			{
+				texture_alias  <DiffuseMap>
+				texture  <DiffuseMap>
+			}
+		}
+	}
+
+
+	technique AmbientNoTexture
+	{
+		scheme AmbientNoTexture
+		pass
+		{
+			//ambient 0 0 0 0			
+		}
+	}
+
+	technique NoAmbientNoTexture
+	{
+		scheme NoAmbientNoTexture
+		pass
+		{
+			ambient 0 0 0 0
+			//emissive 0.35 0.35 0.35 1
+			emissive 0.501961 0.501961 0.501961 1
+			//specular 1 1 1 1 30
+		}
+	}
+
+	technique NoAmbientNoTextureWireFrame
+	{
+		scheme NoAmbientNoTextureWireFrame
+		pass
+		{
+			ambient 0 0 0 0
+			polygon_mode wireframe
+		}
+	}
+
+	technique LightingOffBlack
+	{
+		scheme LightingOffBlack
+		pass
+		{
+			ambient 0 0 0 0
+			diffuse 0 0 0 0
+			emissive 0 0 0 0
+			specular 0 0 0 0
+			//lighting on
+		}
+	}
+
+	technique MultiPassPerLight
+	{
+		scheme MultiPassPerLight
+		pass AmbientPass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+
+			vertex_program_ref VS/AmbientOneTexture
+			{
+				param_named_auto worldViewProj worldviewproj_matrix
+				param_named_auto ambient ambient_light_colour
+			}
+		}
+
+  		pass LightingPass
+  		{
+  			ambient 0 0 0			
+  			iteration once_per_light
+  			scene_blend add
+
+			vertex_program_ref VS/MultiPassLighting
+			{
+				//param_named_auto worldViewProj worldviewproj_matrix
+				//param_named_auto ambient ambient_light_colour
+			}
+  		}
+
+ 		pass DecalPass
+ 		{
+ 			// base colours, not needed for rendering, but as information
+			// to lighting pass categorisation routine
+			lighting off
+			// Really basic vertex program
+			// NB we don't use fixed function here because GL does not like
+			// mixing fixed function and vertex programs, depth fighting can
+			// be an issue
+			vertex_program_ref VS/MultiPassDecal
+			{
+			}
+
+			fragment_program_ref PS/MultiPassLighting
+			{
+			}
+
+			//scene_blend dest_colour zero
+
+ 			texture_unit DiffuseMap
+ 			{
+ 				texture_alias  <DiffuseMap>
+ 				texture  <DiffuseMap>
+ 			}
+ 			
+ 		}
+	}
+}
+
+//
+// 默认实心物体
+//
+
+material TOpaque : TRoot
+{
+}
+
+
+//
+// 对于带遮罩的图材质
+//
+
+material TMasked : TRoot
+{
+	technique Default
+	{
+		scheme Default
+		pass
+		{
+			//scene_blend alpha_blend
+			alpha_rejection greater 128			
+		}
+	}
+
+
+	technique NoAmbientTextured
+	{
+		scheme NoAmbientTextured
+		pass
+		{
+			//scene_blend alpha_blend
+			//scene_blend alpha_rejection
+			alpha_rejection greater 128
+			ambient 0 0 0 0
+			//emissive 0.25 0.25 0.25 1
+			//diffuse 1 1 1 1
+			//cull_hardware none
+			//cull_software none
+		}
+	}
+
+	technique AmbientTextured
+	{
+		scheme AmbientTextured
+		
+		pass
+		{
+			alpha_rejection greater 128
+			cull_hardware none
+			cull_software none
+		}
+	}
+
+	technique NoAmbientNoTexture
+	{
+		scheme NoAmbientNoTexture
+		pass
+		{
+			ambient 0 0 0 0
+			//emissive 0.25 0.25 0.25 1
+		}
+	}
+
+	technique AmbientNoTexture
+	{
+		scheme AmbientNoTexture
+		pass
+		{			
+		}
+	}
+
+
+	technique MultiPassPerLight
+	{
+		scheme MultiPassPerLight
+		pass AmbientPass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+		}
+	}
+
+}
+
+//
+// 半透明物体
+//
+
+material TTransparent : TRoot
+{
+	technique NoAmbientTextured
+	{
+		scheme NoAmbientTextured
+		pass
+		{
+			scene_blend alpha_blend
+		}
+		
+	}
+
+	technique Default
+	{
+		scheme Default
+		
+		pass
+		{
+			scene_blend alpha_blend
+		}
+	}
+
+	technique MultiPassPerLight
+	{
+		scheme MultiPassPerLight
+		pass AmbientPass
+		{
+			ambient 1 1 1
+			diffuse 0 0 0 
+			specular 0 0 0 0
+		}
+	}
+}
+
+//
+// 叠加材质，用于发光型的特效等
+//
+
+material TAdditive : TRoot
+{
+	technique NoAmbientTextured
+	{
+		scheme NoAmbientTextured
+		pass
+		{
+			scene_blend add
+		}
+	}
+
+	technique Default
+	{
+		scheme Default
+		pass
+		{
+			scene_blend add
+		}
+	}
+
+	technique MultiPassPerLight
+	{
+		scheme MultiPassPerLight
+		pass AmbientPass
+		{
+			scene_blend add
+		}		
+	}
+}

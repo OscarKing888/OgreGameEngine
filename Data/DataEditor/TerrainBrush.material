@@ -1,0 +1,18 @@
+
+material TerrainBrush
+{
+	technique
+	{
+		pass
+		{			
+			ambient 1 1 0 1
+			diffuse 1 1 0 1
+			specular 0 0 0 1 10
+			emissive 1 1 0 1
+			depth_check off
+			depth_write off
+			depth_bias 3
+		}
+
+	}
+}

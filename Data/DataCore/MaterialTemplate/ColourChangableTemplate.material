@@ -1,0 +1,148 @@
+////////////////////////////// 用于需要改变颜色的材质
+material AlphaBlend/ColourChangable/AlphaTemplate
+{     
+    // fixed function pipeline
+	technique TwoPass
+    {
+  		pass WriteDepthBuffer
+		{					
+			alpha_rejection greater 128
+			
+			colour_write off				
+			// 保证在那些不支持colour_write的显卡上也不显示该pass的颜色
+			scene_blend zero one	
+			
+			texture_unit
+			{
+				texture <baseTex>.jpg
+				texture_alias <baseTexture>
+			}
+		}
+		
+		pass
+		{					
+			scene_blend alpha_blend				
+			depth_write off
+			
+			ambient 0 0 0
+			diffuse 0 0 0
+									
+			depth_bias 2
+			
+			texture_unit
+			{
+				texture <baseTex>.jpg
+				texture_alias <baseTexture>
+				colour_op add
+			}
+		}		
+    }    
+    
+    technique OnePass
+    {		
+		pass
+		{					
+			alpha_rejection greater 128
+						
+			ambient 0 0 0
+			diffuse 0 0 0	
+			
+			texture_unit
+			{
+				texture <baseTex>.jpg
+				texture_alias <baseTexture>
+				colour_op add
+			}
+		}		
+    }
+    
+    technique NoColourChange
+    {
+  		pass WriteDepthBuffer
+		{					
+			alpha_rejection greater 128
+			
+			// 不能用这种模式
+		//	scene_blend alpha_blend 
+			
+			colour_write off				
+			// 保证在那些不支持colour_write的显卡上也不显示该pass的颜色
+			scene_blend zero one	
+			
+			texture_unit
+			{
+				texture <baseTex>.jpg
+				texture_alias <baseTexture>
+			}
+		}
+		
+		pass
+		{					
+			scene_blend alpha_blend				
+			depth_write off		
+			
+			depth_bias 2
+			
+			texture_unit
+			{
+				texture <baseTex>.jpg
+				texture_alias <baseTexture>
+			}
+		}		
+    }    
+   
+    technique NoColourChangeOnePass
+    {		
+		pass
+		{					
+			alpha_rejection greater 128		
+			
+			texture_unit
+			{
+				texture <baseTex>.jpg
+				texture_alias <baseTexture>
+			}
+		}		
+    }
+}
+
+material AlphaBlend/ColourChangable/NoAlphaTemplate
+{     
+    // fixed function pipeline
+	technique TwoPass
+    {
+  		pass WriteDepthBuffer
+		{	
+			colour_write off				
+			// 保证在那些不支持colour_write的显卡上也不显示该pass的颜色
+			scene_blend zero one			
+		}
+		
+		pass
+		{					
+			scene_blend alpha_blend				
+			depth_write off
+			
+			ambient 0 0 0
+			diffuse 0 0 0
+									
+			depth_bias 2
+			
+			texture_unit
+			{
+				texture <baseTex>.jpg
+				texture_alias <baseTexture>
+				colour_op add
+			}
+		}		
+    }    
+    
+    technique OnePass
+    {		
+		pass
+		{							
+			ambient 0 0 0
+			diffuse 0 0 0			
+		}		
+    }    
+}

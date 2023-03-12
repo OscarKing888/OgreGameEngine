@@ -1,0 +1,6 @@
+uniform float4 surface_diffuse_colour;
+
+float4 FadeScreen_PS(float2 uv : TEXCOORD0) : COLOR
+{
+	return surface_diffuse_colour;
+}

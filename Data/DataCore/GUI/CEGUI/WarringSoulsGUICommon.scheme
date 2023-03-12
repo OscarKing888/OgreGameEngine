@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUIScheme Name="GUICommon">	
+	<Font Name="SongTi" Filename="SongTi9.font"/>
+	<Font Name="SimHei" Filename="simhei.font"/>
+
+</GUIScheme>

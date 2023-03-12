@@ -1,8 +1,4 @@
-CinemaEditor=CinemaEditor
 GUID=GUID
-ID_CINEMA_LIST=ID_CINEMA_LIST
-ID_CINEMA_PROPGRID=ID_CINEMA_PROPGRID
-ID_NEW_CINEMA=ID_NEW_CINEMA
 Particle System=Particle System
 ShadowIndexBufferSize=ShadowIndexBufferSize
 ShadowTextureCasterMaterial=ShadowTextureCasterMaterial

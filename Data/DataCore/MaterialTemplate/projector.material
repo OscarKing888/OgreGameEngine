@@ -1,0 +1,34 @@
+material Core/Projector
+{
+	technique
+	{
+		scheme Test
+		pass
+		{			
+			depth_bias 5
+			lighting off
+		}
+	}
+
+	technique
+	{
+		scheme Default
+		pass
+		{
+			lighting off
+			fog_override true none
+			scene_blend alpha_blend
+			depth_check on
+			depth_write off
+			depth_bias 5
+
+			texture_unit
+			{
+				texture default_core.tga
+				texture_alias diffuseMap
+				tex_address_mode clamp
+			}
+
+		}
+	}
+}

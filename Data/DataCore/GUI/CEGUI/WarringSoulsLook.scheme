@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<GUIScheme Name="WarringSoulsSkin">
+	<Imageset Name="WindowsLook" Filename="WindowsLook.imageset" />	
+	
+	<!--Preparation-->
+	<Imageset Name="PreparationInfo" Filename="PreparationInfo.Imageset" />
+	<Imageset Name="PreparationActionInfo" Filename="PreparationActionInfo.Imageset" />
+	<Imageset Name="PreparationCommand" Filename="PreparationCommand.Imageset" />
+	<Imageset Name="PrepareButton" Filename="PrepareButton.Imageset" />
+	<Imageset Name="PreparationSystem" Filename="PreparationSystem.Imageset" />
+	<Imageset Name="SkillIcon" Filename="SkillIcon.Imageset" />
+	<Imageset Name="WarriorIcon" Filename="WarriorIcon.Imageset" />
+	<Imageset Name="WarriorSetting" Filename="WarriorSetting.Imageset" />
+	<Imageset Name="RoundNumber" Filename="RoundNumber.Imageset" />
+	<Imageset Name="RoundInfo" Filename="RoundInfo.Imageset" />	
+	<Imageset Name="Property" Filename="Property.Imageset" />
+	<Imageset Name="ChongNeng" Filename="ChongNeng.Imageset" />
+	<Imageset Name="SkillName" Filename="SkillName.Imageset" />
+	<Imageset Name="Description" Filename="Description.Imageset" />
+	<Imageset Name="ChongNengNum" Filename="ChongNengNum.Imageset" />
+	<Imageset Name="ChessInfoBg" Filename="ChessInfoBg.Imageset" />
+	<Imageset Name="StateFlag" Filename="StateFlag.Imageset" />
+	<Imageset Name="CharactorFace" Filename="CharactorFace.Imageset" />
+  <Imageset Name="Predict" Filename="Predict.Imageset" />
+  <Imageset Name="CharactorName" Filename="CharactorName.Imageset" />
+  <Imageset Name="GameResult" Filename="GameResult.Imageset" />
+	<Imageset Name="WarriorSettingBg" Filename="WarriorSettingBg.Imageset" />  
+	<Imageset Name="CommandBtn" Filename="CommandBtn.Imageset" />  
+	<Imageset Name="WaveAni_Org" Filename="WaveAni_Org.Imageset" /> 
+	<Imageset Name="BloodFont" Filename="BloodFont.Imageset" />
+	<Imageset Name="UnitFont" Filename="UnitFont.Imageset" />
+	<Imageset Name="PrepareFace" Filename="PrepareFace.Imageset" />
+	<Imageset Name="PrepareSkill" Filename="PrepareSkill.Imageset" />
+	<Imageset Name="QuitConfirm" Filename="QuitConfirm.Imageset" />
+	<Imageset Name="Fight" Filename="Fight.Imageset" />
+
+	<LookNFeel Filename="WarringSoulsLook.looknfeel" />
+	
+	
+	<WindowSet Filename="CEGUIFalagardWRBase" >
+		<WindowFactory Name="Falagard/Button" />
+		<WindowFactory Name="Falagard/StaticImage" />
+		<WindowFactory Name="Falagard/StaticText" />
+		<WindowFactory Name="Falagard/FrameWindow" />
+		<WindowFactory Name="Falagard/Titlebar" />
+		<WindowFactory Name="Falagard/SystemButton" />
+		<WindowFactory Name="Falagard/Scrollbar" />
+		<WindowFactory Name="Falagard/Default" />
+		<WindowFactory Name="Falagard/Editbox" />
+		<WindowFactory Name="Falagard/Listbox" />
+	</WindowSet> 
+
+	<Font Name="BloodFont" Filename="BloodFont.font" />
+	<Font Name="RedDigital" Filename="RedDigital.font" />
+	<Font Name="GreenDigital" Filename="GreenDigital.font" />
+	<Font Name="YellowDigital" Filename="YellowDigital.font" />
+	<Font Name="UnitFont" Filename="UnitFont.font" />	
+	
+
+	<!--FalagardMapping WindowType="WarringSoulsLook/Checkbox"    TargetType="CEGUI/Checkbox"    Renderer="Falagard/ToggleButton" LookNFeel="WarringSoulsLook/Checkbox" />
+	<FalagardMapping WindowType="WarringSoulsLook/RadioButton" TargetType="CEGUI/RadioButton" Renderer="Falagard/ToggleButton" LookNFeel="WarringSoulsLook/RadioButton" />
+	<FalagardMapping WindowType="WarringSoulsLook/MultiLineEditbox" TargetType="CEGUI/MultiLineEditbox" Renderer="Falagard/MultiLineEditbox" LookNFeel="WarringSoulsLook/MultiLineEditbox" />
+	<FalagardMapping WindowType="WarringSoulsLook/Menubar"   TargetType="CEGUI/Menubar"   Renderer="Falagard/Menubar"   LookNFeel="WarringSoulsLook/Menubar" />
+	<FalagardMapping WindowType="WarringSoulsLook/PopupMenu" TargetType="CEGUI/PopupMenu" Renderer="Falagard/PopupMenu" LookNFeel="WarringSoulsLook/PopupMenu" />
+	<FalagardMapping WindowType="WarringSoulsLook/MenuItem"  TargetType="CEGUI/MenuItem"  Renderer="Falagard/MenuItem"  LookNFeel="WarringSoulsLook/MenuItem" />
+	<FalagardMapping WindowType="WarringSoulsLook/ProgressBar"          TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="WarringSoulsLook/ProgressBar" />
+	<FalagardMapping WindowType="WarringSoulsLook/TabButton"  TargetType="CEGUI/TabButton"  Renderer="Falagard/TabButton"  LookNFeel="WarringSoulsLook/TabButton" />
+	<FalagardMapping WindowType="WarringSoulsLook/TabControl" TargetType="CEGUI/TabControl" Renderer="Falagard/TabControl" LookNFeel="WarringSoulsLook/TabControl" />
+	<FalagardMapping WindowType="WarringSoulsLook/TabContentPane"    TargetType="DefaultWindow"    Renderer="Falagard/Default"    LookNFeel="WarringSoulsLook/TabContentPane" />
+	<FalagardMapping WindowType="WarringSoulsLook/TabButtonPane"    TargetType="DefaultWindow"    Renderer="Falagard/Default"    LookNFeel="WarringSoulsLook/TabButtonPane" />
+	<FalagardMapping WindowType="WarringSoulsLook/ComboDropList" TargetType="CEGUI/ComboDropList" Renderer="Falagard/Listbox" LookNFeel="WarringSoulsLook/ComboDropList" />
+	<FalagardMapping WindowType="WarringSoulsLook/Combobox"	TargetType="CEGUI/Combobox"	 Renderer="Falagard/Default" LookNFeel="WarringSoulsLook/Combobox" />
+	<FalagardMapping WindowType="WarringSoulsLook/ListHeader"        TargetType="CEGUI/ListHeader"        Renderer="Falagard/ListHeader"        LookNFeel="WarringSoulsLook/ListHeader" />
+	<FalagardMapping WindowType="WarringSoulsLook/ListHeaderSegment" TargetType="CEGUI/ListHeaderSegment" Renderer="Falagard/ListHeaderSegment" LookNFeel="WarringSoulsLook/ListHeaderSegment" />
+	<FalagardMapping WindowType="WarringSoulsLook/MultiColumnList"   TargetType="CEGUI/MultiColumnList"   Renderer="Falagard/MultiColumnList"   LookNFeel="WarringSoulsLook/MultiColumnList" />
+	<FalagardMapping WindowType="WarringSoulsLook/Slider"      TargetType="CEGUI/Slider" Renderer="Falagard/Slider"  LookNFeel="WarringSoulsLook/Slider" />
+	<FalagardMapping WindowType="WarringSoulsLook/SliderThumb" TargetType="CEGUI/Thumb"  Renderer="Falagard/Button"  LookNFeel="WarringSoulsLook/SliderThumb" />
+	<FalagardMapping WindowType="WarringSoulsLook/ScrollablePane" TargetType="CEGUI/ScrollablePane" Renderer="Falagard/ScrollablePane" LookNFeel="WarringSoulsLook/ScrollablePane" />
+	<FalagardMapping WindowType="WarringSoulsLook/Spinner" TargetType="CEGUI/Spinner" Renderer="Falagard/Default" LookNFeel="WarringSoulsLook/Spinner" />
+	<FalagardMapping WindowType="WarringSoulsLook/Tooltip" TargetType="CEGUI/Tooltip" Renderer="Falagard/Tooltip" LookNFeel="WarringSoulsLook/Tooltip" />
+	<FalagardMapping WindowType="WarringSoulsLook/ItemListbox" TargetType="CEGUI/ItemListbox" Renderer="Falagard/ItemListbox" LookNFeel="WarringSoulsLook/ItemListbox" />
+	<FalagardMapping WindowType="WarringSoulsLook/ListboxItem" TargetType="CEGUI/ItemEntry"   Renderer="Falagard/ItemEntry"   LookNFeel="WarringSoulsLook/ListboxItem" />
+	<FalagardMapping WindowType="WarringSoulsLook/Static"      TargetType="DefaultWindow" Renderer="Falagard/Static"      LookNFeel="WarringSoulsLook/Static" />
+	<FalagardMapping WindowType="WarringSoulsLook/Editbox"          TargetType="CEGUI/Editbox"          Renderer="Falagard/Editbox"          LookNFeel="WarringSoulsLook/Editbox" />
+	<FalagardMapping WindowType="WarringSoulsLook/Listbox"           TargetType="CEGUI/Listbox"           Renderer="Falagard/Listbox"           LookNFeel="WarringSoulsLook/Listbox" /-->
+	
+	
+	
+	
+	<FalagardMapping WindowType="WarringSoulsLook/Button"      TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="WarringSoulsLook/Button" />
+	<FalagardMapping WindowType="WarringSoulsLook/IconButton"  TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="WarringSoulsLook/IconButton" />
+	<FalagardMapping WindowType="WarringSoulsLook/FrameWindow"  TargetType="CEGUI/FrameWindow" Renderer="Falagard/FrameWindow"  LookNFeel="WarringSoulsLook/FrameWindow" />
+	<FalagardMapping WindowType="WarringSoulsLook/Titlebar"     TargetType="CEGUI/Titlebar"    Renderer="Falagard/Titlebar"     LookNFeel="WarringSoulsLook/Titlebar" />
+	<FalagardMapping WindowType="WarringSoulsLook/SystemButton" TargetType="CEGUI/PushButton"  Renderer="Falagard/SystemButton" LookNFeel="WarringSoulsLook/SystemButton" />
+	<FalagardMapping WindowType="WarringSoulsLook/StaticImage" TargetType="DefaultWindow" Renderer="Falagard/StaticImage" LookNFeel="WarringSoulsLook/StaticImage" />
+	<FalagardMapping WindowType="WarringSoulsLook/StaticText"  TargetType="DefaultWindow" Renderer="Falagard/StaticText"  LookNFeel="WarringSoulsLook/StaticText" />
+	<FalagardMapping WindowType="WarringSoulsLook/HorizontalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="WarringSoulsLook/HorizontalScrollbar" />
+	<FalagardMapping WindowType="WarringSoulsLook/VerticalScrollbar"   TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="WarringSoulsLook/VerticalScrollbar" />
+	<FalagardMapping WindowType="WarringSoulsLook/VerticalScrollbarThumb"   TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="WarringSoulsLook/VerticalScrollbarThumb" />
+	<FalagardMapping WindowType="WarringSoulsLook/HorizontalScrollbarThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="WarringSoulsLook/HorizontalScrollbarThumb" />
+	
+
+	<FalagardMapping WindowType="WarringSoulsLook/ImageButton" TargetType="CEGUI/PushButton"   Renderer="Falagard/Button"   LookNFeel="WarringSoulsLook/ImageButton" />
+	
+	<FalagardMapping WindowType="WarringSoulsLook/TaharezButton"      TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="WarringSoulsLook/TaharezButton" />
+
+	<FalagardMapping WindowType="WarringSoulsLook/AnimationButton"      TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="WarringSoulsLook/AnimationButton" />
+	
+	<LookNFeel Filename="WindowsLook.looknfeel" />
+	<FalagardMapping WindowType="WindowsLook/Button"      TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="WindowsLook/Button" />
+	<FalagardMapping WindowType="WindowsLook/Checkbox"    TargetType="CEGUI/Checkbox"    Renderer="Falagard/ToggleButton" LookNFeel="WindowsLook/Checkbox" />
+	<FalagardMapping WindowType="WindowsLook/IconButton"  TargetType="CEGUI/PushButton"  Renderer="Falagard/Button"       LookNFeel="WindowsLook/IconButton" />
+	<FalagardMapping WindowType="WindowsLook/RadioButton" TargetType="CEGUI/RadioButton" Renderer="Falagard/ToggleButton" LookNFeel="WindowsLook/RadioButton" />
+	<FalagardMapping WindowType="WindowsLook/FrameWindow"  TargetType="CEGUI/FrameWindow" Renderer="Falagard/FrameWindow"  LookNFeel="WindowsLook/FrameWindow" />
+	<FalagardMapping WindowType="WindowsLook/Titlebar"     TargetType="CEGUI/Titlebar"    Renderer="Falagard/Titlebar"     LookNFeel="WindowsLook/Titlebar" />
+	<FalagardMapping WindowType="WindowsLook/SystemButton" TargetType="CEGUI/PushButton"  Renderer="Falagard/SystemButton" LookNFeel="WindowsLook/SystemButton" />
+	<FalagardMapping WindowType="WindowsLook/Editbox"          TargetType="CEGUI/Editbox"          Renderer="Falagard/Editbox"          LookNFeel="WindowsLook/Editbox" />
+	<FalagardMapping WindowType="WindowsLook/MultiLineEditbox" TargetType="CEGUI/MultiLineEditbox" Renderer="Falagard/MultiLineEditbox" LookNFeel="WindowsLook/MultiLineEditbox" />
+	<FalagardMapping WindowType="WindowsLook/Menubar"   TargetType="CEGUI/Menubar"   Renderer="Falagard/Menubar"   LookNFeel="WindowsLook/Menubar" />
+	<FalagardMapping WindowType="WindowsLook/PopupMenu" TargetType="CEGUI/PopupMenu" Renderer="Falagard/PopupMenu" LookNFeel="WindowsLook/PopupMenu" />
+	<FalagardMapping WindowType="WindowsLook/MenuItem"  TargetType="CEGUI/MenuItem"  Renderer="Falagard/MenuItem"  LookNFeel="WindowsLook/MenuItem" />
+	<FalagardMapping WindowType="WindowsLook/ProgressBar"          TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="WindowsLook/ProgressBar" />
+	<FalagardMapping WindowType="WindowsLook/VerticalScrollbar"   TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="WindowsLook/VerticalScrollbar" />
+	<FalagardMapping WindowType="WindowsLook/HorizontalScrollbar" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="WindowsLook/HorizontalScrollbar" />
+	<FalagardMapping WindowType="WindowsLook/VerticalScrollbarThumb"   TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="WindowsLook/VerticalScrollbarThumb" />
+	<FalagardMapping WindowType="WindowsLook/HorizontalScrollbarThumb" TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="WindowsLook/HorizontalScrollbarThumb" />
+	<FalagardMapping WindowType="WindowsLook/TabButton"  TargetType="CEGUI/TabButton"  Renderer="Falagard/TabButton"  LookNFeel="WindowsLook/TabButton" />
+	<FalagardMapping WindowType="WindowsLook/TabControl" TargetType="CEGUI/TabControl" Renderer="Falagard/TabControl" LookNFeel="WindowsLook/TabControl" />
+	<FalagardMapping WindowType="WindowsLook/TabContentPane"    TargetType="DefaultWindow"    Renderer="Falagard/Default"    LookNFeel="WindowsLook/TabContentPane" />
+	<FalagardMapping WindowType="WindowsLook/TabButtonPane"    TargetType="DefaultWindow"    Renderer="Falagard/Default"    LookNFeel="WindowsLook/TabButtonPane" />
+	<FalagardMapping WindowType="WindowsLook/ComboDropList" TargetType="CEGUI/ComboDropList" Renderer="Falagard/Listbox" LookNFeel="WindowsLook/ComboDropList" />
+	<FalagardMapping WindowType="WindowsLook/Combobox"	TargetType="CEGUI/Combobox"	 Renderer="Falagard/Default" LookNFeel="WindowsLook/Combobox" />
+	<FalagardMapping WindowType="WindowsLook/Listbox"           TargetType="CEGUI/Listbox"           Renderer="Falagard/Listbox"           LookNFeel="WindowsLook/Listbox" />
+	<FalagardMapping WindowType="WindowsLook/ListHeader"        TargetType="CEGUI/ListHeader"        Renderer="Falagard/ListHeader"        LookNFeel="WindowsLook/ListHeader" />
+	<FalagardMapping WindowType="WindowsLook/ListHeaderSegment" TargetType="CEGUI/ListHeaderSegment" Renderer="Falagard/ListHeaderSegment" LookNFeel="WindowsLook/ListHeaderSegment" />
+	<FalagardMapping WindowType="WindowsLook/MultiColumnList"   TargetType="CEGUI/MultiColumnList"   Renderer="Falagard/MultiColumnList"   LookNFeel="WindowsLook/MultiColumnList" />
+	<FalagardMapping WindowType="WindowsLook/Slider"      TargetType="CEGUI/Slider" Renderer="Falagard/Slider"  LookNFeel="WindowsLook/Slider" />
+	<FalagardMapping WindowType="WindowsLook/SliderThumb" TargetType="CEGUI/Thumb"  Renderer="Falagard/Button"  LookNFeel="WindowsLook/SliderThumb" />
+	<FalagardMapping WindowType="WindowsLook/ScrollablePane" TargetType="CEGUI/ScrollablePane" Renderer="Falagard/ScrollablePane" LookNFeel="WindowsLook/ScrollablePane" />
+	<FalagardMapping WindowType="WindowsLook/Spinner" TargetType="CEGUI/Spinner" Renderer="Falagard/Default" LookNFeel="WindowsLook/Spinner" />
+	<FalagardMapping WindowType="WindowsLook/Tooltip" TargetType="CEGUI/Tooltip" Renderer="Falagard/Tooltip" LookNFeel="WindowsLook/Tooltip" />
+	<FalagardMapping WindowType="WindowsLook/Static"      TargetType="DefaultWindow" Renderer="Falagard/Static"      LookNFeel="WindowsLook/Static" />
+	<FalagardMapping WindowType="WindowsLook/StaticImage" TargetType="DefaultWindow" Renderer="Falagard/StaticImage" LookNFeel="WindowsLook/StaticImage" />
+	<FalagardMapping WindowType="WindowsLook/StaticText"  TargetType="DefaultWindow" Renderer="Falagard/StaticText"  LookNFeel="WindowsLook/StaticText" />
+	<FalagardMapping WindowType="WindowsLook/ItemListbox" TargetType="CEGUI/ItemListbox" Renderer="Falagard/ItemListbox" LookNFeel="WindowsLook/ItemListbox" />
+	<FalagardMapping WindowType="WindowsLook/ListboxItem" TargetType="CEGUI/ItemEntry"   Renderer="Falagard/ItemEntry"   LookNFeel="WindowsLook/ListboxItem" />
+	<FalagardMapping WindowType="WindowsLook/GroupBox" TargetType="CEGUI/GroupBox"   Renderer="Falagard/Default"   LookNFeel="WindowsLook/GroupBox" />
+	<FalagardMapping WindowType="WarringSoulsLook/CloseSettingButton" TargetType="CEGUI/PushButton"   Renderer="Falagard/Button"   LookNFeel="WarringSoulsLook/CloseSettingButton" />
+	
+	
+
+
+</GUIScheme>

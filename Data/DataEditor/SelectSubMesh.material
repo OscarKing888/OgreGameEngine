@@ -1,0 +1,21 @@
+
+material __SelectSubMesh__
+{
+	technique
+	{
+		pass
+		{
+			ambient 1 0 0 1
+			diffuse 1 0 0 0.5
+			specular 0 0 0 1 10
+			emissive 1 0 0 1
+			scene_blend alpha_blend
+			//depth_check off
+			fog_override true
+			//depth_write off
+			//depth_bias 3
+		}
+
+	}
+
+}
