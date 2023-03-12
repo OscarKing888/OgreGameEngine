@@ -9,7 +9,6 @@
 BuildTmp/
 Thumbview/
 *.rar
-*.zip
 /SDK/**/*.htm
 /SDK/**/*.html
 /SDK/**/*.Html2
