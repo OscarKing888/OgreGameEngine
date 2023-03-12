@@ -7,7 +7,7 @@
 /GDD
 /Lib
 BuildTmp/
-Thumbview/*.bmp
+**/Thumbview/*.bmp
 *.rar
 /SDK/**/*.htm
 /SDK/**/*.html

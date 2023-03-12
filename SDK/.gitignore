@@ -1,7 +1,9 @@
+*.htm
 *.html
+*.[Hh]tml2
 *.svg
 *.pdf
 *.png
 
-doc/
-example/
+./**/doc/
+./**/example/
