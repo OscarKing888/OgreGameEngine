@@ -1,0 +1,95 @@
+material Sky/EarlyMorning
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture early_morning.jpg separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Sky/ClubTropicana
+{
+	technique
+	{
+		pass
+		{
+			//lighting off
+			emissive 0.3 0.3 0.3
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture ct.png separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Sky/Clouds
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				cubic_texture clouds.png separateUV
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+
+material DefaultSkyBox : Sky/ClubTropicana
+{	
+}
+
+material DefaultSkyDome
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+
+			texture_unit
+			{
+				texture SKY.JPG
+				scroll_anim 0.15 0
+			}
+		}
+	}	
+}
+
+material DefaultSkyPlane
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			fog_override true none
+
+			texture_unit
+			{
+				texture clouds.jpg
+			}
+		}
+	}
+}

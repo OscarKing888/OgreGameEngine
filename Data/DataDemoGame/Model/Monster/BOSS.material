@@ -1,0 +1,32 @@
+import * from "NPCnMonsterTemplate.material"
+
+material 棋局首领头 : NPCnMonsterFaceNoAlphaTemplate
+{
+	set_texture_alias <baseTexture> jpg_棋局首领头.dds
+}
+
+material 棋局首领宝珠 : NPCnMonsterAlphaTemplate
+{
+	set_texture_alias <baseTexture> tga_棋局首领身红.dds
+}
+
+material 棋局首领披风 : NPCnMonsterAlphaTemplate
+{
+	set_texture_alias <baseTexture> tga_棋局首领披风红.dds
+}
+
+material 棋局首领身 : NPCnMonsterAlphaTemplate
+{
+	set_texture_alias <baseTexture> tga_棋局首领身红.dds
+}
+
+
+material 玄boss猛将刀 : NPCnMonsterAlphaTemplate
+{
+	set_texture_alias <baseTexture> tga_玄boss猛将刀.dds
+}
+
+material 玄boss猛将身 : NPCnMonsterAlphaTemplate
+{
+	set_texture_alias <baseTexture> tga_玄boss猛将身.dds
+}

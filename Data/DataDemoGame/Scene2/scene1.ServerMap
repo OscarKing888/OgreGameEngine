@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GameObjects>
+    <SceneInfo Name="SceneInfo">
+        <MapHeight Value="51200" />
+        <MapWidth Value="51200" />
+    </SceneInfo>
+    <Teleport Name="PG/ThisEntry">
+        <DisplayEditorObjectInGame Value="false" />
+        <EnabledAnimations Value="idle" />
+        <Flag Value="" />
+        <GUID Value="0" />
+        <MeshFile Value="chuansong.mesh" />
+        <Name Value="PG/ThisEntry" />
+        <Pitch Value="0" />
+        <Position Value="22369.4 -32827.9 45738.4" />
+        <Roll Value="0" />
+        <Scale Value="5 5 5" />
+        <Serializeable Value="true" />
+        <ShowBoundingBox Value="false" />
+        <ShowCollisionBox Value="true" />
+        <Size Value="400 400 400" />
+        <TargetPosition Value="12810 -3135 25563" />
+        <TargetSceneName Value="XQ_zhucheng" />
+        <TriggerMask Value="1101529088" />
+        <VisibilityFlag Value="1" />
+        <Visible Value="true" />
+        <Yaw Value="0" />
+    </Teleport>
+    <Teleport Name="PG/To_XQ">
+        <DisplayEditorObjectInGame Value="false" />
+        <EnabledAnimations Value="idle" />
+        <Flag Value="" />
+        <GUID Value="0" />
+        <MeshFile Value="chuansong.mesh" />
+        <Name Value="PG/To_XQ" />
+        <Pitch Value="0" />
+        <Position Value="30535 -29883.6 14991.6" />
+        <Roll Value="0" />
+        <Scale Value="5 5 5" />
+        <Serializeable Value="true" />
+        <ShowBoundingBox Value="false" />
+        <ShowCollisionBox Value="true" />
+        <Size Value="400 400 400" />
+        <TargetPosition Value="12810 -3135 25563" />
+        <TargetSceneName Value="XQ_zhucheng" />
+        <TriggerMask Value="0" />
+        <VisibilityFlag Value="1" />
+        <Visible Value="true" />
+        <Yaw Value="0" />
+    </Teleport>
+</GameObjects>

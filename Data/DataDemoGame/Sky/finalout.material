@@ -1,0 +1,19 @@
+material Final_Output
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			fragment_program_ref Pixel_Out
+			{
+			}
+			texture_unit
+			{
+			}
+			texture_unit
+			{
+			}
+		}
+	}
+}

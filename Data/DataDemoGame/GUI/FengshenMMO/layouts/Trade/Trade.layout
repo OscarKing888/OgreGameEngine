@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Trade_DW" >
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,110},{0,355},{0,580}}" />
+        <Window Type="FengshenMMO/Titlebar" Name="TR_Title_TTB" >
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0.05,0}}" />
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow0" Name="TR_BackGround_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/ActionButton" Name="Trade_SysHelp_Btn" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnHelp_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnHelp_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnHelp_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,14},{0,19},{0,28}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="Trade_SysClose_Btn" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnClose_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnClose_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnClose_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,334},{0,14},{0,348},{0,28}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TR_Title_Lable" >
+                <Property Name="Font" Value="WeiBei" />
+                <Property Name="Text" Value="交  易" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,44},{0,9},{0,308},{0,32}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_TargetItem_SImage0" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="0" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,97},{0,45},{0,137}}" />
+				<Window Type="FengshenMMO/Label" Name="TR_TargetItemNum_Label0" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_TargetItem_SImage1" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,138},{0,45},{0,178}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetItemNum_Label1" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_TargetItem_SImage2" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,178},{0,45},{0,218}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetItemNum_Label2" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_TargetItem_SImage3" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="3" />                
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,258},{0,45},{0,298}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetItemNum_Label3" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_TargetItem_SImage4" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="4" />                
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,219},{0,45},{0,259}}" />
+               	<Window Type="FengshenMMO/Label" Name="TR_TargetItemNum_Label4" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_SelfItem_SImage0" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="0" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,97},{0,219},{0,137}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemNum_Label0" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_SelfItem_SImage1" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,138},{0,219},{0,178}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemNum_Label1" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_SelfItem_SImage2" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,178},{0,219},{0,218}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemNum_Label2" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_SelfItem_SImage3" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,258},{0,219},{0,298}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemNum_Label3" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_SelfItem_SImage4" >
+                <Property Name="Image" Value="set:CommonItem image:ActionBK" />
+                <Property Name="ID" Value="4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,179},{0,219},{0,219},{0,259}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemNum_Label4" >
+					<Property Name="Text" Value="1" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />					
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0.6,0},{0.5,0},{1.0,0},{0.9,0}}" />
+				</Window>
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TR_Confim_Btn" >
+                <Property Name="Text" Value="交 易" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,223},{0,425},{0,283},{0,447}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TR_Cancel_Btn" >
+                <Property Name="Text" Value="取 消" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,267},{0,425},{0.05,327},{0,447}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TR_InputCoin_Btn" >
+                <Property Name="Text" Value="输入金钱" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,275},{0,38},{0,346},{0,66}}" />
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_TargetName_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,38},{0,166},{0,66}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetName_Label" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,6},{0,4},{0,92},{0,24}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_SelfName_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,178},{0,38},{0,274},{0,66}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfName_Label" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,7},{0,4},{0,93},{0,24}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TR_SelfLock_Btn" >
+                <Property Name="Text" Value="锁 定 交 易" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,223},{0,395},{0,346},{0,421}}" />
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_TargetItem_Frame0" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0,96},{0,165},{0,136}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetItemName_Label0" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_TargetItem_Frame1" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0.05,114},{0,165},{0.05,154}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetItemName_Label1" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_TargetItem_Frame2" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0.1,131},{0,165},{0.1,171}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetItemName_Label2" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_TargetItem_Frame3" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0.25,142},{0,165},{0.25,182}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetItemName_Label3" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_TargetItem_Frame4" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0.15,149},{0,165},{0.15,189}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetItemName_Label4" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_SelfItem_Frame0" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,121},{0,97},{0.3,233},{0,137}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemName_Label0" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_SelfItem_Frame1" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,121},{0.05,114},{0.3,233},{0.05,154}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemName_Label1" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_SelfItem_Frame2" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,121},{0.1,131},{0.3,233},{0.1,171}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemName_Label2" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_SelfItem_Frame3" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,121},{0.15,149},{0.3,233},{0.15,189}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemName_Label3" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_SelfItem_Frame4" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,121},{0.25,142},{0.3,233},{0.25,182}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfItemName_Label4" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_TargetPet_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,301},{0,45},{0,385}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_TargetPet_Label" >
+                    <Property Name="Font" Value="LiSu" />
+                    <Property Name="Text" >宠
+物</Property>
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_SelfPet_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,108},{0,301},{0.2,148},{0,385}}" />
+                <Window Type="FengshenMMO/Label" Name="TR_SelfPet_Label" >
+                    <Property Name="Font" Value="LiSu" />
+                    <Property Name="Text" >宠
+物</Property>
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.1,0},{0.1,0},{0.9,0},{0.9,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_TargetPetName_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0,301},{0,165},{0,362}}" />
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="TR_SelfPetName_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,121},{0,301},{0.3,233},{0,362}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TR_TargetPetTip_Label" >
+                <Property Name="Text" Value="右键点击查看资料" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,53},{0,362},{0,165},{0,388}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon2" Name="TR_DeleteSelectedPet_Btn" >
+                <Property Name="Text" Value="删除所选宠物" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,121},{0,362},{0.3,233},{0,387}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TR_TargetLock_Btn" >
+                <Property Name="Text" Value="尚 未 锁 定" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,27},{0,395},{0.05,150},{0,421}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_TargetCopperCoin_SImage" >
+                <Property Name="Image" Value="set:Button2 image:Icon_CopperCoin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,145},{0,69},{0,162},{0,88}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_TargetSilverCoin_SImage" >
+                <Property Name="Image" Value="set:Button2 image:Icon_SilverCoin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,112},{0,69},{0,129},{0,88}}" />
+                <Property Name="Visible" Value="False" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_TargetGoldCoin_SImage" >
+                <Property Name="Image" Value="set:Button2 image:Icon_GoldCoin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,74},{0,69},{0,91},{0,88}}" />
+                <Property Name="Visible" Value="False" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_SelfCopperCoin_SImage" >
+                <Property Name="Image" Value="set:Button2 image:Icon_CopperCoin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,324},{0,69},{0,341},{0,88}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_SelfSilverCoin_SImage" >
+                <Property Name="Image" Value="set:Button2 image:Icon_SilverCoin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,288},{0,69},{0,305},{0,88}}" />
+                <Property Name="Visible" Value="False" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TR_SelfGoldCoin_SImage" >
+                <Property Name="Image" Value="set:Button2 image:Icon_GoldCoin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,252},{0,69},{0,269},{0,88}}" />
+                <Property Name="Visible" Value="False" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TR_TargetCopperCoin_Lable" >
+                <!--Property Name="Text" Value="99" /-->
+                <Property Name="HorzFormat" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,127},{0,67},{0,144},{0,91}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TR_SelfCopperCoin_Lable" >
+                <!--Property Name="Text" Value="99" /-->
+                <Property Name="HorzFormat" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,287},{0,67},{0.05,304},{0,91}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TR_TargetSilverCoin_Lable" >
+                <!--Property Name="Text" Value="55" /-->
+                <Property Name="HorzFormat" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,91},{0,67},{0,108},{0,91}}" />
+                <!--Property Name="Visible" Value="False" /-->
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TR_TargetGoldCoin_Lable" >
+                <!--Property Name="Text" Value="9999" /-->
+                <Property Name="HorzFormat" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,23},{0,67},{0,70},{0,91}}" />
+                <!--Property Name="Visible" Value="False" /-->
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TR_SelfSilverCoin_Lable" >
+                <!--Property Name="Text" Value="55" /-->
+                <Property Name="HorzFormat" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,250},{0,67},{0.05,267},{0,91}}" />
+                <!--Property Name="Visible" Value="False" /-->
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TR_SelfGoldCoin_Lable" >
+                <!--Property Name="Text" Value="9999" /-->
+                <Property Name="HorzFormat" Value="RightAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,184},{0,67},{0.05,231},{0,91}}" />
+                <!--Property Name="Visible" Value="False" /-->
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

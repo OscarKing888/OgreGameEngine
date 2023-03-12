@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="LargeMapFrame" >
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="FengshenMMO/FramePlayerOther" Name="LargeMap_Frondground_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/Label" Name="LargeMap_Frondground_Text" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.3,0},{1,-25},{0.4,0},{1,-5}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/Frame_Lace1" Name="LargeMap_Bk" >
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{1,-37},{0,17},{1,-17},{0,37}}" />
+            <Window Type="FengshenMMO/ActionButton" Name="LargeMap_CloseButtons" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnClose_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnClose_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnClose_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,17},{0,17}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/StaticImageNULL" Name="LargeMap_Frondground" >
+            <Property Name="Image" Value="set:WorldMap image:full_image" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,10},{1,-10},{1,-28}}" />
+        </Window>
+    </Window>
+</GUILayout>

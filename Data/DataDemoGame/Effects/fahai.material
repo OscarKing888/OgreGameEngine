@@ -1,0 +1,193 @@
+
+material Bone13_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone14_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material fahai/fenyun
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_check on
+			depth_write off
+                        fog_override true
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture fahai01.dds
+			}
+		}
+
+	}
+
+}
+
+material fahai/sd01
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_check on
+			depth_write off
+                        fog_override true
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture fahai02.dds
+			}
+		}
+
+	}
+
+}
+
+material Bone01_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone02_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone03_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone04_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone05_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone06_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone07_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone08_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone09_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}

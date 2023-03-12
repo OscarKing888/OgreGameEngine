@@ -1,0 +1,21 @@
+material raindrop
+{
+	technique
+	{
+		pass
+		{	
+
+			scene_blend colour_blend
+			//alpha_blend
+			cull_hardware none
+			cull_software none
+			depth_write off
+			texture_unit
+			{
+				texture drop6.png
+				//texture rain_drop.tga
+				mip_bias -999
+			}
+		}
+	}
+}

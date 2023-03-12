@@ -1,0 +1,22 @@
+
+material Effect_Flare
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_write off
+			cull_hardware none
+			fog_override true none
+			texture_unit
+			{
+				texture flare.png
+				tex_address_mode clamp
+			}
+		}
+
+	}
+
+}

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="MiniMap_Frame" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{1,-195},{0,0},{1,0},{0,246}}" />
+        <Window Type="FengshenMMO/StaticImageNULL" Name="MiniMap_Background_Time" >
+            <Property Name="Image" Value="set:MiniMap image:Minimap_Time" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,51},{0,42}}" />
+        </Window>
+        <Window Type="FengshenMMO/StaticImageNULL" Name="MiniMap_Background_Title" >
+            <Property Name="Image" Value="set:MiniMap image:Minimap_BK" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{1,-144},{0,0},{1,0},{0,42}}" />
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_Help" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnHelp_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnHelp_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnHelp_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-35},{0,6},{1,-21},{0,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_CloseButtons" >
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomIn_Hover" />
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomIn_Normal" />
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomIn_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-20},{0,6},{1,-6},{0,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_OpenButtons" >
+                <Property Name="HoverImage" Value="set:CommonStaticImage image:MinimapZoomOut_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:CommonStaticImage image:MinimapZoomOut_Normal" />
+                <Property Name="PushedImage" Value="set:CommonStaticImage image:MinimapZoomOut_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-20},{0,6},{1,-6},{0,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="MiniMap_Coordinate" >
+                <Property Name="Text" Value="x:300 y:300" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,25},{0,144},{0,41}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="MiniMap_Background_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,42},{0,195},{0,227}}" />
+            <Window Type="FengshenMMO/StaticImageNULL" Name="MiniMap_Background_MapContent" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-154},{0,0},{1,0},{0,184}}" />                
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="MiniMap_Background_Map" >
+                <Property Name="Image" Value="set:MiniMap image:Minimap_Area" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-154},{0,0},{1,0},{0,184}}" />
+            </Window>
+            
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_North" >
+                <Property Name="HoverImage" Value="set:Button4 image:BtnN_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Button4 image:BtnN_Normal" />
+                <Property Name="PushedImage" Value="set:Button4 image:BtnN_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,108},{0,0},{0,128},{0,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_Plot" >
+                <Property Name="HoverImage" Value="set:Button4 image:BtnQ_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Button4 image:BtnQ_Normal" />
+                <Property Name="PushedImage" Value="set:Button4 image:BtnQ_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,55},{0,52},{0,77}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_WorldMap" >
+                <Property Name="HoverImage" Value="set:Button4 image:BtnEye_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Button4 image:BtnEye_Normal" />
+                <Property Name="PushedImage" Value="set:Button4 image:BtnEye_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,83},{0,52},{0,107}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="MiniMap_PK_Mode" >
+                <Property Name="Image" Value="set:Button4 image:ModeWar" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-36},{0,4},{1,-4},{0,36}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_SuperHelp2" >
+                <Property Name="HoverImage" Value="set:Button7 image:Minimap_Wenhao_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Button7 image:Minimap_Wenhao_Normal" />
+                <Property Name="PushedImage" Value="set:Button7 image:Minimap_Wenhao_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,41},{0,23},{0,71},{0,53}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_PlayerAsk_Bn" >
+                <Property Name="Visible" Value="False" />
+                <Property Name="HoverImage" Value="set:CommonFrame7 image:XunIcon_A2" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:CommonFrame7 image:XunIcon_A1" />
+                <Property Name="PushedImage" Value="set:CommonFrame7 image:XunIcon_A3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,36},{0,26},{0,66},{0,56}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_HuaShanLunJian" >
+                <Property Name="HoverImage" Value="set:Buttons image:HuaShanLunJian_Hover" />
+                <Property Name="NormalImage" Value="set:Buttons image:HuaShanLunJian_Normal" />
+                <Property Name="PushedImage" Value="set:Buttons image:HuaShanLunJian_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,35},{0,30}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_JiangHu" >
+                <Property Name="HoverImage" Value="set:Button4 image:MiniMap_JiangHu_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Button4 image:MiniMap_JiangHu_Normal" />
+                <Property Name="PushedImage" Value="set:Button4 image:MiniMap_JiangHu_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,69},{0,4},{0,99},{0,34}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_AutoSearch" >
+                <Property Name="HoverImage" Value="set:Button4 image:MiniMap_AutoSearch_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Button4 image:MiniMap_AutoSearch_Normal" />
+                <Property Name="PushedImage" Value="set:Button4 image:MiniMap_AutoSearch_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="ClippedByParent" Value="False" />
+                <Property Name="UnifiedAreaRect" Value="{{0,111},{0,139},{0,188},{0,179}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_Yuanbao" >
+                <Property Name="HoverImage" Value="set:Button7 image:Minimap_Yuanbao_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:Button7 image:Minimap_Yuanbao_Normal" />
+                <Property Name="PushedImage" Value="set:Button7 image:Minimap_Yuanbao_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,66},{0,136},{0,97},{0,168}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="MiniMap_Liebiao" >
+                <Property Name="HoverImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Hover" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="NormalImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Normal" />
+                <Property Name="PushedImage" Value="set:ButtonCampaign1 image:Campaign_IMG_Liebiao_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,36},{0,107},{0,67},{0,139}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="MiniMap_MyPos" >
+				<Property Name="Image" Value="set:MiniMap_Arrow2 image:Arrow_00000" />
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+				<Property Name="UnifiedAreaRect" Value="{{0.5,-16},{0.5,-16},{0.5,16},{0.5,16}}" />
+				<Property Name="AlwaysOnTop" Value="True" />
+			</Window>
+            
+            
+        </Window>
+    </Window>
+</GUILayout>

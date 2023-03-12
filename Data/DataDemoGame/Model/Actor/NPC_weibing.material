@@ -1,0 +1,41 @@
+
+material MAT_NPC_weibing/MAT_NPC_weibing_01
+{
+	technique
+	{
+		pass
+		{
+                        cull_hardware none
+                        emissive 0.2 0.2 0.2 1
+                        alpha_rejection greater 180
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture NPC_XQ_weibing011.dds
+			}
+		}
+
+	}
+
+}
+
+material MAT_NPC_weibing/MAT_NPC_weibing_02
+{
+	technique
+	{
+		pass
+		{
+                        cull_hardware none
+                        emissive 0.2 0.2 0.2 1
+                        alpha_rejection greater 180
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture NPC_XQ_weibing012.dds
+			}
+		}
+
+	}
+
+}

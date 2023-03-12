@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<map>
+    <terrain terrainXCnt="10" terrainZCnt="10" terrainSize="513" terrainWorldSize="10000" texWorldSz="1000" blendMapSz="1024" clrMapSz="1024" lightMapSz="1024" compositeMapDistance="10000" skirtSz="30" compositeMapSz="1024" maxPixelErr="8" castDynShadows="false" />
+</map>

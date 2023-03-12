@@ -1,0 +1,36 @@
+
+//Heat Vision effect
+compositor "Heat Vision"
+{
+    technique
+    {
+        texture scene 256 256 PF_R8G8B8
+		texture temp 256 256 PF_R8G8B8
+	
+	target scene
+	{
+	    input previous
+	}
+
+	target temp
+	{
+	    input none
+		pass render_quad
+	    {
+			material Fury/HeatVision/LightToHeat
+	    	input 0 scene
+		}
+	}
+	
+	target_output
+	{
+	    input none
+	   
+	    pass render_quad
+	    {
+	    	material Fury/HeatVision/Blur
+	    	input 0 temp
+	    }
+	}
+    }
+}

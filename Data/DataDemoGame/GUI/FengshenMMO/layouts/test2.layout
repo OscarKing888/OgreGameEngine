@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Root" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,2},{1,0},{1,0}}" />
+        <Window Type="FengshenMMO/MainFrameWindow0" Name="Root/" >
+            <Property Name="Text" Value="Frame0" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,10},{0,210},{0,407}}" />
+            <Window Type="FengshenMMO/ButtonCommon" Name="Root//" >
+                <Property Name="Text" Value="开始游戏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,50},{0,296},{0,143},{0,328}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow1" Name="Root/11" >
+            <Property Name="Text" Value="Frame1" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,220},{0,2},{0,426},{0,269}}" />
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow2" Name="Root/22" >
+            <Property Name="Text" Value="Frame2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,451},{0,97},{0,651},{0,298}}" />
+            <Window Type="FengshenMMO/ButtonCommon" Name="Root/22/33" >
+                <Property Name="Text" Value="Common" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,30},{0,55},{0,98},{0,87}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon2" Name="Root/22/333" >
+                <Property Name="Text" Value="Common2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,32},{0,128},{0,123},{0,161}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow3" Name="Root/33" >
+            <Property Name="Text" Value="Frame3" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,258},{0,320},{0,458},{0,420}}" />
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow4" Name="Root/44" >
+            <Property Name="Text" Value="Frame4" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,231},{0,438},{0,499},{0,585}}" />
+            <Window Type="FengshenMMO/ButtonAction" Name="Root/44/" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,79},{0,34},{0,110},{0,66}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

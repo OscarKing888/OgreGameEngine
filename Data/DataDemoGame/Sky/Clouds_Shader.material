@@ -1,0 +1,27 @@
+material Cover
+{
+	receive_shadows off
+	technique Default
+	{
+		pass Main
+		{
+			lighting off
+			fog_override true none
+			scene_blend alpha_blend
+
+			vertex_program_ref cloud_vs
+			{
+			}
+			fragment_program_ref cloud_ps
+			{
+				param_named vClr float4 1 1 1 1.0
+				param_named vCloud float4 1.0 1.0 -0.2 2.0
+			}
+			texture_unit
+			{
+				texture NoiseVolume.dds  3d
+				tex_address_mode wrap
+			}
+		}
+	}
+}

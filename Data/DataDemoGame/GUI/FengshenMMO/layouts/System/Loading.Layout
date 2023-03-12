@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Loading" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="FengshenMMO/StaticImageNULL" Name="LoadingBG_Image" >
+            <Property Name="Image" Value="set:LoginBack image:full_image" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/Label" Name="CueText" >
+                <Property Name="Font" Value="WeiBei" />
+                <Property Name="Text" Value="加 载 中 。 。 。 。 。 。" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,260},{0,506},{0,714},{0,589}}" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

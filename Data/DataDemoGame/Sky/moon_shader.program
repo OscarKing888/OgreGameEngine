@@ -1,0 +1,12 @@
+fragment_program moon_shader hlsl
+{
+	source moon_shader.hlsl
+	entry_point moon_ps
+	target ps_2_0
+	
+	default_params
+	{
+		param_named vOffset		float4 0.0 0.0 0.0 0.0
+		param_named fBrightness		float 2.0
+	}
+}

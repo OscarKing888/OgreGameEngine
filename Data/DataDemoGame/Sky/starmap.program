@@ -1,0 +1,19 @@
+vertex_program starmap_vs hlsl
+{
+	source starmap.hlsl
+	entry_point star_vs
+	target vs_2_0
+	default_params
+	{
+		param_named_auto mW world_matrix
+		param_named_auto mWVP worldviewproj_matrix
+ 	}
+}
+
+fragment_program starmap_ps hlsl
+{
+	source starmap.hlsl
+	entry_point star_ps
+	target ps_2_0
+}
+

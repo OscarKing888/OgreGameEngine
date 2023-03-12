@@ -1,0 +1,45 @@
+
+particle_system rain
+{
+	quota	500
+	material	raindrop
+	particle_width		16
+	particle_height	64
+
+    	billboard_type  oriented_common
+    	common_direction 0 -1 0
+
+	emitter Box
+	{
+		angle	0
+		colour	1 1 1 1
+		colour_range_start	1 1 1 1
+		colour_range_end	1 1 1 1
+		direction	1 0 0
+		emission_rate	500
+		position	0 0 0
+		velocity	1
+		velocity_min	1
+		velocity_max	1
+		time_to_live	2
+		time_to_live_min	1
+		time_to_live_max	2
+		duration	0
+		duration_min	0
+		duration_max	0
+		repeat_delay	0
+		repeat_delay_min	0
+		repeat_delay_max	0
+		width	1
+		height	100
+		depth	100
+	}
+
+
+	affector LinearForce
+	{
+		force_vector	0 -200 0
+		force_application	average
+	}
+}
+

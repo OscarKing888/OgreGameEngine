@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="NpcDialogBox" >
+        <Property Name="InheritsAlpha" Value="False" />   
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,175},{0,132},{0,462},{0,480}}" />
+        <Window Type="FengshenMMO/MainFrameWindow0" Name="DialogBoxBG_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/Label" Name="NDB_NpcNameText" >
+                <Property Name="Font" Value="WeiBei" />
+                <Property Name="Text" Value="小  强" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,96},{0,6},{0,191},{0,35}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon2" Name="NDB_AcceptBtn" >
+                <Property Name="Text" Value="接受" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,306},{0,48},{0,327}}" />
+                <Property Name="Visible" Value="False" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon2" Name="NDB_ContinueBtn" >
+                <Property Name="Text" Value="继续" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,41},{0,306},{0.05,81},{0,327}}" />
+                <Property Name="Visible" Value="False" />                
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon2" Name="NDB_LeaveBtn" >
+                <Property Name="Text" Value="再见" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,207},{0,306},{0.1,247},{0,327}}" />
+            </Window>
+            <Window Type="FengshenMMO/ChatFrame" Name="DB_Content_MLEB" >
+                <Property Name="Text" >很好很牛B很好很牛B很好很牛B很好很牛B很好很牛
+</Property>
+                <Property Name="ReadOnly" Value="True" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,7},{0,38},{0,277},{0,189}}" />
+            </Window>
+            <Window Type="DefaultWindow" Name="ND_Option_DW" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0,194},{0,275},{0,300}}" />
+            </Window>    
+        </Window>
+        <Window Type="FengshenMMO/Titlebar" Name="NDB_Title_TTB" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0.05,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

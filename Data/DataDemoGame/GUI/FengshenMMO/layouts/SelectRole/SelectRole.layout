@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="SelectRole" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="FengshenMMO/MainFrameWindow2" Name="ActorInfoBG_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,659},{0,100},{0,911},{0,321}}" />
+            <Window Type="FengshenMMO/Label" Name="NameText" >
+                <Property Name="Text" Value="姓名：" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,39},{0,106},{0,68}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="LevelText" >
+                <Property Name="Text" Value="等级：" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0.05,77},{0,106},{0.05,106}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="ConfraternityText" >
+                <Property Name="Text" Value="门派：" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0.1,117},{0,106},{0.1,146}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="NameInfoText" >
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.15,87},{0.05,27},{0.15,183},{0.05,56}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="LevelInfoText" >
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.15,86},{0.05,77},{0.15,182},{0.05,106}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="SchoolInfoText" >
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.15,87},{0.15,108},{0.15,183},{0.15,137}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="ActorInfoText" >
+                <Property Name="Font" Value="WeiBei" />
+                <Property Name="Text" Value="人物信息" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,28},{0,5},{0,223},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow4" Name="ActionButtonBG_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,700},{0,358},{0,879},{0,631}}" />
+            <Window Type="FengshenMMO/ButtonCommon" Name="EnterGameBtn" >
+                <Property Name="Text" Value="进入游戏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0,34},{0,136},{0,64}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="CreateRoleBtn" >
+                <Property Name="Text" Value="创建角色" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0.05,78},{0,136},{0.05,108}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="DeleteRoleBtn" >
+                <Property Name="Text" Value="删除角色" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0.15,109},{0,136},{0.15,139}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="BackBtn" >
+                <Property Name="Text" Value="上一步" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,42},{0.2,150},{0,136},{0.2,180}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow2" Name="TempRoleBK" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,102},{0,88},{0,293},{0,312}}" />
+            <Window Type="FengshenMMO/ListBoxCommon" Name="TempRoleList" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,23},{1,0},{1,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TempRoleText" >
+                <Property Name="Font" Value="WeiBei" />
+                <Property Name="Text" Value="人物列表" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,30},{0,3},{0,162},{0,20}}" />
+            </Window>
+        </Window>
+        <Window Type="DefaultWindow" Name="SR_Tip_DW" >
+            <Property Name="Visible" Value="False" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/MainFrameWindow2" Name="SR_TipBG_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,359},{0,266},{0,624},{0,407}}" />
+                <Window Type="FengshenMMO/Label" Name="SR_Tip_Text" >
+                    <Property Name="Text" Value="是否需要真的删除？" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,29},{0,19},{0,237},{0,68}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonCommon" Name="SR_TipConfim_Btn" >
+                    <Property Name="Text" Value="确定" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,31},{0.05,75},{0,119},{0.05,101}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonCommon" Name="SR_TipCancel_Btn" >
+                    <Property Name="Text" Value="取消" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,133},{0.05,75},{0.05,221},{0.05,101}}" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="ItemDefine_DW" >
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,200},{0,255}}" />
+        <Window Type="FengshenMMO/MainFrameWindow2" Name="ID_Background_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="ID_Name_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,2},{0,196},{0,34}}" />
+                <Window Type="FengshenMMO/Label" Name="ID_Name_Lable" >
+                    <Property Name="Font" Value="WeiBei" />
+                    <Property Name="Text" Value="道 具" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,10},{0,1},{0,186},{0,29}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="ID_Pic_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,33},{0,196},{0,142}}" />
+                <Window Type="FengshenMMO/StaticImageNULL" Name="ID_PicBackground_SImage" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,8},{0,14},{0,73},{0,79}}" />
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="ID_ItemAttribute_Lable" >
+                    <Property Name="Text" >道具 
+
+可以吃的</Property>
+                    <Property Name="VertFormat" Value="TopAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,88},{0,14},{0,188},{0,79}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="ID_ItemType_Label" >
+                <Property Name="Text" Value="药 品" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,17},{0,144},{0,77},{0,164}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ID_ItemDescription_Label_MLabel" >
+                <!--Property Name="VertFormat" Value="TopAligned" /-->
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,165},{0,196},{0,251}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

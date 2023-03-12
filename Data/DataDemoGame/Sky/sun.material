@@ -1,0 +1,23 @@
+material Sun_Material
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			scene_blend alpha_blend
+			fog_override true none
+			cull_hardware none
+			cull_software none
+			
+			vertex_program_ref billboard
+			{
+			}
+			
+			texture_unit
+			{
+				texture sun.dds
+			}
+		}
+	}
+}

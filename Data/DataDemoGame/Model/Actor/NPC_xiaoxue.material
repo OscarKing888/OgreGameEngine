@@ -1,0 +1,18 @@
+material MAT_NPC_xiaoxue
+{
+	technique
+	{
+		pass
+		{					
+			emissive 0.2 0.2 0.2 1
+                        alpha_rejection greater 180
+			cull_hardware none
+
+			texture_unit
+			{
+				texture NPC_xiaoxue.tga
+
+			}
+		}
+	}
+}	

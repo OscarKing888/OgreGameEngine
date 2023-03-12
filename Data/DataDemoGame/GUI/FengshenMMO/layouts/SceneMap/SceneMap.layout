@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="FengshenMMO/MainFrameWindow0" Name="SceneMap_Frame">
+		<Property Name="AlwaysOnTop" Value="True"/>
+		<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0,75},{0,50},{1,-75},{1,-100}}"/>
+		<Window Type="FengshenMMO/Titlebar" Name="SceneMap_SceneName">
+			<Property Name="Font" Value="WeiBei"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,25},{0,11},{1,-25},{0,31}}"/>
+		</Window>
+		<Window Type="FengshenMMO/ActionButton" Name="SceneMap_CloseButtons">
+			<Property Name="HoverImage" Value="set:Button1 image:BtnClose_Hover"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="NormalImage" Value="set:Button1 image:BtnClose_Normal"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{1,-19},{0,14},{1,-5},{0,28}}"/>
+		</Window>
+		<Window Type="FengshenMMO/ActionButton" Name="SceneMap_Help">
+			<Property Name="HoverImage" Value="set:Button1 image:BtnHelp_Hover"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="NormalImage" Value="set:Button1 image:BtnHelp_Normal"/>
+			<Property Name="PushedImage" Value="set:Button1 image:BtnHelp_Pushed"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,5},{0,14},{0,19},{0,28}}"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="SceneMap_Move">
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{1,-125},{1,-140},{1,-25},{1,-40}}"/>
+			<Window Type="FengshenMMO/ActionButton" Name="SceneMap_MoveUp">
+				<Property Name="HoverImage" Value="set:Buttons image:SceneMap_Up_Hover"/>
+				<Property Name="NormalImage" Value="set:Buttons image:SceneMap_Up_Normal"/>
+				<Property Name="PushedImage" Value="set:Buttons image:SceneMap_Up_Pushed"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,33},{0,0},{0,66},{0,33}}"/>
+			</Window>
+			<Window Type="FengshenMMO/ActionButton" Name="SceneMap_MoveDown">
+				<Property Name="HoverImage" Value="set:Buttons image:SceneMap_Down_Hover"/>
+				<Property Name="NormalImage" Value="set:Buttons image:SceneMap_Down_Normal"/>
+				<Property Name="PushedImage" Value="set:Buttons image:SceneMap_Down_Pushed"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,33},{0,66},{0,66},{0,99}}"/>
+			</Window>
+			<Window Type="FengshenMMO/ActionButton" Name="SceneMap_MoveL">
+				<Property Name="HoverImage" Value="set:Buttons image:SceneMap_Left_Hover"/>
+				<Property Name="NormalImage" Value="set:Buttons image:SceneMap_Left_Normal"/>
+				<Property Name="PushedImage" Value="set:Buttons image:SceneMap_Left_Pushed"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,0},{0,33},{0,33},{0,66}}"/>
+			</Window>
+			<Window Type="FengshenMMO/ActionButton" Name="SceneMap_MoveR">
+				<Property Name="HoverImage" Value="set:Buttons image:SceneMap_Right_Hover"/>
+				<Property Name="NormalImage" Value="set:Buttons image:SceneMap_Right_Normal"/>
+				<Property Name="PushedImage" Value="set:Buttons image:SceneMap_Right_Pushed"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,66},{0,33},{0,99},{0,66}}"/>
+			</Window>
+		</Window>
+		<Window Type="FengshenMMO/ActionButton" Name="SceneMap_ZoomButtons2">
+			<Property Name="HoverImage" Value="set:Button1 image:BtnAdd_Hover"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="NormalImage" Value="set:Button1 image:BtnAdd_Normal"/>
+			<Property Name="PushedImage" Value="set:Button1 image:BtnAdd_Pushed"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{1,-30},{0,39},{1,-15},{0,54}}"/>
+		</Window>
+		<Window Type="FengshenMMO/ActionButton" Name="SceneMap_ZoomButtons1">
+			<Property Name="HoverImage" Value="set:Button1 image:BtnSub_Hover"/>
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="NormalImage" Value="set:Button1 image:BtnSub_Normal"/>
+			<Property Name="PushedImage" Value="set:Button1 image:BtnSub_Pushed"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{1,-165},{0,39},{1,-150},{0,54}}"/>
+		</Window>
+		<Window Type="FengshenMMO/Label" Name="SceneMap_Text3">
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{1,-150},{0,38},{1,-30},{0,58}}"/>
+		</Window>
+		<Window Type="FengshenMMO/Label" Name="SceneMap_Text2">
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.3,0},{0,38},{0.7,0},{0,58}}"/>
+		</Window>
+		<Window Type="FengshenMMO/LabelRight" Name="SceneMap_Crood">
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,115},{0,38},{0,195},{0,56}}"/>
+		</Window>
+		<Window Type="FengshenMMO/LabelLeft" Name="SceneMap_Text1">
+			<Property Name="AlwaysOnTop" Value="True"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,15},{0,38},{0,115},{0,56}}"/>
+		</Window>
+		<Window Type="DefaultWindow" Name="SceneMap_Board_Back">
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,15},{0,62},{1,-15},{1,-32}}"/>
+			<Window Type="FengshenMMO/StaticImageNULL" Name="SceneMap_Board">
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+				<!--
+                <Window Type="FengshenMMO/StaticImageNULL" Name="SceneMap_Board/Map0" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0.5,0},{0.5,0}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="SceneMap_Board/Map1" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.5,0},{0,0},{1,0},{0.5,0}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="SceneMap_Board/Map2" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0.5,0},{0.5,0},{1,0}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="SceneMap_Board/Map3" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.5,0},{0.5,0},{1,0},{1,0}}" />
+                </Window>-->
+			</Window>
+			<Window Type="FengshenMMO/StaticImageNULL" Name="SceneMap_MyPos">
+				<Property Name="Image" Value="set:MiniMap_Arrow2 image:Arrow_00000"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0.5,-16},{0.5,-16},{0.5,16},{0.5,16}}"/>
+				<Property Name="AlwaysOnTop" Value="True"/>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

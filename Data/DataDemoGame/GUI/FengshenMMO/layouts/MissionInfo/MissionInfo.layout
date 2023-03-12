@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="MissionInfo_DW" >
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,172},{0,117},{0,466},{0,508}}" />
+        <Window Type="FengshenMMO/MainFrameWindow2" Name="MI_MissionInfo_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/Tree" Name="MI_CurrentMissionList_Tree" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,55},{0,290},{0,195}}" />
+            </Window>
+            <Window Type="FengshenMMO/Tree" Name="MI_FutureMissionList_Tree" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,55},{0,290},{0,195}}" />
+            </Window>            
+            <Window Type="FengshenMMO/ButtonCommon" Name="MI_CurrentMission_Btn" >
+                <Property Name="Text" Value="当前任务" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,11},{0.05,9},{0,87},{0.05,30}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="MI_FutureMission_Btn" >
+                <Property Name="Text" Value="可接任务" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,80},{0.05,9},{0.05,156},{0.05,30}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="MI_Close_Btn" >
+                <Property Name="Text" Value="关闭" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,240},{0,361},{0,283},{0,384}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLineEditboxEx" Name="MI_MissionDescription_MLED" >
+                <Property Name="TextEx" >
+</Property>
+                <!--Property Name="ReadOnly" Value="True" /-->
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,194},{0,288},{0,357}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/Titlebar" Name="MI_Title_TTB" >
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0.05,0}}" />
+        </Window>
+    </Window>
+</GUILayout>

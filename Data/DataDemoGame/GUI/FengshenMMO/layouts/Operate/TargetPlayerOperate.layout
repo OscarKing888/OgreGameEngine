@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="TargetPlayerOperate_DW" >
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,286},{0,295},{0,427},{0,516}}" />
+        <Window Type="FengshenMMO/MainFrameWindow5" Name="TPO_Background_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/ButtonCommon" Name="TPO_RequestProcession_Btn" >
+                <Property Name="Text" Value="申 请 入 队" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,140},{0,33}}" />
+                <Property Name="Disabled" Value="True" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TPO_RequestTrade_Btn" >
+                <Property Name="Text" Value="请 求 交 易" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,29},{0,140},{0,61}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TPO_RequestFriend_Btn" >
+                <Property Name="Text" Value="加 为 好 友" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,58},{0,140},{0,90}}" />
+                <Property Name="Disabled" Value="True" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TPO_ExamineInfomation_Btn" >
+                <Property Name="Text" Value="查 看 资 料" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,87},{0,140},{0,119}}" />
+                <Property Name="Disabled" Value="True" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TPO_Follow_Btn" >
+                <Property Name="Text" Value="跟 随 对 方" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,116},{0,140},{0,148}}" />
+                <Property Name="Disabled" Value="True" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TPO_Close_Btn" >
+                <Property Name="Text" Value="关  闭" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,1},{0,145},{0,140},{0,177}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

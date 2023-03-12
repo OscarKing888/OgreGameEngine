@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="CreateRole" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="FengshenMMO/MainFrameWindow4" Name="BasicInfoBG_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,681},{0,20},{0,917},{0,410}}" />
+            <Window Type="FengshenMMO/Label" Name="RoleNameText" >
+                <Property Name="Text" Value="角色名字：" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,18},{0,25},{0.05,97},{0,49}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="RoleGenderText" >
+                <Property Name="Text" Value="选择性别：" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,18},{0.05,65},{0.05,97},{0.05,89}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="RoleHairstyleText" >
+                <Property Name="Text" Value="选择发型：" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,18},{0.05,135},{0.05,97},{0.05,159}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="RoleClothText" >
+                <Property Name="Text" Value="选择衣着：" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,18},{0.1,180},{0.05,97},{0.1,204}}" />
+            </Window>
+            <Window Type="FengshenMMO/EditBoxNormal" Name="RoleNameEditBox" >
+                <Property Name="Text" Value="MMO" />
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,19},{0,52},{0.05,154},{0,78}}" />
+                <Property Name="MouseCursorImage" Value="" />
+            </Window>
+            <Window Type="FengshenMMO/Combobox" Name="CR_SelectHair_Combobox" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,20},{0,178},{0.05,138},{0,241}}" />
+                <Property Name="MaxEditTextLength" Value="1073741823" />
+            </Window>
+            <Window Type="FengshenMMO/Combobox" Name="CR_SelectCloth_Combobox" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,20},{0.05,228},{0.05,138},{0.05,291}}" />
+                <Property Name="MaxEditTextLength" Value="1073741823" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon2" Name="CR_SelectMan_Btn" >
+                <Property Name="Text" Value="男" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,23},{0,119},{0.05,49},{0,147}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon2" Name="CR_SelectWomen_Btn" >
+                <Property Name="Text" Value="女" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,54},{0,119},{0.05,80},{0,147}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="RoleFaceText" >
+                <Property Name="Text" Value="选择头象：" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.1,8},{0.15,224},{0.1,87},{0.15,248}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="CR_SelectFacePic" >
+                <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_1" />
+                <Property Name="HorzFormatting" Value="LeftAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="VertFormatting" Value="TopAligned" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,32},{0.05,292},{0.05,79},{0.05,342}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow0" Name="HeadPicBG_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,699},{0,402},{0,899},{0,603}}" />
+            <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,34},{0,196},{0,183}}" />
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic1" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_1" />
+                    <Property Name="ID" Value="0" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{0,48},{0,51}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic2" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_2" />
+                    <Property Name="ID" Value="1" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,49},{0,1},{0,96},{0,51}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic3" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_3" />
+                    <Property Name="ID" Value="2" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,97},{0,1},{0,144},{0,51}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic4" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_4" />
+                    <Property Name="ID" Value="3" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,144},{0,1},{0,191},{0,51}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic5" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_5" />
+                    <Property Name="ID" Value="4" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,49},{0,48},{0,99}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic6" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_6" />
+                    <Property Name="ID" Value="5" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,47},{0,49},{0,94},{0,99}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic7" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_7" />
+                    <Property Name="ID" Value="6" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,95},{0,49},{0,142},{0,99}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic8" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_8" />
+                    <Property Name="ID" Value="7" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,142},{0,49},{0,189},{0,99}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic9" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_9" />
+                    <Property Name="ID" Value="8" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,98},{0,48},{0,148}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic10" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_10" />
+                    <Property Name="ID" Value="9" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,48},{0,98},{0,95},{0,148}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic11" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_11" />
+                    <Property Name="ID" Value="10" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,95},{0,98},{0,142},{0,148}}" />
+                </Window>
+                <Window Type="FengshenMMO/StaticImageNULL" Name="CR_TempHendPic12" >
+                    <Property Name="Image" Value="set:ManProtagonist image:ManProtagonist_12" />
+                    <Property Name="ID" Value="11" />
+                    <Property Name="HorzFormatting" Value="LeftAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="VertFormatting" Value="TopAligned" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,142},{0,98},{0,189},{0,148}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="CaptionText" >
+                <Property Name="Font" Value="WeiBei" />
+                <Property Name="Text" Value="选择头像：" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,40},{0,10},{0,160},{0,30}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow4" Name="ButtonBG_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,726},{0,599},{0,871},{0,716}}" />
+            <Window Type="FengshenMMO/ButtonCommon" Name="CR_CreateRoleBtn" >
+                <Property Name="Text" Value="创建" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,29},{0,22},{0,114},{0,51}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="CR_BackBtn" >
+                <Property Name="Text" Value="上一步" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,23},{0.05,55},{0.05,108},{0.05,84}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

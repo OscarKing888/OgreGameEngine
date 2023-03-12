@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="InputMoney_DW" >
+        <Property Name="AlwaysOnTop" Value="True" /> 
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,360},{0,110},{0,602},{0,237}}" />
+        <Window Type="FengshenMMO/Titlebar" Name="IM_Title_TTB" >
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{1,0},{0.15,0}}" />
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow2" Name="IM_BackGround_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/ActionButton" Name="IM_SysHelp_Btn" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnHelp_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnHelp_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnHelp_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,4},{0,4},{0,20},{0,19}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="IM_SysClose_Btn" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnClose_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnClose_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnClose_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,208},{0,4},{0.05,224},{0,19}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="IM_TipName_Label" >
+                <Property Name="Font" Value="WeiBei" />
+                <Property Name="Text" Value="输 入 交 易 金 钱" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,2},{0,203},{0,22}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="IM_Confim_Btn" >
+                <Property Name="Text" Value="确认" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,87},{0,154},{0,115}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="IM_Close_Btn" >
+                <Property Name="Text" Value="取消" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,163},{0,87},{0,232},{0,115}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="IM_CopperCoin_SImage" >
+                <Property Name="Image" Value="set:Button2 image:Icon_CopperCoin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,207},{0.1,33},{0,230},{0.1,55}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="IM_SilverCoin_SImage" >
+                <Property Name="Image" Value="set:Button2 image:Icon_SilverCoin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,149},{0.1,33},{0,172},{0.1,55}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="IM_GoldCoin_SImage" >
+                <Property Name="Image" Value="set:Button2 image:Icon_GoldCoin" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,89},{0.1,33},{0,112},{0.1,55}}" />
+            </Window>
+            <Window Type="FengshenMMO/EditBoxNormal" Name="IM_CopperCoin_EditBox" >
+                <Property Name="MaxTextLength" Value="2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,173},{0.1,33},{0,203},{0.1,55}}" />
+                <Property Name="MouseCursorImage" Value="" />
+            </Window>
+            <Window Type="FengshenMMO/EditBoxNormal" Name="IM_SilverCoin_EditBox" >
+                <!--Property Name="ReadOnly" Value="True" /-->
+                <Property Name="MaxTextLength" Value="2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,115},{0.1,33},{0,145},{0.1,55}}" />
+                <Property Name="MouseCursorImage" Value="" />
+            </Window>
+            <Window Type="FengshenMMO/EditBoxNormal" Name="IM_GoldCoin_EditBox" >
+                <!--Property Name="ReadOnly" Value="True" /-->
+                <Property Name="MaxTextLength" Value="5" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,22},{0.1,33},{0,82},{0.1,55}}" />
+                <Property Name="MouseCursorImage" Value="" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

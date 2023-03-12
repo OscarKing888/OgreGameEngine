@@ -1,0 +1,26 @@
+
+material 12_-_Default
+{
+	receive_shadows off
+	technique Default
+	{
+		pass Main
+		{
+			lighting off
+			fog_override true none
+
+			vertex_program_ref vault_vs
+			{
+			}
+			fragment_program_ref vault_ps
+			{
+				//param_named_auto fTime time_0_1 10
+			}
+			texture_unit
+			{	
+				texture SkyTime.tga
+				tex_address_mode clamp
+			}
+		}
+	}
+}

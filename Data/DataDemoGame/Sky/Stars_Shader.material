@@ -1,0 +1,30 @@
+
+material 13_-_Default
+{
+	technique Default
+	{
+		pass Main
+		{
+			scene_blend add
+			lighting off
+			fog_override true none
+			vertex_program_ref stars_vs
+			{
+			}
+			fragment_program_ref stars_ps
+			{
+			}
+
+			texture_unit
+			{
+				texture Star_T.tga
+			}
+			texture_unit
+			{
+				texture Distortion2.jpg
+				tex_address_mode wrap
+			}
+
+		}
+	}
+}

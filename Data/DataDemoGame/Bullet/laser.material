@@ -1,0 +1,19 @@
+
+material Bullet/Laser
+{
+	technique
+	{
+		pass
+		{
+			scene_blend add
+			diffuse 0.5 0.5 0.5
+
+			texture_unit
+			{
+				texture laser.dds
+			}
+		}
+
+	}
+
+}

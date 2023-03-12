@@ -1,0 +1,6 @@
+fragment_program skycap_ambient hlsl
+{
+	source skycap_ambient.hlsl
+	entry_point skycap_ambient_ps
+	target ps_2_0
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+	<Imageset Name="CommonFrame2" Imagefile="common/CommonFrame2.tga" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="false">
+		<Image Name="TooltipFrame_LT" XPos="183" YPos="232" Width="18" Height="21" />
+    <Image Name="TooltipFrame_LB" XPos="183" YPos="232" Width="18" Height="21" />
+    <Image Name="TooltipFrame_RT" XPos="183" YPos="232" Width="18" Height="21" />
+    <Image Name="TooltipFrame_RB" XPos="183" YPos="232" Width="18" Height="21" />
+    <Image Name="TooltipFrame_L" XPos="183" YPos="232" Width="18" Height="21" />
+    <Image Name="TooltipFrame_R" XPos="183" YPos="232" Width="18" Height="21" />
+    <Image Name="TooltipFrame_T" XPos="183" YPos="232" Width="18" Height="21" />
+    <Image Name="TooltipFrame_B" XPos="183" YPos="232" Width="18" Height="21" />
+
+    <Image Name="PlayerFrame" XPos="0" YPos="106" Width="191" Height="63" />
+    <Image Name="PetFrame" XPos="0" YPos="170" Width="148" Height="37" />
+    <Image Name="TeamFrame" XPos="0" YPos="210" Width="150" Height="40" />
+	</Imageset>

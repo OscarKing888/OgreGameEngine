@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextExManager>
+	<!--静态图片-->
+	<TextEx Name="face0" Value="set:Food2 image:Food2_10"/>
+	<TextEx Name="face1" Value="set:Food2 image:Food2_11"/>
+	<!--动态图片-->
+	<TextEx Name="face2" Value="anim1"/>
+	<TextEx Name="face3" Value="anim2"/>
+</TextExManager>

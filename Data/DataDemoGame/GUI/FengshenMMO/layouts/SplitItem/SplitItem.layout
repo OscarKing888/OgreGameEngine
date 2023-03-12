@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="FengshenMMO/MainFrameWindow2" Name="SplitItem_Frame" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.55664,0},{0.51108,0},{0.55664,160},{0.51108,114}}" />
+        <Window Type="FengshenMMO/Titlebar" Name="SplitItem_Frame_Title" >
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,26},{0,2},{1,-26},{0,20}}" />
+            <Window Type="FengshenMMO/Label" Name="Split_Title" >
+                <Property Name="Font" Value="WeiBei" />
+                <Property Name="Text" Value="拆分" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/ActionButton" Name="SplitItem_Help" >
+            <Property Name="HoverImage" Value="set:Button1 image:BtnHelp_Hover" />
+            <Property Name="NormalImage" Value="set:Button1 image:BtnHelp_Normal" />
+            <Property Name="PushedImage" Value="set:Button1 image:BtnHelp_Pushed" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,19},{0,19}}" />
+        </Window>
+        <Window Type="FengshenMMO/ActionButton" Name="SplitItem_Close" >
+            <Property Name="HoverImage" Value="set:Button1 image:BtnClose_Hover" />
+            <Property Name="NormalImage" Value="set:Button1 image:BtnClose_Normal" />
+            <Property Name="PushedImage" Value="set:Button1 image:BtnClose_Pushed" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{1,-19},{0,5},{1,-5},{0,19}}" />
+        </Window>
+        <Window Type="DefaultWindow" Name="SplitItem_Frame_Client" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,10},{0,26},{1,-8},{1,-5}}" />
+            <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SplitItem_ItemName" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0.1,0},{1,0},{0.1,20}}" />
+                <Window Type="FengshenMMO/Label" Name="SplitItem_ItemNameLabel" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="HorzFormatting" Value="CentreAligned" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/EditBoxNormal" Name="SplitItem_Num" >
+                <Property Name="MaxTextLength" Value="1073741823" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.2,0},{0.4,0},{0.6,0},{0.4,20}}" />
+                <Property Name="MouseCursorImage" Value="" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="SplitItem_Addition_Button" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnAdd_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnAdd_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnAdd_Pushed" />
+                <Property Name="DisabledImage" Value="set:Button1 image:BtnAdd_Disable" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.62,0},{0.42,0},{0.62,15},{0.42,15}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="SplitItem_Decrease_Button" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnSub_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnSub_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnSub_Pushed" />
+                <Property Name="DisabledImage" Value="set:Button1 image:BtnSub_Disable" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.74,0},{0.42,0},{0.74,14},{0.42,14}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="SplitItem_Accept" >
+                <Property Name="Text" Value="接受" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-80},{1,-20},{1,-40},{1,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="SplitItem_cancel" >
+                <Property Name="Text" Value="取消" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-40},{1,-20},{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

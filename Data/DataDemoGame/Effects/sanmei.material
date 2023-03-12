@@ -1,0 +1,101 @@
+
+material sanmei/FX_sanmei03
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_check on
+			depth_write off
+                        fog_override true
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture sanmei03.dds
+			}
+		}
+
+	}
+
+}
+
+material sanmei/FX_sanmei01
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_check on
+                        depth_write off
+                        fog_override true
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture sanmei01.dds
+			}
+		}
+
+	}
+
+}
+
+material sanmei/FX_sanmei02
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_check on
+                        depth_write off
+                        fog_override true
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture sanmei02.dds
+			}
+		}
+
+	}
+
+}
+
+material Bone01_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}
+
+material Bone02_mesh_material
+{
+	technique
+	{
+		pass
+		{
+			specular 1 1 1 1 20
+		}
+
+	}
+
+}

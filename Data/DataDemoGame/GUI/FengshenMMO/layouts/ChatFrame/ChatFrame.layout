@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="LoginArtLayout__" >
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="DefaultWindow" Name="Chat_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{1,-196},{0,320},{1,0}}" />
+            <Window Type="DefaultWindow" Name="Chat_CheckBox_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0.115,0}}" />
+                <Window Type="FengshenMMO/ButtonCheckForChatPage" Name="Chat_CommonChk" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="Text" Value="综合" />
+                    <Property Name="Selected" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.007,0},{0,0},{0.132,0},{1,1.73868e-039}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonCheckForChatPage" Name="Chat_SystemChk" >
+                    <Property Name="Text" Value="系统" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.132,0},{0,0},{0.257,0},{1,1.73868e-039}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonCheckForChatPage" Name="Chat_SelfChk" >
+                    <Property Name="Text" Value="个人" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.257,0},{0,0},{0.382,0},{1,1.73868e-039}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonCheckForChatPage" Name="Chat_City" >
+                    <Property Name="Text" Value="同城" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.382,0},{0,0},{0.507,0},{1,1.73868e-039}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonCheckForChatPage" Name="Chat_CreateChk1" >
+                    <Property Name="Text" Value="#{INTERFACE_XML_889}" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.507,0},{0,0},{0.667,0},{1,1.73868e-039}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonCheckForChatPage" Name="Chat_CreateChk2" >
+                    <Property Name="Text" Value="#{INTERFACE_XML_890}" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.665625,0},{0,0},{0.825625,0},{1,1.73868e-039}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonCheckForChatPage" Name="Chat_CreateChk3" >
+                    <Property Name="Text" Value="#{INTERFACE_XML_891}" />
+                    <Property Name="Visible" Value="False" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.825,0},{0,0},{0.985,0},{1,1.73868e-039}}" />
+                </Window>
+            </Window>
+            <Window Type="DefaultWindow" Name="Chat_Frame_HistoryFrame" >
+                <Property Name="RiseOnClick" Value="False" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,0},{0,23},{1,0},{1,-40}}" />
+                <Window Type="FengshenMMO/MultiLineEditboxEx" Name="Chat_Frame_History" >
+                    <Property Name="TextEx" >
+</Property>
+                    <Property Name="MaxTextLength" Value="1073741823" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{1,0},{1,0}}" />
+                </Window>
+            </Window>
+        </Window>
+        <!--
+        <Window Type="DefaultWindow" Name="Chat_Frame_ChannelFrame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/ChatPanel" Name="Chat_Frame_Channel" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,450},{0,125},{0,574}}" />
+                <Window Type="DefaultWindow" Name="Chat_Frame_ChannelItemNear" >
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{1.0,-5},{0.0,27}}" />
+					<Window Type="FengshenMMO/ActionButton" Value="Chat_Frame_NearButton">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,3},{0,2},{0.0,20},{0.0,20}}" />
+						<Property Name="HoverImage" Value="set:Buttons image:ChannelPersonal_Normal" />
+						<Property Name="NormalImage" Value="set:Buttons image:ChannelPersonal_Hover" />
+						<Property Name="PushedImage" Value="set:Buttons image:ChannelPersonal_Pushed" />
+					</Window>
+					<Window Type="FengshenMMO/Label" Value="Chat_Frame_NearByText">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{1.0,0},{1.0,0}}" />
+						<Property Name="Text" Value="附近频道"/>
+						<Property Name="TextColourNormal" Value="FFFFFFFF"/>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="Chat_Frame_ChannelItemWorld" >
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0,5},{0,28},{1.0,-5},{0.0,50}}" />
+					<Window Type="FengshenMMO/ActionButton" Value="Chat_Frame_WorldButton">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,3},{0,2},{0.0,20},{0.0,20}}" />
+						<Property Name="HoverImage" Value="set:Buttons image:ChannelWorld_Normal" />
+						<Property Name="NormalImage" Value="set:Buttons image:ChannelWorld_Hover" />
+						<Property Name="PushedImage" Value="set:Buttons image:ChannelWorld_Pushed" />
+					</Window>
+					<Window Type="FengshenMMO/Label" Value="Chat_Frame_WorldText">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{1.0,0},{1.0,0}}" />
+						<Property Name="Text" Value="世界频道"/>
+						<Property Name="TextColourNormal" Value="FFFFFFFF"/>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="Chat_Frame_ChannelItemVicinity" >
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0,5},{0,51},{1.0,-5},{0.0,73}}" />
+					<Window Type="FengshenMMO/ActionButton" Value="Chat_Frame_VicinityButton">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,3},{0,2},{0.0,20},{0.0,20}}" />
+						<Property Name="HoverImage" Value="set:Buttons image:Channelvicinity_Normal" />
+						<Property Name="NormalImage" Value="set:Buttons image:ChannelVicinity_Hover" />
+						<Property Name="PushedImage" Value="set:Buttons image:ChannelVicinity_Pushed" />
+					</Window>
+					<Window Type="FengshenMMO/Label" Value="Chat_Frame_VicinityText">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{1.0,0},{1.0,0}}" />
+						<Property Name="Text" Value="同城频道"/>
+						<Property Name="TextColourNormal" Value="FFFFFFFF"/>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="Chat_Frame_ChannelItemMenpai" >
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0,5},{0,74},{1.0,-5},{0.0,96}}" />
+					<Window Type="FengshenMMO/ActionButton" Value="Chat_Frame_MenpaiButton">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,3},{0,2},{0.0,20},{0.0,20}}" />
+						<Property Name="HoverImage" Value="set:Buttons image:ChannelMenpai_Normal" />
+						<Property Name="NormalImage" Value="set:Buttons image:ChannelMenpai_Hover" />
+						<Property Name="PushedImage" Value="set:Buttons image:ChannelMenpai_Pushed" />
+					</Window>
+					<Window Type="FengshenMMO/Label" Value="Chat_Frame_MenpaiText">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{1.0,0},{1.0,0}}" />
+						<Property Name="Text" Value="门派频道"/>
+						<Property Name="TextColourNormal" Value="FFFFFFFF"/>
+					</Window>
+				</Window>
+				<Window Type="DefaultWindow" Name="Chat_Frame_ChannelItemTeam" >
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+					<Property Name="UnifiedAreaRect" Value="{{0,5},{0,97},{1.0,-5},{0.0,119}}" />
+					<Window Type="FengshenMMO/ActionButton" Value="Chat_Frame_TeamButton">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,3},{0,2},{0.0,20},{0.0,20}}" />
+						<Property Name="HoverImage" Value="set:Buttons image:ChannelTeam_Normal" />
+						<Property Name="NormalImage" Value="set:Buttons image:ChannelTeam_Hover" />
+						<Property Name="PushedImage" Value="set:Buttons image:ChannelTeam_Pushed" />
+					</Window>
+					<Window Type="FengshenMMO/Label" Value="Chat_Frame_TeamText">
+						<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+						<Property Name="UnifiedAreaRect" Value="{{0,20},{0,0},{1.0,0},{1.0,0}}" />
+						<Property Name="Text" Value="组队频道"/>
+						<Property Name="TextColourNormal" Value="FFFFFFFF"/>
+					</Window>
+				</Window>
+            </Window>
+        </Window>
+		-->
+        <Window Type="DefaultWindow" Name="Chat_ChatSpeaker" >
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{1.0,-348},{0,335},{1.0,-263}}" />
+            <Window Type="DefaultWindow" Name="Chat_ChatSpeaker_StarWindow2" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,1},{1,0},{1,0}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

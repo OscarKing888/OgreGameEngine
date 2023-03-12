@@ -1,0 +1,23 @@
+material Droplet
+{
+	technique
+	{
+		pass
+		{
+			//lighting off
+			scene_blend alpha_blend
+			emissive 1 1 1 1
+                        depth_write off
+			//alpha_rejection greater 128
+
+			//point_sprites on
+			//point_size 10
+			//point_size_attenuation on
+
+			texture_unit
+			{
+				texture Droplet.dds
+			}
+		}
+	}
+}

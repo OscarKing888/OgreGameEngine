@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GameObjects>
+    <MainLight GUID="FFFFFFFFFFFF00B5">
+        <AttenuationConstant Value="1" />
+        <AttenuationLinear Value="0" />
+        <AttenuationQuadric Value="0" />
+        <AttenuationRange Value="2000" />
+        <DiffuseColour Value="0.235294 0.235294 0.235294 1" />
+        <Direction Value="0 0 1" />
+        <DisplayEditorObjectInGame Value="false" />
+        <GUID Value="FFFFFFFFFFFF00B5" />
+        <LightType Value="Directional" />
+        <On Value="true" />
+        <Pitch Value="0" />
+        <Position Value="-2170.28 0 391.443" />
+        <PowerScale Value="1" />
+        <Roll Value="0" />
+        <Scale Value="1 1 1" />
+        <Serializeable Value="true" />
+        <ShowBoundingBox Value="false" />
+        <SpecularColour Value="0.627451 0.627451 0.643137 1" />
+        <SpotlightFalloff Value="1" />
+        <SpotlightInnerAngle Value="0.523599" />
+        <SpotlightOuterAngle Value="0.698132" />
+        <TriggerMask Value="FFFFFFFF" />
+        <VisibilityFlag Value="1" />
+        <Visible Value="true" />
+        <Yaw Value="0" />
+    </MainLight>
+</GameObjects>

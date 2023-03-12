@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><grass>	<txture file="TerrainSurface/XQ_zhucheng_S1.dds">		<grassModel name="grass/grass_01.mesh" noisy="0.3" density="0.3"/>		<grassModel name="flower/flower_01.mesh" noisy="0.1" density="0.1"/>	</txture></grass>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Souds>
+  <!--<Sound Name="MainMenu_Background" FileName="s_main.ogg" IsLoop="True" />-->
+  <Sound Name="MainMenu_Confirm" FileName="s_down.wav"  />
+  <Sound Name="MainMenu_Cancel" FileName="s_cancel.wav"  />  
+</Souds>

@@ -1,0 +1,18 @@
+
+material MonsterBrush
+{
+	technique
+	{
+		pass
+		{			
+			ambient vertexcolour
+			diffuse vertexcolour
+			specular vertexcolour
+			emissive vertexcolour
+			depth_check off
+			depth_write off
+			depth_bias 3
+		}
+
+	}
+}

@@ -1,0 +1,21 @@
+#Animation Category
+
+[Idle]
+idle0;
+idle1;
+
+[CombatIdle]
+combatidle;
+
+[Walk]
+run;
+
+[Attack]
+combat0;
+combat1;
+
+[Hurt]
+injured;
+
+[Dead]
+death;

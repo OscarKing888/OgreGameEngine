@@ -1,0 +1,22 @@
+import * from "RootMaterial.material"
+
+material Login_terrain : TRoot
+{
+	technique  Default
+	{
+		scheme Default
+		pass
+		{
+
+			texture_unit
+			{
+				texture Login__base.tga
+				colour_op_ex source1 src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+
+		}
+
+	}
+
+}

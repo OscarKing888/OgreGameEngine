@@ -1,0 +1,36 @@
+//CG Pixel Shader ps_2_0
+fragment_program tutorial_BumpMap_ps cg
+{
+	source tutorial_BumpMap_ps.source
+	profiles ps_2_0 arbfp1 fp20
+	entry_point main
+
+	default_params
+	{
+		param_named Ka float 0.30
+		param_named Kd float 1.0
+		param_named Ks float 1.0
+		param_named_auto ambient ambient_light_colour
+		param_named_auto diffuse light_diffuse_colour 0
+		param_named_auto specular light_specular_colour 0
+		param_named bumpiness float 1.0
+		param_named specular_power float 64.0
+		
+	}
+}
+
+//CG Vertex Shader vs_2_0
+vertex_program tutorial_BumpMap_vs cg
+{
+	source tutorial_BumpMap_vs.source
+	profiles vs_2_0 arbvp1
+	entry_point main
+
+	default_params
+	{
+		param_named_auto view_proj_matrix worldViewProj_matrix
+		param_named_auto inv_view_matrix inverse_worldView_matrix
+		param_named_auto light_position light_position_object_space 0
+		param_named_auto eye_position camera_position_object_space
+	}
+}

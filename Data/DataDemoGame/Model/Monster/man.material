@@ -1,0 +1,44 @@
+
+material Standard_20
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			specular 0 0 0 1 10
+			emissive 0.992157 0.992157 0.992157 1
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture body.tga
+			}
+		}
+
+	}
+
+}
+
+material Standard_19
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			specular 0 0 0 1 10
+			emissive 1 1 1 1
+			scene_blend alpha_blend
+			alpha_rejection greater 128
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture hair.tga
+			}
+		}
+
+	}
+
+}

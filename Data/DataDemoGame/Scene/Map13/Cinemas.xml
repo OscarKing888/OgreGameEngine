@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Cinemas>
+    <Cinema Name="新建电影" Length="10">
+        <AmbientLightColour TypeName="AmbientLightColour">
+            <Property>
+                <Comment Value="" />
+                <Enable Value="true" />
+                <TargetObjectID Value="FFFFFFFFFFFF006C" />
+            </Property>
+            <KeyFrames>
+                <KeyFrame Time="0" Value="1 0 0 0" />
+                <KeyFrame Time="0.82" Value="0 1 0 0" />
+            </KeyFrames>
+            <Tips />
+        </AmbientLightColour>
+        <Movement TypeName="Movement">
+            <Property>
+                <Comment Value="" />
+                <Enable Value="true" />
+                <InterpolationMode Value="Linear" />
+                <RotationInterpolationMode Value="Linear" />
+                <TargetObjectID Value="FFFFFFFFFFFF0068" />
+            </Property>
+            <KeyFrames>
+                <KeyFrame Time="0" Value="0 0 0|1 1 1|1 0 0 0" />
+                <KeyFrame Time="0" Value="0 0 0|1 1 1|1 0 0 0" />
+                <KeyFrame Time="0.25" Value="0 0 0|1 1 1|1 0 0 0" />
+                <KeyFrame Time="1.02" Value="0 0 0|1 1 1|1 0 0 0" />
+            </KeyFrames>
+            <Tips />
+        </Movement>
+        <Movement TypeName="Movement">
+            <Property>
+                <Comment Value="" />
+                <Enable Value="true" />
+                <InterpolationMode Value="Linear" />
+                <RotationInterpolationMode Value="Linear" />
+                <TargetObjectID Value="FFFFFFFFFFFF006C" />
+            </Property>
+            <KeyFrames>
+                <KeyFrame Time="0" Value="0 0 0|1 1 1|1 0 0 0" />
+            </KeyFrames>
+            <Tips />
+        </Movement>
+        <FadeScreen TypeName="FadeScreen">
+            <Property>
+                <Comment Value="" />
+                <Enable Value="true" />
+            </Property>
+            <KeyFrames>
+                <KeyFrame Time="0" Value="0 0 0 0" />
+                <KeyFrame Time="1.45" Value="0 0 0 0" />
+                <KeyFrame Time="1.53" Value="0 0 0 1" />
+                <KeyFrame Time="1.62" Value="0 0 0 0" />
+            </KeyFrames>
+            <Tips />
+        </FadeScreen>
+        <Property TypeName="Property">
+            <Property>
+                <Comment Value="" />
+                <Enable Value="true" />
+                <TargetObjectID Value="FFFFFFFFFFFF006C" />
+            </Property>
+            <KeyFrames>
+                <KeyFrame Time="0" Value="ShowBoundingBox|true" />
+                <KeyFrame Time="0.77" Value="Yaw|1" />
+            </KeyFrames>
+            <Tips />
+        </Property>
+    </Cinema>
+</Cinemas>

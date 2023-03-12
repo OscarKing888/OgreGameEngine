@@ -1,0 +1,17 @@
+vertex_program vault_vs hlsl
+{
+	source vault_shader.hlsl
+	entry_point vault_vs
+	target vs_2_0
+	default_params
+	{
+		param_named_auto wvp_matrix worldviewproj_matrix
+	}
+}
+
+fragment_program vault_ps hlsl
+{
+	source vault_shader.hlsl
+	entry_point vault_ps
+	target ps_2_0
+}

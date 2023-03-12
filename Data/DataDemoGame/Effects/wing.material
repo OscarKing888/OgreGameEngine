@@ -1,0 +1,23 @@
+material ½ð³á
+{
+	technique
+	{
+		pass
+		{
+			//ambient 0 0 0 1
+			//diffuse 0 0 0 1
+			//lighting off
+			ambient 0 0.403922 0.94902 1
+			diffuse 0 0.403922 0.94902 1
+			scene_blend add
+			depth_write off
+			fog_override true none
+			texture_unit
+			{
+				texture tga_½ð³á.dds
+				colour_op_ex modulate_x4 src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+	}
+}

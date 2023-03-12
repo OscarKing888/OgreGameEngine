@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GameObjects>
+    <SceneEnvironment Name="SceneEnvironment">
+        <AmbientLight Value="1 1 1 1" />
+        <DisplaySceneNodes Value="false" />
+        <FindVisibleObjects Value="true" />
+        <FlipCullingOnNegativeScale Value="true" />
+        <FogColour Value="1 1 1 1" />
+        <FogDensity Value="0.001" />
+        <FogEnd Value="1" />
+        <FogStart Value="0" />
+        <FogType Value="None" />
+        <ShadowCasterRenderBackFaces Value="true" />
+        <ShadowColour Value="0 0 0 1" />
+        <ShadowDirLightTextureOffset Value="0.6" />
+        <ShadowDirectionalLightExtrusionDistance Value="10000" />
+        <ShadowFarDistance Value="2500" />
+        <ShadowIndexBufferSize Value="51200" />
+        <ShadowTechnique Value="None" />
+        <ShadowTextureCasterMaterial Value="" />
+        <ShadowTextureCount Value="1" />
+        <ShadowTextureFadeEnd Value="0.9" />
+        <ShadowTextureFadeStart Value="0.7" />
+        <ShadowTextureReceiverMaterial Value="" />
+        <ShadowTextureSelfShadow Value="false" />
+        <ShadowTextureSize Value="512" />
+        <ShadowUseInfiniteFarPlane Value="true" />
+        <ShadowUseLightClipPlanes Value="false" />
+        <ShowBoundingBoxes Value="false" />
+        <ShowDebugShadows Value="false" />
+    </SceneEnvironment>
+    <SkyBox Name="SkyBox">
+        <SkyBoxMaterial Value="DefaultSkyBox" />
+        <SkyDistance Value="5000" />
+        <SkyDomeCurvature Value="10" />
+        <SkyDomeMaterial Value="DefaultSkyDome" />
+        <SkyDomeTiling Value="8" />
+        <SkyDomeXSegments Value="16" />
+        <SkyDomeYSegments Value="16" />
+        <SkyDomeYSegmentsKeep Value="-1" />
+        <SkyPlaneBow Value="0" />
+        <SkyPlaneMaterial Value="DefaultSkyPlane" />
+        <SkyPlaneScale Value="1000" />
+        <SkyPlaneTiling Value="10" />
+        <SkyPlaneXSegments Value="1" />
+        <SkyPlaneYSegments Value="1" />
+        <SkyType Value="None" />
+    </SkyBox>
+    <Terrain Name="Terrain">
+        <DetailTextureRepeat Value="3" />
+        <DetailTile Value="3" />
+        <HeightBitType Value="16Bit" />
+        <HeightMapFile Value="newMap.raw" />
+        <HeightMapSize Value="513" />
+        <LodBias Value="0" />
+        <MaxGeoMipMapLevel Value="5" />
+        <MaxHeight Value="65535" />
+        <MaxPixelError Value="2" />
+        <MinGeoMipMapLevel Value="4" />
+        <TerrainMaterial Value="newMap_terrain" />
+        <TerrainWidthX Value="5120" />
+        <TerrainWidthZ Value="5120" />
+        <TileSize Value="129" />
+    </Terrain>
+    <SceneInfo Name="SceneInfo">
+        <MapHeight Value="5120" />
+        <MapWidth Value="5120" />
+    </SceneInfo>
+    <Actor Name="Actor-2009-08-22-22-47-08-0">
+        <ActiveActorController Value="" />
+        <CastShadow Value="true" />
+        <DisplayEditorObjectInGame Value="false" />
+        <EnabledAnimation Value="idle1" />
+        <EnabledAnimations Value="idle1" />
+        <MeshFile Value="linghu.mesh" />
+        <Name Value="Actor-2009-08-22-22-47-08-0" />
+        <Pitch Value="0" />
+        <Position Value="2543.25 32767.4 2529.39" />
+        <Roll Value="0" />
+        <Scale Value="1 1 1" />
+        <Serializeable Value="true" />
+        <ShowBoundingBox Value="false" />
+        <SubMaterials Value="0:linghu;" />
+        <TriggerMask Value="-842150451" />
+        <UpdateEnabled Value="true" />
+        <VisibilityFlag Value="1" />
+        <Visible Value="true" />
+        <Yaw Value="0" />
+    </Actor>
+</GameObjects>

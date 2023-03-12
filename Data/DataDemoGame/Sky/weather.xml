@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- edited with XMLSPY v2004 rel. 4 U (http://www.xmlspy.com) by longlong (utt) -->
+<root>
+	<weather particle0="" particle1="" cloud_dir="0 0 0 0" cloud_clr="0 0 0 1" cloud_param="0 0 0 0"/>
+	<weather particle0="rain" particle1="" cloud_dir="0 0 0 0" cloud_clr="0.2 0.2 0.2 1" cloud_param="0 0 0 0"/>
+	<weather particle0="snow" particle1="" cloud_dir="0 0 0 0" cloud_clr="0.3 0.3 0.3 1" cloud_param="0 0 0 0"/>
+</root>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="FengshenMMO/MainFrameWindow0" Name="ZiDingYi_Frame" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.225,0},{0.2,0},{0.225,435},{0.2,350}}" />
+        <Window Type="FengshenMMO/Titlebar" Name="ZiDingYi_DragTitle">          
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,11},{1.0,-25},{0,31}}" />
+            <Property Name="Text" Value="自定义快捷键" />
+        </Window>
+        <Window Type="FengshenMMO/ActionButton" Name="ZiDingYi_Help" >
+            <Property Name="HoverImage" Value="set:Button1 image:BtnHelp_Hover" />
+            <Property Name="NormalImage" Value="set:Button1 image:BtnHelp_Normal" />
+            <Property Name="PushedImage" Value="set:Button1 image:BtnHelp_pushed" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,5},{0,14},{0,19},{0,28}}" />
+        </Window>
+        <Window Type="FengshenMMO/ActionButton" Name="ZiDingYi_Close" >
+            <Property Name="HoverImage" Value="set:Button1 image:BtnClose_Hover" />
+            <Property Name="NormalImage" Value="set:Button1 image:BtnClose_Normal" />
+            <Property Name="PushedImage" Value="set:Button1 image:BtnClose_Pushed" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{1,-19},{0,14},{1,-5},{0,28}}" />
+        </Window>
+        <Window Type="DefaultWindow" Name="ZiDingYi_Client" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,7},{0,36},{1,-6},{1,-29}}" />
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_moren" >
+                <Property Name="Text" Value="恢复默认键位" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-421},{1,-20},{1,-311},{1,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="ZiDingYi_List_Text1" >
+                <Property Name="Text" Value="快捷键名称" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.013559,0},{0.005952,195},{0.013559,21}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name1" >
+                <Property Name="Text" Value="主技能/物品01" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.111864,0},{0.005952,195},{0.111864,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name2" >
+                <Property Name="Text" Value="主技能/物品02" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.179661,0},{0.005952,195},{0.179661,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name3" >
+                <Property Name="Text" Value="主技能/物品03" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.247458,0},{0.005952,195},{0.247458,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name4" >
+                <Property Name="Text" Value="主技能/物品04" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.315254,0},{0.005952,195},{0.315254,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name5" >
+                <Property Name="Text" Value="主技能/物品05" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.383051,0},{0.005952,195},{0.383051,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name6" >
+                <Property Name="Text" Value="主技能/物品06" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.450847,0},{0.005952,195},{0.450847,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name7" >
+                <Property Name="Text" Value="主技能/物品07" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.518644,0},{0.005952,195},{0.518644,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name8" >
+                <Property Name="Text" Value="主技能/物品08" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.586441,0},{0.005952,195},{0.586441,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name9" >
+                <Property Name="Text" Value="主技能/物品09" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.654237,0},{0.005952,195},{0.654237,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/MultiLabel" Name="ZiDingYi_List_Name10" >
+                <Property Name="Text" Value="主技能/物品10" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.722034,0},{0.005952,195},{0.722034,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="ZiDingYi_List_Text2" >
+                <Property Name="Text" Value="非聊天模式" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.490521,0},{0.013559,0},{0.490521,85},{0.013559,21}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button1" >
+                <Property Name="Text" Value="F1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.111864,0},{1,-130},{0.111864,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button2" >
+                <Property Name="Text" Value="F2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.179661,0},{1,-130},{0.179661,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button3" >
+                <Property Name="Text" Value="F3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.247458,0},{1,-130},{0.247458,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button4" >
+                <Property Name="Text" Value="F4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.315254,0},{1,-130},{0.315254,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button5" >
+                <Property Name="Text" Value="F5" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.383051,0},{1,-130},{0.383051,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button6" >
+                <Property Name="Text" Value="F6" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.450847,0},{1,-130},{0.450847,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button7" >
+                <Property Name="Text" Value="F7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.518644,0},{1,-130},{0.518644,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button8" >
+                <Property Name="Text" Value="F8" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.586441,0},{1,-130},{0.586441,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button9" >
+                <Property Name="Text" Value="F9" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.654237,0},{1,-130},{0.654237,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_NotChat_Button10" >
+                <Property Name="Text" Value="F10" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-215},{0.722034,0},{1,-130},{0.722034,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="ZiDingYi_List_Text3" >
+                <Property Name="Text" Value="聊天模式" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.71327,0},{0.013559,0},{0.71327,85},{0.013559,21}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button1" >
+                <Property Name="Text" Value="F1" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.111864,0},{1,-36},{0.111864,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button2" >
+                <Property Name="Text" Value="F2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.179661,0},{1,-36},{0.179661,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button3" >
+                <Property Name="Text" Value="F3" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.247458,0},{1,-36},{0.247458,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button4" >
+                <Property Name="Text" Value="F4" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.315254,0},{1,-36},{0.315254,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button5" >
+                <Property Name="Text" Value="F5" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.383051,0},{1,-36},{0.383051,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button6" >
+                <Property Name="Text" Value="F6" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.450847,0},{1,-36},{0.450847,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button7" >
+                <Property Name="Text" Value="F7" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.518644,0},{1,-36},{0.518644,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button8" >
+                <Property Name="Text" Value="F8" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.586441,0},{1,-36},{0.586441,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button9" >
+                <Property Name="Text" Value="F9" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.654237,0},{1,-36},{0.654237,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Chat_Button10" >
+                <Property Name="Text" Value="F10" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-121},{0.722034,0},{1,-36},{0.722034,20}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="ZiDingYi_List_Text4" >
+                <Property Name="Text" Value="点击想修改的快捷键后输入您想设置的键即可,取消设置请按ESC." />
+                <Property Name="HorzFormat" Value="HorzCentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.005952,0},{0.825,0},{0.005952,410},{0.825,21}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_ok" >
+                <Property Name="Text" Value="确定" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-142},{1,-20},{1,-72},{1,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="ZiDingYi_Cancel" >
+                <Property Name="Text" Value="取消" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-72},{1,-20},{1,-2},{1,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="ZiDingYi_shangyiye" >
+                <Property Name="Tooltip" Value="#{INTERFACE_XML_1060}" />
+                <Property Name="Disabled" Value="True" />
+                <Property Name="HoverImage" Value="set:Button6 image:PageUp_Btn_Hover" />
+                <Property Name="NormalImage" Value="set:Button6 image:PageUp_Btn_Normal" />
+                <Property Name="PushedImage" Value="set:Button6 image:PageUp_Btn_Pushed" />
+                <Property Name="DisabledImage" Value="set:Button6 image:PageUp_Btn_Disabled" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-27},{0,37},{1,-7},{0,63}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="ZiDingYi_xiayiye" >
+                <Property Name="Tooltip" Value="#{INTERFACE_XML_1061}" />
+                <Property Name="HoverImage" Value="set:Button6 image:PageDown_Btn_Hover" />
+                <Property Name="NormalImage" Value="set:Button6 image:PageDown_Btn_Normal" />
+                <Property Name="PushedImage" Value="set:Button6 image:PageDown_Btn_Pushed" />
+                <Property Name="DisabledImage" Value="set:Button6 image:PageDown_Btn_Disabled" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-27},{1,-119},{1,-7},{1,-93}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

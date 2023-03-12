@@ -1,0 +1,23 @@
+
+material LightningBall
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_write off
+			cull_hardware none
+			fog_override true none
+			texture_unit
+			{
+				anim_texture SPE_LightningBall.dds 6 0.2
+				rotate_anim 1.5
+				tex_address_mode clamp
+			}
+		}
+
+	}
+
+}

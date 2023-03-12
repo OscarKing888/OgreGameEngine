@@ -1,0 +1,24 @@
+vertex_program stars_vs hlsl
+{
+	source star_shader.hlsl
+	entry_point star_vs
+	target vs_2_0
+	
+	default_params
+	{
+		param_named_auto wvp_matrix worldviewproj_matrix
+	}
+}
+
+fragment_program stars_ps hlsl
+{
+	source star_shader.hlsl
+	entry_point star_ps
+	target ps_2_0
+	
+	default_params
+	{
+		param_named vClr float4 1 1 1 1
+		param_named_auto fTime time_0_1 10
+	}
+}

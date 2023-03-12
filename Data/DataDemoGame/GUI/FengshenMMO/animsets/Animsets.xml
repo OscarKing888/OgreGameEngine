@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnimsetManager>
+	<Animset Name="anim1" State="a" Width="32" Height="32">
+		<Frame IntervalTime="300" Value="set:Food2 image:Food2_1" x="0" y="0"/>
+		<Frame IntervalTime="300" Value="set:Food2 image:Food2_2" x="0" y="0"/>
+		<Frame IntervalTime="300" Value="set:Food2 image:Food2_3" x="0" y="0"/>
+	</Animset>
+	<Animset Name="anim2" State="a" Width="64" Height="64">
+		<Frame IntervalTime="300" Value="set:Food2 image:Food2_4" x="0" y="0"/>
+		<Frame IntervalTime="300" Value="set:Food2 image:Food2_5" x="0" y="0"/>
+		<Frame IntervalTime="300" Value="set:Food2 image:Food2_6" x="0" y="0"/>
+	</Animset>
+</AnimsetManager>

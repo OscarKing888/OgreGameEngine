@@ -1,0 +1,257 @@
+
+// Gray scale color
+float4 PS_GrayScale(float4 srcClr)
+{
+	float3 greyscale = dot(srcClr.rgb , float3(0.3, 0.59, 0.11));
+	return float4(greyscale, 1.0);
+}
+
+float4 PS_Embossed(sampler2D tex, float2 uv)
+{
+	float4 clr;
+	clr.a = 1.0f;
+	clr.rgb = 0.5f;
+	clr -= tex2D( tex, uv - 0.001) * 2.0f;
+	clr += tex2D( tex, uv + 0.001) * 2.0f;
+	clr.rgb = PS_GrayScale(clr);
+	//clr.rgb = (clr.r + clr.g + clr.b) / 3.0f;
+	return clr;
+}
+
+// Gaussian bloom, requires offsets and weights to be provided externally
+float4 PS_BloomHorizonal(sampler2D tex, float2 uv)
+{
+#if 1 
+
+	static const int sampleCount = 9;
+
+	static float offset[sampleCount] =
+	{
+		-0.050000001,
+		-0.037500001,
+		-0.025000000,
+		-0.012500000,
+		0.00000000,
+		0.012500000, 
+		0.025000000,
+		0.037500001,
+		0.050000001
+	};
+
+	static float weight[sampleCount] =
+	{
+		0.091324538,
+		0.12853695,
+		0.16408049,
+		0.18996529,
+		0.19947115,
+		0.18996529,
+		0.16408049,
+		0.12853695,
+		0.091324538
+	};
+
+	float4 sum = tex2D(tex, uv);
+	for (int i = 0; i < sampleCount; i++)
+	{
+		sum += tex2D(tex, uv + float2(offset[i] * 1.0, 0.0) * weight[i]);
+	}
+	sum /= sampleCount;
+
+	return sum;
+
+
+#else
+
+	float4 sum = tex2D(tex, uv);
+	for (int i = 0; i < 8; i++)
+	{
+		sum += tex2D(tex, uv + 0.0125 * samples[i]);
+	}
+	sum /= 8;
+
+	return sum;
+
+
+	//  float4 accum = float4(0.0f, 0.0f, 0.0f, 1.0f);
+	//  float2 sampleUV;
+	// 
+	//  for( int i = 0; i < 15; i++ )
+	//  {
+	//   // Sample from adjacent points, 7 each side and central
+	//   sampleUV = uv + sampleOffsets[i];
+	//   accum += sampleWeights[i] * tex2D(tex, sampleUV);
+	//  }
+	// 
+	//  return accum; 
+#endif
+}
+
+float4 PS_BloomVertical(sampler2D tex, float2 uv)
+{
+#if 1
+	static const int sampleCount = 9;
+
+	static float offset[sampleCount] =
+	{
+		-0.066666670,
+		-0.050000004,
+		-0.033333335,
+		-0.016666668,
+		0.00000000,
+		0.016666668 , 
+		0.033333335 ,
+		0.050000004 ,
+		0.066666670 
+	};
+
+	static float weight[sampleCount] =
+	{
+		0.091324538,
+		0.12853695,
+		0.16408049,
+		0.18996529,
+		0.19947115,
+		0.18996529,
+		0.16408049,
+		0.12853695,
+		0.091324538
+	};
+
+	float4 sum = tex2D(tex, uv);
+	for (int i = 0; i < sampleCount; i++)
+	{
+		sum += tex2D(tex, uv + float2(0.0, offset[i] * 1.0) * weight[i]);
+	}
+	sum /= sampleCount;
+
+	return sum;
+#else
+	static const float2 samples[8] =
+	{
+		{-0.326212, -0.405805},
+		{-0.840144, -0.073580},
+		{-0.695914, +0.457137},
+		{-0.203345, +0.620716},
+		{+0.962340, -0.194983},
+		{+0.473434, -0.480026},
+		{+0.519456, +0.767022},
+		{+0.896420, +0.412458},
+	};
+
+	float4 sum = tex2D(tex, uv);
+	for (int i = 0; i < 8; i++)
+	{
+		sum += tex2D(tex, uv + 0.1125 * samples[i]);
+	}
+	sum /= 8;
+
+	return sum;
+
+
+	//  float4 accum = float4(0.0f, 0.0f, 0.0f, 1.0f);
+	//  float2 sampleUV;
+	// 
+	//  for( int i = 0; i < 15; i++ )
+	//  {
+	//   // Sample from adjacent points, 7 each side and central
+	//   sampleUV = uv + sampleOffsets[i];
+	//   accum += sampleWeights[i] * tex2D(tex, sampleUV);
+	//  }
+	// 
+	//  return accum; 
+#endif
+}
+
+
+float4 PS_RadialBlur(sampler2D tex, float2 uv,
+					 float sampleDist, float sampleStrength)
+{
+	static const float samples[10] =
+	{
+		-0.08,
+		-0.05,
+		-0.03,
+		-0.02,
+		-0.01,
+		0.01,
+		0.02,
+		0.03,
+		0.05,
+		0.08
+	};
+
+	//Vector from pixel to the center of the screen
+	float2 dir = 0.5 - uv;
+
+	//Distance from pixel to the center (distant pixels have stronger effect)
+	//float dist = distance( float2( 0.5, 0.5 ), texCoord );
+	float dist = sqrt( dir.x * dir.x + dir.y * dir.y );
+
+
+	//Now that we have dist, we can normlize vector
+	dir = normalize( dir );
+
+	//Save the color to be used later
+	float4 color = tex2D( tex, uv );
+
+	//Average the pixels going along the vector
+	float4 sum = color;
+	for (int i = 0; i < 10; i++)
+	{
+		sum += tex2D( tex, uv + dir * samples[i] * sampleDist );
+	}
+	sum /= 11;
+
+	//Calculate amount of blur based on
+	//distance and a strength parameter
+	float t = dist * sampleStrength;
+	t = saturate( t );//We need 0 <= t <= 1
+
+	//Blend the original color with the averaged pixels
+	return lerp( color, sum, t );
+}
+
+
+float4 PS_Tiling(sampler2D tex, float2 uv, half numTiles, half threshhold)
+{
+	half3 EdgeColor = {0.7, 0.7, 0.7};
+
+	half size = 1.0 / numTiles;
+	half2 Pbase = uv - fmod(uv, size.xx);
+	half2 PCenter = Pbase + (size / 2.0).xx;
+	half2 st = (uv - Pbase)/size;
+	half4 c1 = (half4)0;
+	half4 c2 = (half4)0;
+	half4 invOff = half4((1 - EdgeColor),1);
+	if (st.x > st.y) { c1 = invOff; }
+	half threshholdB =  1.0 - threshhold;
+	if (st.x > threshholdB) { c2 = c1; }
+	if (st.y > threshholdB) { c2 = c1; }
+	half4 cBottom = c2;
+	c1 = (half4)0;
+	c2 = (half4)0;
+	if (st.x > st.y) { c1 = invOff; }
+	if (st.x < threshhold) { c2 = c1; }
+	if (st.y < threshhold) { c2 = c1; }
+	half4 cTop = c2;
+	half4 tileColor = tex2D(tex, PCenter);
+	half4 result = tileColor + cTop - cBottom;
+	return result;
+}
+
+
+float4 PS_Posterize(sampler2D tex, float2 uv)
+{
+	float nColors = 8;
+	float gamma = 0.6;
+
+	float4 texCol = tex2D(tex, uv);
+	float3 tc = texCol.xyz;
+	tc = pow(tc, gamma);
+	tc = tc * nColors;
+	tc = floor(tc);
+	tc = tc / nColors;
+	tc = pow(tc,1.0/gamma);
+	return float4(tc,texCol.w);
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="ErrorTip" >
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="FengshenMMO/MainFrameWindow2" Name="ET_BackGround_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,367},{0,241},{0,639},{0,380}}" />
+            <Window Type="FengshenMMO/ButtonCommon" Name="ET_OK_Btn" >
+                <Property Name="Text" Value="确 定" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,85},{0,100},{0,188},{0,125}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="ET_ErrorInfo_Label" >
+                <Property Name="Text" Value="出错请返回" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,13},{0,37},{0,264},{0,89}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

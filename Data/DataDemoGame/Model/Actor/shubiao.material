@@ -1,0 +1,26 @@
+
+material 14_-_Default
+{
+	technique
+	{
+		pass
+		{
+			//ambient 0.588235 0.588235 0.588235 1
+			//specular 0 0 0 1 10
+			emissive 1 1 1 1
+			scene_blend alpha_blend
+			alpha_rejection greater 128
+			//depth_check off
+			//depth_write off
+			depth_bias 5
+
+			texture_unit
+			{
+				texture biaoji.tga
+				rotate_anim 0.2
+			}
+		}
+
+	}
+
+}

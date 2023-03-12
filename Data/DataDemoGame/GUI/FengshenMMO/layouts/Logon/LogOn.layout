@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="LogOn_Frame" >
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="FengshenMMO/StaticImageNULL" Name="LogOn_Background1_Frame" >
+            <Property Name="Image" Value="set:LoginBack image:full_image" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/MainFrameWindow4" Name="BackGroundFrame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,378},{0,297},{0,679},{0,496}}" />
+                <Window Type="FengshenMMO/Label" Name="AccountNameText" >
+                    <Property Name="Text" Value="账号：" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,25},{0,50},{0.05,110},{0,83}}" />
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="PassWordText" >
+                    <Property Name="Text" Value="密码：" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.05,25},{0,116},{0.05,110},{0,144}}" />
+                </Window>
+                <Window Type="FengshenMMO/EditBoxNormal" Name="AccountNameEditBox" >
+                    <Property Name="Text" Value="test1" />
+                    <Property Name="MaxTextLength" Value="1073741823" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,110},{0,53},{0,234},{0,81}}" />
+                    <Property Name="MouseCursorImage" Value="" />
+                </Window>
+                <Window Type="FengshenMMO/EditBoxNormal" Name="PasswordEditBox" >
+                    <Property Name="Text" Value="123456" />
+                    <Property Name="MaxTextLength" Value="1073741823" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,110},{0.05,107},{0,233},{0.05,137}}" />
+                    <Property Name="MouseCursorImage" Value="" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="EnterBtn" >
+                <Property Name="Text" Value="进入游戏" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,475},{0,561},{0,582},{0,590}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

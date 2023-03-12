@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GameObjects>
+    <MSky Name="MSky-2009-02-20-18-39-21-0">
+        <CloudHeight_L0 Value="84000" />
+        <CloudHeight_L1 Value="80000" />
+        <MoonOffset Value="1.6495e-033 1.66173e-033 1.24633e-010 -5.72268" />
+        <MoonSize Value="16000" />
+        <SeaLevel Value="1.86155e+034" />
+        <ShowLightVec Value="false" />
+        <StarScale Value="153600" />
+        <SunSize Value="24000" />
+        <Time Value="16.102" />
+        <TimeScale Value="192" />
+        <TrackHeight Value="102400" />
+        <TrackOrient Value="0.707 0.707 0 0" />
+        <VaultScale Value="204800" />
+        <WindSpeed Value="0.001 0 0 0" />
+    </MSky>
+    <SceneEnvironment Name="SceneEnvironment">
+        <AmbientLight Value="0.439216 0.501961 0.654902 1" />
+        <DisplaySceneNodes Value="false" />
+        <FindVisibleObjects Value="true" />
+        <FlipCullingOnNegativeScale Value="true" />
+        <FogColour Value="0.458824 0.52549 0.772549 1" />
+        <FogDensity Value="0.00015" />
+        <FogEnd Value="18000" />
+        <FogStart Value="3500" />
+        <FogType Value="Linear" />
+        <ShadowCasterRenderBackFaces Value="true" />
+        <ShadowColour Value="0.764706 0.764706 0.764706 1" />
+        <ShadowDirLightTextureOffset Value="0.6" />
+        <ShadowDirectionalLightExtrusionDistance Value="10000" />
+        <ShadowFarDistance Value="2500" />
+        <ShadowIndexBufferSize Value="51200" />
+        <ShadowTechnique Value="StencilModulative" />
+        <ShadowTextureCasterMaterial Value="" />
+        <ShadowTextureCount Value="1" />
+        <ShadowTextureFadeEnd Value="0.9" />
+        <ShadowTextureFadeStart Value="0.7" />
+        <ShadowTextureReceiverMaterial Value="" />
+        <ShadowTextureSelfShadow Value="false" />
+        <ShadowTextureSize Value="512" />
+        <ShadowUseInfiniteFarPlane Value="true" />
+        <ShadowUseLightClipPlanes Value="false" />
+        <ShowBoundingBoxes Value="false" />
+        <ShowDebugShadows Value="false" />
+    </SceneEnvironment>
+    <SkyBox Name="SkyBox">
+        <SkyBoxMaterial Value="DefaultSkyBox" />
+        <SkyDistance Value="10" />
+        <SkyDomeCurvature Value="10" />
+        <SkyDomeMaterial Value="DefaultSkyDome" />
+        <SkyDomeTiling Value="8" />
+        <SkyDomeXSegments Value="16" />
+        <SkyDomeYSegments Value="16" />
+        <SkyDomeYSegmentsKeep Value="-1" />
+        <SkyPlaneBow Value="0" />
+        <SkyPlaneMaterial Value="DefaultSkyPlane" />
+        <SkyPlaneScale Value="1000" />
+        <SkyPlaneTiling Value="10" />
+        <SkyPlaneXSegments Value="1" />
+        <SkyPlaneYSegments Value="1" />
+        <SkyType Value="None" />
+    </SkyBox>
+    <Terrain Name="Terrain">
+        <DetailTextureRepeat Value="3" />
+        <DetailTile Value="3" />
+        <HeightBitType Value="16Bit" />
+        <HeightMapFile Value="empty.raw" />
+        <HeightMapSize Value="513" />
+        <LodBias Value="5" />
+        <MaxGeoMipMapLevel Value="5" />
+        <MaxHeight Value="65535" />
+        <MaxPixelError Value="4" />
+        <TerrainMaterial Value="empty_terrain" />
+        <TerrainWidthX Value="51200" />
+        <TerrainWidthZ Value="51200" />
+        <TileSize Value="129" />
+    </Terrain>
+</GameObjects>

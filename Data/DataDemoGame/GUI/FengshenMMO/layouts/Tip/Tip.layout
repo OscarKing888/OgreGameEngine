@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="TIP_DW" >
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,756},{0,592},{0,996},{0,724}}" />
+        <Window Type="FengshenMMO/Titlebar" Name="TIP_Title_TTB" >
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0.17,0}}" />
+        </Window>
+        <Window Type="FengshenMMO/MainFrameWindow2" Name="TIP_BackGround_Frame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,1},{1,0},{1,0}}" />
+            <Window Type="FengshenMMO/ActionButton" Name="TIP_SysHelp_Btn" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnHelp_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnHelp_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnHelp_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,5},{0,19},{0,19}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="TIP_SysClose_Btn" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnClose_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnClose_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnClose_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.05,208},{0,5},{0.05,222},{0,19}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TIP_TipName_Label" >
+                <Property Name="Font" Value="WeiBei" />
+                <Property Name="Text" Value="请 求 交 易" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,38},{0,2},{0,203},{0,22}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="TIP_TipText_Label" >
+                <Property Name="Text" Value="很好很强大 " />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,20},{0,34},{0,220},{0,74}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TIP_Confim_Btn" >
+                <Property Name="Text" Value="确认" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,34},{0,87},{0,103},{0,115}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="TIP_Close_Btn" >
+                <Property Name="Text" Value="返回" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,135},{0,87},{0,204},{0,115}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

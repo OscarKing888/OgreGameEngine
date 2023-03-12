@@ -1,0 +1,6 @@
+import * from "WeaponTemplate.material"
+
+material MAT_Weapon02 : WeaponTemplateAlpha
+{
+	set_texture_alias <BaseTexture> wuqi_jian02.dds	
+}

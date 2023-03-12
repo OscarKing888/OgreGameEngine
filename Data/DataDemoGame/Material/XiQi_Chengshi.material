@@ -1,0 +1,305 @@
+import * from "RootMaterial.material"
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_11 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_jitan_bagua.dds
+}
+
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_12 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_dizhuan02.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_01 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_bianmen01_hengliang.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_02 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_muban01.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_03 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_louqiang03.dds
+}
+
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_04 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_dadian_men03.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_05 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_muban02.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_06 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_dadian_wujiao01.dds
+}
+
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_07 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_dadian_wujiao02.dds
+}
+
+material XiQi_DaDian_Shader/XiQi_DaDian_Shader_08 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/XQ_DaDian_Wa01.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_09 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_muban03.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_10 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_dadian_wuyanbian.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_11 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_dadian_zhuzi.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_12 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_dadian_longgu.dds
+}
+
+material XiQi_Flag_Shader : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xiqi_qigan_tex.dds
+}
+
+material XiQi_Men_Shader/XiQi_Men_Shader_10 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_wa01.dds
+}
+
+material XiQi_Men_Shader/XiQi_Men_Shader_11 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_bianqiang_shape.dds
+}
+
+material XiQi_Men_Shader/ogre_XiQi_Men_Shader_12 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_neiqiang_qiang.dds
+}
+
+material XiQi_Men_Shader/XiQi_Men_Shader_01 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_wa02.dds
+}
+
+material XiQi_Men_Shader/XiQi_Men_Shader_02 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_bianmen01_qiang.dds
+}
+
+material XiQi_Men_Shader/XiQi_Men_Shader_03 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/XQ_muban02.dds
+}
+
+
+material XiQi_Men_Shader/XiQi_Men_Shader_04 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_bianmen01_hengliang.dds
+}
+
+material XiQi_Men_Shader/XiQi_Men_Shader_05 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_bianmen01_wuyanqiang.dds
+}
+
+material XiQi_Men_Shader/XiQi_Men_Shader_06 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_bianmen01_wuyandi.dds
+}
+
+material XiQi_Men_Shader/XiQi_Men_Shader_07 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_bianmen01_zhuzi.dds
+}
+
+material XiQi_Men_Shader/XiQi_Men_Shader_08 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_bianmen01_wuyanding.dds
+}
+
+material XiQi_Men_Shader/ogre_XiQi_Men_Shader_13 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_wuyan.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_15 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_pailou.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_16 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_chengmen01.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_17 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_chengmen02.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_18 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_chenglouqiang.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_19 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_chengdong.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_20 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_chengqiang.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_21 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_xiaowujian.dds
+}
+
+material XQ_Wuzi_Shader/XQ_Wuzi_Shader_03 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_wuzi03_wuding.dds
+}
+
+material XQ_Wuzi_Shader/XQ_Wuzi_Shader_05 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_wuzi01_qiang07.dds
+}
+
+material XQ_Wuzi_Shader/ogre_XQ_Wuzi_Shader_06 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_minju_wa02.dds
+}
+
+material XQ_Wuzi_Shader/XQ_Wuzi_Shader_02 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_wuzi01_qiang05.dds
+}
+
+material XQ_Wuzi_Shader/XQ_Wuzi_Shader_04 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_wuzi01_qiang06.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_13 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_ta_zalan.dds
+}
+
+material XiQi_DaDian_Shader/ogre_XiQi_DaDian_Shader_14 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_dadian_men01_tower.dds
+}
+
+material XQ_Walls_Shader : TOpaque
+{
+	set_texture_alias <DiffuseMap> XQ/xq_wall_t.dds
+}
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_01 : TOpaque
+{
+	set_texture_alias <DiffuseMap> XQ/xq_shilu01.dds
+}
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_02 : TOpaque
+{
+	set_texture_alias <DiffuseMap> XQ/xq_caodi01.dds
+}
+
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_03 : TOpaque
+{
+	set_texture_alias <DiffuseMap> XQ/xq_diji01.dds
+}
+
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_04 : TOpaque
+{
+	set_texture_alias <DiffuseMap> XQ/xq_shilan01.dds
+}
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_05 : TOpaque
+{
+	set_texture_alias <DiffuseMap> XQ/XQ_dizhuan01.dds
+}
+
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_06 : TMasked
+{
+	set_texture_alias <DiffuseMap> xXQ/q_wuyan.dds
+}
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_07 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_shiti01.dds
+}
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_08 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_jitan01.dds
+}
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_09 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_jitan03.dds
+}
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_10 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_jitan02.dds
+}
+
+material XiQi_DiBiao_Shader/ogre_XiQi_DiBiao_Shader_13 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_shuye.dds
+}
+
+material XQ_Dimian_shitou : TOpaque
+{
+	set_texture_alias <DiffuseMap> XQ/xq_dimianshitou_t.dds
+}
+
+
+material XQ_AiShu_Shader : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_aishu_t.dds
+}
+
+
+material XQ_Shu_SHader/ogre_XQ_Shu_Yezi01 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_shu_yezi01.dds
+}
+
+material XQ_Shu_SHader/ogre_XQ_Shu_Shuzhuang01 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_shu_shuzhuang01.dds
+}
+
+material XQ_Shu_SHader/ogre_XQ_Shu_Yezi02 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_shu_yezi02.dds
+}
+
+material XQ_Shu_SHader/ogre_XQ_Shu_Yezi03 : TMasked
+{
+	set_texture_alias <DiffuseMap> XQ/xq_shu_yezi03.dds
+}

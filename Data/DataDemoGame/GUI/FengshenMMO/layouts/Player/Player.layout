@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="Player" >
+        <Property Name="InheritsAlpha" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+        <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PlayerFrame" >
+            <Property Name="Font" Value="SongTi" />
+            <Property Name="Image" Value="set:CommonFrame2 image:PlayerFrame" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{-0.0115235,0},{0.000520458,0},{0.182813,0},{0.087761,0}}" />
+            <Window Type="FengshenMMO/Label" Name="Player/PlayerFrame/PlayerNameText" >
+                <Property Name="Font" Value="SongTi" />
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormat" Value="CentreAlignd" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.536181,1},{0.061197,5},{0.96834,0},{0.45,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="Player/PlayerFrame/PlayerLevelText" >
+                <Property Name="Text" Value="" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.324875,1},{0.061197,5},{0.525877,0},{0.45,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PlayerFrame/PlayerImage" >
+                <Property Name="Font" Value="SongTi" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.062815,0},{0.201496,0},{0.319095,0},{0.947767,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PlayerFrame/HP" >
+                <Property Name="Font" Value="SongTi" />
+                <Property Name="Image" Value="set:MainGUI image:HPBack" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.337715,0},{0.418707,0},{0.959737,0},{0.618291,0}}" />
+                <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PlayerFrame/HP/HP" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="Image" Value="set:MainGUI image:HP" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.215399,0},{0.206481,0},{0.972611,0},{0.845139,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PlayerFrame/MP" >
+                <Property Name="Font" Value="SongTi" />
+                <Property Name="Image" Value="set:MainGUI image:MPBack" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.337715,0},{0.582884,0},{0.959737,0},{0.782468,0}}" />
+                <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PlayerFrame/MP/MP" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="Image" Value="set:MainGUI image:MP" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.215399,0},{0.206481,0},{0.972611,0},{0.845139,0}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PlayerFrame/Rage" >
+                <Property Name="Font" Value="SongTi" />
+                <Property Name="Image" Value="set:MainGUI image:RageBack" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.337715,0},{0.776911,0},{0.959737,0},{0.976495,0}}" />
+                <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PlayerFrame/Rage/Rage" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="Image" Value="set:MainGUI image:Rage" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.215399,0},{0.206481,0},{0.972611,0},{0.845139,0}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PetFrame" >
+            <Property Name="Font" Value="SongTi" />
+            <Property Name="Image" Value="set:CommonFrame2 image:PetFrame" />
+            <Property Name="HorzFormatting" Value="CentreAligned" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="VertFormatting" Value="CentreAligned" />
+            <Property Name="UnifiedAreaRect" Value="{{0.0462887,0},{0.079166,0},{0.19082,0},{0.13776,0}}" />
+            <Window Type="FengshenMMO/StaticImageNULL" Name="Player/PetFrame/PetImage" >
+                <Property Name="Font" Value="SongTi" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.065518,0},{0.18483,0},{0.281257,0},{0.864434,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="Player/PetFrame/PetLevelText" >
+                <Property Name="Text" Value="" />
+                <Property Name="HorzFormat" Value="CenterAligned" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.326016,1},{0.395023,6},{0.527018,0},{0.783826,3}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/StaticImageNULL" Name="Player/Enemy" >
+            <Property Name="Font" Value="SongTi" />
+            <Property Name="Image" Value="set:CommonFrame2 image:PlayerFrame" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0.304297,0},{0,0},{0.504297,0},{0.0824161,0}}" />
+            <Window Type="FengshenMMO/StaticImageNULL" Name="Player/Enemy/EnemyImage" >
+                <Property Name="Font" Value="SongTi" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.0634766,0},{0.124482,0},{0.316796,0},{1,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="Player/Enemy/EnemyName" >
+                <Property Name="Text" Value="狐狸" />
+                <Property Name="HorzFormat" Value="CentreAligned" />
+                <Property Name="AlwaysOnTop" Value="True" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.351172,1},{0.061197,5},{0.994727,0},{0.45,0}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="Player/Enemy/HP" >
+                <Property Name="Font" Value="SongTi" />
+                <Property Name="Image" Value="set:MainGUI image:HPBack" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0.292773,0},{0.418707,0},{0.985156,0},{0.618291,0}}" />
+                <Window Type="FengshenMMO/StaticImageNULL" Name="Player/Enemy/HP/HP" >
+                    <Property Name="Font" Value="SongTi" />
+                    <Property Name="Image" Value="set:MainGUI image:HP" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.215399,0},{0.277524,0},{0.972611,0},{0.715074,0}}" />
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

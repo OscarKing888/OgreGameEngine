@@ -1,0 +1,48 @@
+
+material MAT_Weapon01/MAT_Weapon01_A
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			specular 0 0 0 1 10
+			emissive 1 1 1 1
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture wuqi_jian01.tga
+			}
+		}
+
+	}
+
+}
+
+material MAT_Weapon01/MAT_Weapon01_B
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			specular 0 0 0 1 10
+			emissive 1 1 1 1
+			scene_blend src_alpha dest_alpha
+			alpha_rejection greater 0
+			depth_write off
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture wuqi_jian01guang.tga
+				colour_op_ex modulate_x2 src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+		}
+
+	}
+
+}

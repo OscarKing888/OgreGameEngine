@@ -1,0 +1,25 @@
+vertex_program stars_ambient_vs hlsl
+{
+	source star_ambient.hlsl
+	entry_point star_vs
+	target vs_2_0
+	
+	default_params
+	{
+		param_named_auto worldviewproj worldviewproj_matrix
+	}
+}
+
+fragment_program stars_ambient_ps hlsl
+{
+	source star_ambient.hlsl
+	entry_point star_ps
+	target ps_2_0
+	
+	default_params
+	{
+		//param_named mRot matrix4x4 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1
+		param_named vClr float4 1 1 1 1
+		param_named_auto fTime time_0_1 8.0
+	}
+}

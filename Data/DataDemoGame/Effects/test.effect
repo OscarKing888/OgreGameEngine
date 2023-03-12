@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="GB2312"?>
+<SpecialEffects>
+	<Effect Name="testAttack1_Source">
+		<Name Value="testAttack1_Source"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<!--<EffectElement Type="EffectElement_Billboard" Name="testBillboard">
+			<Attach Value="false" />
+			<AttachPointName Value="" />
+			<LifeTime Value="10" />
+			<ManualLifeTime Value="true" />
+			<Name Value="testBillboard" />
+			<OrientationOffset Value="1 0 0 0" />
+			<PositionOffset Value="0 0 0" />
+			<Serializeable Value="true" />
+			<StartTime Value="0" />
+			<Width Value="100" />
+			<Height Value="100" />
+			<MaterialName Value="LightningBall" />
+			<ElementController Type="Controller_MoveToTarget" Name="testCtrl">
+				<Name Value="testCtrl" />
+				<Serializeable Value="true" />
+				<Speed Value="10" />
+			</ElementController>
+		</EffectElement>-->
+
+		<EffectElement Type="EffectElement_SkeletonAnimation" Name="conjureAnimation1A">
+			<AnimationName Value="Conjure1_A" />
+			<Attach Value="false" />
+			<AttachPointName Value="" />
+			<LifeTime Value="1" />
+			<LoopAnimation Value="false" />
+			<ManualLifeTime Value="true" />
+			<Name Value="conjureAnimation1A" />
+			<OrientationOffset Value="1 0 0 0" />
+			<PositionOffset Value="0 0 0" />
+			<Serializeable Value="true" />
+			<StartTime Value="0" />
+		</EffectElement>
+		<EffectElement Type="EffectElement_SkeletonAnimation" Name="conjureAnimation1B">
+			<AnimationName Value="Conjure1_B" />
+			<Attach Value="false" />
+			<AttachPointName Value="" />
+			<LifeTime Value="1" />
+			<LoopAnimation Value="true" />
+			<ManualLifeTime Value="true" />
+			<Name Value="conjureAnimation1B" />
+			<OrientationOffset Value="1 0 0 0" />
+			<PositionOffset Value="0 0 0" />
+			<Serializeable Value="true" />
+			<StartTime Value="0" />
+		</EffectElement>
+		<EffectElement Type="EffectElement_SkeletonAnimation" Name="conjureAnimation1C">
+			<AnimationName Value="Conjure1_C" />
+			<Attach Value="false" />
+			<AttachPointName Value="" />
+			<LifeTime Value="1" />
+			<LoopAnimation Value="false" />
+			<ManualLifeTime Value="true" />
+			<Name Value="conjureAnimation1C" />
+			<OrientationOffset Value="1 0 0 0" />
+			<PositionOffset Value="0 0 0" />
+			<Serializeable Value="true" />
+			<StartTime Value="0" />
+		</EffectElement>
+		<EffectElement Type="EffectElement_SkeletonAnimation" Name="conjureAnimation1D">
+			<AnimationName Value="Conjure1_D" />
+			<Attach Value="false" />
+			<AttachPointName Value="" />
+			<LifeTime Value="1" />
+			<LoopAnimation Value="false" />
+			<ManualLifeTime Value="true" />
+			<Name Value="conjureAnimation1D" />
+			<OrientationOffset Value="1 0 0 0" />
+			<PositionOffset Value="0 0 0" />
+			<Serializeable Value="true" />
+			<StartTime Value="0" />
+		</EffectElement>
+		<EffectElement Type="EffectElement_SkeletonAnimation" Name="conjureAnimation1E">
+			<AnimationName Value="Conjure1_E" />
+			<Attach Value="false" />
+			<AttachPointName Value="" />
+			<LifeTime Value="1" />
+			<LoopAnimation Value="false" />
+			<ManualLifeTime Value="true" />
+			<Name Value="conjureAnimation1E" />
+			<OrientationOffset Value="1 0 0 0" />
+			<PositionOffset Value="0 0 0" />
+			<Serializeable Value="true" />
+			<StartTime Value="0" />
+		</EffectElement>
+
+		<EffectElement Type="EffectElement_Entity" Name="testEntity">
+			<Attach Value="false"/>
+			<AttachPointName Value="Body"/>
+			<LifeTime Value="3"/>
+			<ManualLifeTime Value="false"/>
+			<MeshFile Value="金翅.mesh"/>
+			<Name Value="testEntity"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<PositionOffset Value="0 0 -60"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+			<SubMaterials Value=""/>
+			<PlayAnimationName Value="休闲"/>
+			<LoopAnimation Value="true"/>
+			<StartPlayAnimationTime Value="0"/>
+		</EffectElement>
+		<!--<EffectElement Type="EffectElement_SkeletonAnimation" Name="testSkeletonAnimation">
+			<AnimationName Value="Attack" />
+			<Attach Value="false" />
+			<AttachPointName Value="" />
+			<LifeTime Value="1" />
+			<LoopAnimation Value="false" />
+			<ManualLifeTime Value="false" />
+			<Name Value="testSkeletonAnimation" />
+			<OrientationOffset Value="1 0 0 0" />
+			<PositionOffset Value="0 0 0" />
+			<Serializeable Value="true" />
+			<StartTime Value="0" />
+		</EffectElement>-->
+	</Effect>
+	<Effect Name="Weapon/2Hand/Ice">
+		<Name Value="Weapon/2Hand/Ice"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Particle" Name="weaponIceRight">
+			<Attach Value="true"/>
+			<AttachPointName Value="RightHandWeapon"/>
+			<LifeTime Value="5"/>
+			<ManualLifeTime Value="true"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/WeaponIce"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+		<EffectElement Type="EffectElement_Particle" Name="weaponStarRight">
+			<Attach Value="true"/>
+			<AttachPointName Value="RightHandWeapon"/>
+			<LifeTime Value="5"/>
+			<ManualLifeTime Value="true"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/WeaponStar"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+		<EffectElement Type="EffectElement_Particle" Name="weaponIceLeft">
+			<Attach Value="true"/>
+			<AttachPointName Value="LeftHandWeapon"/>
+			<LifeTime Value="5"/>
+			<ManualLifeTime Value="true"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/WeaponIce"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+
+	</Effect>
+
+
+	<Effect Name="Male/combat0">
+		<EffectElement Type="EffectElement_RibbonTrail" Name="Male/combat0/Right">
+			<ManualLifeTime Value="false"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0.7"/>
+			<LifeTime Value="0.3"/>
+
+			<FaceToCamera Value="false"/>
+			<UseLocalPosition Value="false"/>
+
+			<MaterialName Value="Effect/Trail"/>
+			<TargetNodeName Value="RightHandWeapon"/>
+			<!--__Main__ RightHandWeapon Bone_weapon_R_end-->
+
+			<TrailLength Value="1800"/>
+			<NumberOfChains Value="1"/>
+			<MaxChainElements Value="180"/>
+
+			<InitialWidths Value="0:100;"/>
+			<WidthChanges Value="0:0;"/>
+			<ColourChanges Value="0:1 1 1 1;"/>
+			<ElementPositionOffsetOnWidthExtent Value="150"/>
+
+			<!--pitch yaw roll-->
+			<ElementOrientationOffset Value="0 0 0"/>
+		</EffectElement>
+	</Effect>
+
+	<Effect Name="Female/combat0">
+		<EffectElement Type="EffectElement_RibbonTrail" Name="Female/combat0/Right">
+			<ManualLifeTime Value="false"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0.6"/>
+			<LifeTime Value="0.5"/>
+
+			<FaceToCamera Value="false"/>
+			<UseLocalPosition Value="false"/>
+
+			<MaterialName Value="Effect/Trail"/>
+			<TargetNodeName Value="RightHandWeapon"/>
+			<!--__Main__ RightHandWeapon Bone_weapon_R_end-->
+
+			<TrailLength Value="400"/>
+			<NumberOfChains Value="1"/>
+			<MaxChainElements Value="180"/>
+
+			<InitialWidths Value="0:100;"/>
+			<WidthChanges Value="0:0;"/>
+			<ColourChanges Value="0:1 1 1 1;"/>
+			<ElementPositionOffsetOnWidthExtent Value="150"/>
+
+			<!--pitch yaw roll-->
+			<ElementOrientationOffset Value="0 0 0"/>
+		</EffectElement>
+	</Effect>
+
+	<Effect Name="State/Poisoning">
+		<Name Value="State/Poisoning"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Particle" Name="headEffect">
+			<Attach Value="true"/>
+			<AttachPointName Value="OverHead"/>
+			<LifeTime Value="5"/>
+			<ManualLifeTime Value="false"/>
+			<Name Value="headEffect"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/Poisoning"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+	</Effect>
+	<Effect Name="testShield">
+		<Name Value="testShield"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Particle" Name="shield">
+			<Attach Value="true"/>
+			<AttachPointName Value="Body"/>
+			<LifeTime Value="5"/>
+			<ManualLifeTime Value="true"/>
+			<Name Value="shield"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/Shield"/>
+			<PositionOffset Value="0 30 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+	</Effect>
+	<Effect Name="testAttack1_Target">
+		<Name Value="testAttack1_Target"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Billboard" Name="testBillboard">
+			<Attach Value="false"/>
+			<AttachPointName Value=""/>
+			<LifeTime Value="10"/>
+			<ManualLifeTime Value="true"/>
+			<Name Value="testBillboard"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+			<Width Value="100"/>
+			<Height Value="100"/>
+			<MaterialName Value="LightningBall"/>
+			<ElementController Type="Controller_MoveToTarget" Name="testCtrl">
+				<Name Value="testCtrl"/>
+				<Serializeable Value="true"/>
+				<Speed Value="100"/>
+			</ElementController>
+		</EffectElement>
+		<EffectElement Type="EffectElement_PointLight" Name="testLight">
+			<Attach Value="false"/>
+			<AttachPointName Value=""/>
+			<AttenuationConstant Value="0.2"/>
+			<AttenuationLinear Value="0.000001"/>
+			<AttenuationQuadric Value="0.000001"/>
+			<AttenuationRange Value="500"/>
+			<DiffuseColour Value="1 0 1 0"/>
+			<Direction Value="0 0 1"/>
+			<LifeTime Value="10"/>
+			<LightType Value="Point"/>
+			<ManualLifeTime Value="false"/>
+			<Name Value="testLight"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<PositionOffset Value="0 100 0"/>
+			<PowerScale Value="1"/>
+			<Serializeable Value="true"/>
+			<SpecularColour Value="0 0 0 1"/>
+			<SpotlightFalloff Value="1"/>
+			<SpotlightInnerAngle Value="0.523599"/>
+			<SpotlightOuterAngle Value="0.698132"/>
+			<StartTime Value="0"/>
+			<ElementController Type="Controller_MoveToTarget" Name="testCtrl">
+				<Name Value="testCtrl"/>
+				<Serializeable Value="true"/>
+				<Speed Value="100"/>
+			</ElementController>
+		</EffectElement>
+	</Effect>
+	<Effect Name="Actor_IncreaseMana">
+		<Attach Value="false"/>
+		<Name Value="Actor_IncreaseMana"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Particle" Name="particleIncreaseMana">
+			<Attach Value="false"/>
+			<AttachPointName Value=""/>
+			<LifeTime Value="5"/>
+			<ManualLifeTime Value="false"/>
+			<Name Value="particleIncreaseMana"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="IncreaseMana"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+	</Effect>
+	<Effect Name="Actor_IncreaseBlood">
+		<Name Value="Actor_IncreaseBlood"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Particle" Name="particleIncreaseBlood">
+			<Attach Value="false"/>
+			<AttachPointName Value=""/>
+			<LifeTime Value="5"/>
+			<ManualLifeTime Value="false"/>
+			<Name Value="particleIncreaseBlood"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="IncreaseBlood"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+	</Effect>
+
+	<Effect Name="PlayerHit">
+		<Name Value="PlayerHit"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Particle" Name="particleEffect/PlayerHit">
+			<Attach Value="true"/>
+			<AttachPointName Value="Body"/>
+			<LifeTime Value="1"/>
+			<ManualLifeTime Value="false"/>
+			<Name Value="particleEffect/PlayerHit"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/AttackHit02"/>
+			<PositionOffset Value="0 10 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+	</Effect>
+
+	<Effect Name="MonsterHit">
+		<Name Value="AttackHit02"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Particle" Name="particleEffect/MonsterHit">
+			<Attach Value="true"/>
+			<AttachPointName Value="Body"/>
+			<LifeTime Value="1"/>
+			<ManualLifeTime Value="false"/>
+			<Name Value="particleEffect/MonsterHit"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/AttackHit02"/>
+			<PositionOffset Value="0 10 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+
+		<EffectElement Type="EffectElement_Particle" Name="particleEffect/AttackNormalFlash">
+			<Attach Value="false"/>
+			<AttachPointName Value="OverHead"/>
+			<LifeTime Value="1"/>
+			<ManualLifeTime Value="false"/>
+			<Name Value="particleEffect/AttackNormalFlash"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/AttackNormalFlash"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+
+		<EffectElement Type="EffectElement_Particle" Name="particleEffect/AttackHitSpark">
+			<Attach Value="false"/>
+			<AttachPointName Value="OverHead"/>
+			<LifeTime Value="1"/>
+			<ManualLifeTime Value="false"/>
+			<Name Value="particleEffect/AttackHitSpark"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/AttackHitSpark"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+	</Effect>
+
+	<Effect Name="DropBox">
+		<Name Value="DropBox"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Particle" Name="particleEffect/DropBox">
+			<Attach Value="false"/>
+			<AttachPointName Value=""/>
+			<LifeTime Value="2"/>
+			<ManualLifeTime Value="true"/>
+			<Name Value="particleEffect/DropBox"/>
+			<OrientationOffset Value="1 0 0 0"/>
+			<ParticleTemplateName Value="Effect/DropBox"/>
+			<PositionOffset Value="0 0 0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+	</Effect>
+
+	<Effect Name="玄boss猛将.mesh">
+		<Name Value="Boss/玄boss猛将.mesh"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Entity" Name="testEntity">
+			<Attach Value="true"/>
+			<AttachPointName Value="CenterFoot"/>
+			<LifeTime Value="3"/>
+			<ManualLifeTime Value="true"/>
+			<MeshFile Value="fengyun.mesh"/>
+			<OrientationOffset Value="0.707 0.707 0 0"/>
+			<PositionOffset Value="0 0 -0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+			<SubMaterials Value=""/>
+			<PlayAnimationName Value="fahai"/>
+			<LoopAnimation Value="true"/>
+			<StartPlayAnimationTime Value="0"/>
+		</EffectElement>
+		<EffectElement Type="EffectElement_Particle" Name="Boss/玄boss猛将.mesh/Particle2">
+			<Attach Value="true"/>
+			<AttachPointName Value="RightHandWeapon"/>
+			<ManualLifeTime Value="true"/>
+			<ParticleTemplateName Value="Effect/BossWeapon"/>
+			<StartTime Value="0"/>
+		</EffectElement>
+
+	</Effect>
+
+	<Effect Name="棋局首领.mesh">
+		<Name Value="Boss/棋局首领.mesh"/>
+		<Orientation Value="1 0 0 0"/>
+		<Position Value="0 0 0"/>
+		<Scale Value="1 1 1"/>
+		<Serializeable Value="true"/>
+		<Visible Value="true"/>
+		<EffectElement Type="EffectElement_Entity" Name="testEntity">
+			<Attach Value="true"/>
+			<AttachPointName Value="CenterFoot"/>
+			<LifeTime Value="3"/>
+			<ManualLifeTime Value="true"/>
+			<MeshFile Value="sanmei.mesh"/>
+			<OrientationOffset Value="0.707 0.707 0 0"/>
+			<PositionOffset Value="0 0 -0"/>
+			<Serializeable Value="true"/>
+			<StartTime Value="0"/>
+			<SubMaterials Value=""/>
+			<PlayAnimationName Value="sanmei"/>
+			<LoopAnimation Value="true"/>
+			<StartPlayAnimationTime Value="0"/>
+		</EffectElement>
+	</Effect>
+
+
+
+</SpecialEffects>

@@ -1,0 +1,14 @@
+
+material MAT_SKY_BALL
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			cull_software none
+			specular 0 0 0 0
+			ambient 0 0 0 0
+		}
+	}
+}

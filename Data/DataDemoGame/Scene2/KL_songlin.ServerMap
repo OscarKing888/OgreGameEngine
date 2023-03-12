@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GameObjects>
+    <SceneInfo Name="SceneInfo">
+        <MapHeight Value="51200" />
+        <MapWidth Value="51200" />
+    </SceneInfo>
+    <Teleport Name="Teleport-2009-02-10-13-55-31-0">
+        <DisplayEditorObjectInGame Value="false" />
+        <EnabledAnimations Value="idle" />
+        <Flag Value="" />
+        <GUID Value="0" />
+        <MeshFile Value="chuansong.mesh" />
+        <Name Value="Teleport-2009-02-10-13-55-31-0" />
+        <Orientation Value="1 0 0 0" />
+        <Position Value="5686.63 -1625.77 8180.7" />
+        <Scale Value="5 5 5" />
+        <Serializeable Value="true" />
+        <ShowBoundingBox Value="false" />
+        <ShowCollisionBox Value="true" />
+        <Size Value="600 600 600" />
+        <TargetPosition Value="36031 -3136 25571" />
+        <TargetSceneName Value="XQ_zhucheng" />
+        <TriggerMask Value="0" />
+        <VisibilityFlag Value="1" />
+        <Visible Value="true" />
+    </Teleport>
+</GameObjects>

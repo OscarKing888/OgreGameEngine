@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="DefaultWindow" Name="TargetFrame" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,220},{0,0},{0,472},{0,90}}" />
+        <Window Type="FengshenMMO/StaticImageNULL" Name="TargetFrame_CampFrame1" >
+            <Property Name="Image" Value="set:CommonFrame3 image:TragetCamp" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,25},{0,87}}" />
+        </Window>
+        <Window Type="FengshenMMO/StaticImageNULL" Name="TargetFrame2" >
+            <Property Name="Image" Value="set:CommonFrame3 image:TragetFrame" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,25},{0,0},{0,207},{0,73}}" />
+            <Window Type="FengshenMMO/Label" Name="TargetFrame_LevelText" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,69},{0,48},{0,99},{0,62}}" />
+                <Property Name="HorzFormat" Value="CentreAligned"/>
+            </Window>
+            <Window Type="FengshenMMO/MainFrameNULL" Name="TargetFrame_DataBack" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,29},{0,125},{0,47}}" />
+                <Window Type="FengshenMMO/ProgressPropertyRed" Name="TargetFrame_HP" >
+                    <Property Name="StepSize" Value="0.01" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="CurrentProgress" Value="0" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0,5}}" />
+                </Window>
+                <Window Type="FengshenMMO/ProgressPropertyBlue" Name="TargetFrame_MP" >
+                    <Property Name="StepSize" Value="0.01" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="CurrentProgress" Value="0" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{1,0},{0,11}}" />
+                </Window>
+                <Window Type="FengshenMMO/ProgressPropertyYellow" Name="TargetFrame_SP" >
+                    <Property Name="StepSize" Value="0.01" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="CurrentProgress" Value="0" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{1,0},{0,17}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TargetFrame_NameBar" >
+                <Property Name="Image" Value="set:CommonStaticImage3 image:Targetname_Bak" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,2},{0,11},{0,124},{0,27}}" />
+                <Window Type="FengshenMMO/Label" Name="TargetFrame_Name" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="HorzFormat" Value="CentreAligned"/>
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="TargetFrame_Icon" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,128},{0,11},{0,176},{0,59}}" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

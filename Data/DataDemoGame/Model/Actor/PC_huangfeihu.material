@@ -1,0 +1,140 @@
+
+material MAT_PC_huangfeihu_face_cangsang
+{
+	technique
+	{
+		pass
+		{
+			
+			cull_hardware none
+                        emissive 0.2 0.2 0.2 1
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_huangfeihu_face_cangsang.tga
+			}
+		}
+
+	}
+
+}
+
+material MAT_PC_huangfeihu_body_qingliang
+{
+	technique
+	{
+		pass
+		{
+			
+			cull_hardware none
+			specular 0.2 0.2 0.2 1 10
+                        emissive 0.2 0.2 0.2 1
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_huangfeihu_body_qingliang.tga
+			}
+		}
+
+	}
+
+}
+
+material MAT_PC_huangfeihu_hair_duanfa
+{
+	technique
+	{
+		pass
+		{			
+			emissive 0.2 0.2 0.2 1
+                        alpha_rejection greater 180
+			cull_hardware none
+
+			texture_unit
+			{
+				texture PC_huangfeihu_hair_duanfa.tga
+			}
+		}
+
+		pass
+		{
+		
+			scene_blend alpha_blend
+			
+			cull_hardware none
+
+			texture_unit
+			{
+				texture PC_huangfeihu_hair_duanfa.tga
+			}
+		}
+
+	}
+
+}
+
+material MAT_PC_huangfeihu_hair_xianhua
+{
+	technique
+	{
+		pass
+		{
+			specular 0.4 0.4 0.4 1 10
+                        emissive 0.2 0.2 0.2 1
+			scene_blend src_alpha one_minus_dest_alpha
+			alpha_rejection greater 180
+			cull_hardware none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_huangfeihu_hair_xianhua.tga
+			}
+		}
+
+	}
+
+}
+
+material MAT_PC_huangfeihu_face_shuaiqi
+{
+	technique
+	{
+		pass
+		{
+			
+			cull_hardware none
+			specular 0.2 0.2 0.2 1 10
+                        emissive 0.2 0.2 0.2 1
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_huangfeihu_face_shuaiqi.tga
+			}
+		}
+
+	}
+
+}
+
+material MAT_PC_huangfeihu_body_xianhua
+{
+	technique
+	{
+		pass
+		{
+			specular 0.2 0.2 0.2 1 10
+                        emissive 0.2 0.2 0.2 1
+			cull_hardware none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_huangfeihu_body_xianhua.tga
+			}
+		}
+
+	}
+
+}

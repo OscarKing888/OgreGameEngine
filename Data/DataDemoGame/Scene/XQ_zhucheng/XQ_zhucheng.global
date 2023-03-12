@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<GameObjects>
+    <SceneEnvironment GUID="FFFFFFFFFFFF0003">
+        <AmbientLight Value="0.49 0.49 0.49 1" />
+        <DisplaySceneNodes Value="false" />
+        <FindVisibleObjects Value="true" />
+        <FlipCullingOnNegativeScale Value="true" />
+        <FogColour Value="1 1 1 1" />
+        <FogDensity Value="0.001" />
+        <FogEnd Value="1" />
+        <FogStart Value="0" />
+        <FogType Value="None" />
+        <ShadowCasterRenderBackFaces Value="false" />
+        <ShadowColour Value="0 0 0 1" />
+        <ShadowDirLightTextureOffset Value="0.6" />
+        <ShadowDirectionalLightExtrusionDistance Value="10000" />
+        <ShadowFarDistance Value="60000" />
+        <ShadowIndexBufferSize Value="51200" />
+        <ShadowTechnique Value="TextureAdditiveIntegrated" />
+        <ShadowTextureCasterMaterial Value="" />
+        <ShadowTextureCount Value="3" />
+        <ShadowTextureFadeEnd Value="0.9" />
+        <ShadowTextureFadeStart Value="0.7" />
+        <ShadowTextureReceiverMaterial Value="" />
+        <ShadowTextureSelfShadow Value="false" />
+        <ShadowTextureSize Value="512" />
+        <ShadowUseInfiniteFarPlane Value="true" />
+        <ShadowUseLightClipPlanes Value="false" />
+        <ShowBoundingBoxes Value="false" />
+        <ShowDebugShadows Value="false" />
+    </SceneEnvironment>
+    <SkyBox GUID="FFFFFFFFFFFF0004">
+        <SkyBoxMaterial Value="DefaultSkyBox" />
+        <SkyDistance Value="5000" />
+        <SkyDomeCurvature Value="10" />
+        <SkyDomeMaterial Value="DefaultSkyDome" />
+        <SkyDomeTiling Value="8" />
+        <SkyDomeXSegments Value="16" />
+        <SkyDomeYSegments Value="16" />
+        <SkyDomeYSegmentsKeep Value="-1" />
+        <SkyPlaneBow Value="0" />
+        <SkyPlaneMaterial Value="DefaultSkyPlane" />
+        <SkyPlaneScale Value="1000" />
+        <SkyPlaneTiling Value="10" />
+        <SkyPlaneXSegments Value="1" />
+        <SkyPlaneYSegments Value="1" />
+        <SkyType Value="Box" />
+    </SkyBox>
+    <MainLight GUID="FFFFFFFFFFFF0005">
+        <AttenuationConstant Value="1" />
+        <AttenuationLinear Value="0" />
+        <AttenuationQuadric Value="0" />
+        <AttenuationRange Value="2000" />
+        <DiffuseColour Value="1 1 1 1" />
+        <Direction Value="0.562809 -0.306987 0.767467" />
+        <DisplayEditorObjectInGame Value="false" />
+        <GUID Value="FFFFFFFFFFFF0005" />
+        <LightType Value="Directional" />
+        <On Value="true" />
+        <Pitch Value="-0" />
+        <Position Value="0 0 0" />
+        <PowerScale Value="1" />
+        <Roll Value="0" />
+        <Scale Value="1 1 1" />
+        <Serializeable Value="true" />
+        <ShowBoundingBox Value="false" />
+        <SpecularColour Value="0.4 0.4 0.4 1" />
+        <SpotlightFalloff Value="1" />
+        <SpotlightInnerAngle Value="0.523599" />
+        <SpotlightOuterAngle Value="0.698132" />
+        <TriggerMask Value="FFFFFFFF" />
+        <VisibilityFlag Value="1" />
+        <Visible Value="true" />
+        <Yaw Value="0" />
+    </MainLight>
+</GameObjects>

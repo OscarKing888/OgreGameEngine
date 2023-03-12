@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="FengshenMMO/ButtonAction" Name="ButtonAction" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,73},{0,63},{0,682},{0,398}}" />
+        <Window Type="FengshenMMO/ButtonCommon" Name="ButtonAction/" >
+            <Property Name="Text" Value="开始游戏" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,127},{0,87},{0,208},{0,114}}" />
+        </Window>
+        <Window Type="FengshenMMO/ButtonCommon2" Name="ButtonAction/2" >
+            <Property Name="Text" Value="d得到" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,134},{0,151},{0,218},{0,178}}" />
+        </Window>
+    </Window>
+</GUILayout>

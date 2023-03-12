@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FrameAnimation>
+	<FrameAni_Wave_Org ImageName="set:WaveAni_Org image:Wave_Org" TotalFrames="5" FrameAnimationType="Loop">
+		<DelayEach Time="0.15"/>
+	</FrameAni_Wave_Org>
+	
+  	<ChongNeng ImageName="set:ChongNeng image:1" TotalFrames="3" FrameAnimationType="Loop">
+    		<DelayEach Time="0.06"/>
+    		<Delay FrameNumber="0" Time="0.2"/>
+  	</ChongNeng> 
+  	
+</FrameAnimation>

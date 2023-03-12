@@ -1,0 +1,144 @@
+<?xml version="1.0"?>
+<GUIScheme Name="FengshenMMO">
+	<!-- 这里添加字库配置。 -->
+	<Font Name="SongTi" Filename="SongTi.font"/>
+	<Font Name="WeiBei" Filename="WeiBei.font"/>
+	<Font Name="LiSu" Filename="LiSu.font"/>
+	<!--Font Name="SIMLI" Filename="SIMLI.TTF"/-->	
+
+	<WindowSet Filename="CEGUIFalagardWRBase"/>
+
+	<!-- 可以使用多个.looknfeel文件，如果控件过多，可以分类到不同文件中。 -->
+	<LookNFeel Filename="FengshenMMO.looknfeel"/>
+		
+	<!-- 这里Window类型映射，注意WindowType和LookNFeel的命名：命名不用加前缀，LookNFeel要和.looknfeel文件中命名一致。 -->
+	<!-- 通用actionbutton -->
+	<FalagardMapping WindowType="FengshenMMO/ButtonAction" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="ButtonAction"/>
+	<!-- 通用按钮 -->
+	<FalagardMapping WindowType="FengshenMMO/ButtonCommon" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="ButtonCommon"/>
+	<FalagardMapping WindowType="FengshenMMO/ButtonCommon2" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="ButtonCommon2"/>
+	<!-- 通用边框 -->
+	<FalagardMapping WindowType="FengshenMMO/MainFrameWindow0" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainFrameWindow0"/>
+	<FalagardMapping WindowType="FengshenMMO/MainFrameWindow1" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainFrameWindow1"/>
+	<FalagardMapping WindowType="FengshenMMO/MainFrameWindow2" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainFrameWindow2"/>
+	<FalagardMapping WindowType="FengshenMMO/MainFrameWindow3" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainFrameWindow3"/>
+	<FalagardMapping WindowType="FengshenMMO/MainFrameWindow4" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainFrameWindow4"/>
+  <FalagardMapping WindowType="FengshenMMO/MainFrameWindow5" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainFrameWindow5"/>
+	<FalagardMapping WindowType="FengshenMMO/Default" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="CommonFrame"/>
+	<FalagardMapping WindowType="FengshenMMO/FramePlayer" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="FramePlayer"/>
+	<FalagardMapping WindowType="FengshenMMO/Frame_Lace5" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="Frame_Lace5"/>
+	<FalagardMapping WindowType="FengshenMMO/Frame_Lace2" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="Frame_Lace2"/>
+	<FalagardMapping WindowType="FengshenMMO/Frame_Lace1" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="Frame_Lace1"/>
+	<FalagardMapping WindowType="FengshenMMO/FramePlayerOther" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="FramePlayerOther"/>
+	
+	<FalagardMapping WindowType="FengshenMMO/SimpleMulitiTextFrame" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="SimpleMulitiTextFrame"/>
+	<!--背景-->
+	<FalagardMapping WindowType="FengshenMMO/MainFrameNULL" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainFrameNULL"/>
+	<FalagardMapping WindowType="FengshenMMO/Titlebar" TargetType="CEGUI/Titlebar" Renderer="Falagard/Default" LookNFeel="TitleBar"/>
+	<FalagardMapping WindowType="FengshenMMO/ImageButton" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="ImageButton"/>
+	<FalagardMapping WindowType="FengshenMMO/ActionButton" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="ActionButton"/>
+	<FalagardMapping WindowType="FengshenMMO/StaticImageNULL" TargetType="DefaultWindow" Renderer="Falagard/StaticImage" LookNFeel="StaticImage"/>
+	<FalagardMapping WindowType="FengshenMMO/MainMenuBarCenter" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainMenuBarCenter"/>
+	<FalagardMapping WindowType="FengshenMMO/MainMenuBarLeft" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainMenuBarLeft"/>
+	<FalagardMapping WindowType="FengshenMMO/MainMenuBarRight" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainMenuBarRight"/>
+	<FalagardMapping WindowType="FengshenMMO/MainFrameLace2" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MainFrameLace2"/>
+	<FalagardMapping WindowType="FengshenMMO/ChatPanel" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="ChatPanel"/>
+	<FalagardMapping WindowType="FengshenMMO/Label" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="Label"/>	
+	<FalagardMapping WindowType="FengshenMMO/MultiLabel" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="MultiLabel"/>
+	<FalagardMapping WindowType="FengshenMMO/LabelLeft" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="LabelLeft"/>
+	<FalagardMapping WindowType="FengshenMMO/LabelRight" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="LabelRight"/>
+	<!--道具-->
+	<FalagardMapping WindowType="FengshenMMO/DragItem" TargetType="DragContainer" Renderer="Falagard/StaticImage" LookNFeel="DragItem"/>
+	
+	<FalagardMapping WindowType="FengshenMMO/SystemButton" TargetType="CEGUI/PushButton"  Renderer="Falagard/SystemButton" LookNFeel="ActionButton" />
+	<FalagardMapping WindowType="FengshenMMO/FrameTitlebar" TargetType="CEGUI/Titlebar" Renderer="Falagard/Titlebar" LookNFeel="FrameTitleBar"/>
+	<FalagardMapping WindowType="FengshenMMO/MainFrameFrameWindow" TargetType="CEGUI/FrameWindow" Renderer="Falagard/FrameWindow" LookNFeel="MainFrameFrameWindow"/>
+
+	<FalagardMapping WindowType="FengshenMMO/EditBoxNormal" TargetType="CEGUI/Editbox" Renderer="Falagard/Editbox" LookNFeel="Editbox"/>
+
+	<FalagardMapping WindowType="FengshenMMO/ButtonCheckForChatPage" TargetType="CEGUI/Checkbox" Renderer="Falagard/ToggleButton" LookNFeel=" ButtonCheckForChatPage"/>
+	<FalagardMapping WindowType="FengshenMMO/ScrollbarThumb_Common" TargetType="CEGUI/Thumb" Renderer="Falagard/Button" LookNFeel="ScrollbarThumb_Common"/>
+	<FalagardMapping WindowType="FengshenMMO/Scrollbar_Common" TargetType="CEGUI/Scrollbar" Renderer="Falagard/Scrollbar" LookNFeel="Scrollbar_Common"/>
+	<FalagardMapping WindowType="FengshenMMO/ChatHistory_ParentWindow" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="ChatHistory_ParentWindow"/>
+	<FalagardMapping WindowType="FengshenMMO/ChatFrame" TargetType="CEGUI/MultiLineEditbox" Renderer="Falagard/MultiLineEditbox" LookNFeel="ChatHistory"/>
+  <FalagardMapping WindowType="FengshenMMO/MultiLineEditboxEx" TargetType="CEGUI/MultiLineEditboxEx" Renderer="Falagard/MultiLineEditboxEx" LookNFeel="MultiLineEditboxEx" />
+	<FalagardMapping WindowType="FengshenMMO/ComboDropList" TargetType="CEGUI/ComboDropList" Renderer="Falagard/Listbox" LookNFeel="ComboDropList" />
+	<FalagardMapping WindowType="FengshenMMO/Combobox"	TargetType="CEGUI/Combobox"	 Renderer="Falagard/Default" LookNFeel="Combobox" />
+	<FalagardMapping WindowType="FengshenMMO/ListBoxCommon"	TargetType="CEGUI/Listbox"	 Renderer="Falagard/Listbox" LookNFeel="ListBoxCommon" />
+	
+	<FalagardMapping WindowType="FengshenMMO/ButtonPageDown" TargetType="CEGUI/Checkbox"    Renderer="Falagard/ToggleButton" LookNFeel="ButtonPageDown" />
+	<FalagardMapping WindowType="FengshenMMO/ButtonPageUp" TargetType="CEGUI/Checkbox"    Renderer="Falagard/ToggleButton" LookNFeel="ButtonPageUp" />
+	<FalagardMapping WindowType="FengshenMMO/ButtonCheck" TargetType="CEGUI/Checkbox"    Renderer="Falagard/ToggleButton" LookNFeel="ButtonRadio" />
+	
+	<FalagardMapping WindowType="FengshenMMO/ProgressPropertyRed"          TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="ProgressPropertyRed" />
+	<FalagardMapping WindowType="FengshenMMO/ProgressPropertyBlue"          TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="ProgressPropertyBlue" />
+	<FalagardMapping WindowType="FengshenMMO/ProgressPropertyGreen"          TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="ProgressPropertyGreen" />
+	<FalagardMapping WindowType="FengshenMMO/ProgressPropertyWhite"          TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="ProgressPropertyWhite" />
+	<FalagardMapping WindowType="FengshenMMO/ProgressPropertyYellow"          TargetType="CEGUI/ProgressBar" Renderer="Falagard/ProgressBar" LookNFeel="ProgressPropertyYellow" />
+	<FalagardMapping WindowType="FengshenMMO/Tree" TargetType="CEGUI/Tree"   Renderer="Falagard/Tree"   LookNFeel="Tree" />
+	
+	<!--HUD文字-->
+	<FalagardMapping WindowType="FengshenMMO/HUDTextLabel" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="HUDLabel"/>
+	<!--<FalagardMapping WindowType="FengshenMMO/HUDTextLabel" TargetType="CEGUI/PushButton" Renderer="Falagard/Button" LookNFeel="ButtonCommon"/>-->
+	<FalagardMapping WindowType="FengshenMMO/HUDNumber" TargetType="DefaultWindow" Renderer="Falagard/Default" LookNFeel="HUDNumber"/>
+	
+	<Imageset Name="MainGUI" Filename="MainGUI.imageset.xml"/>
+	<Imageset Name="CommonFrame" Filename="CommonFrame.imageset.xml"/>
+	<Imageset Name="CommonFrame2" Filename="CommonFrame2.imageset.xml"/>
+	<Imageset Name="CommonFrame3" Filename="CommonFrame3.imageset.xml"/>
+	<Imageset Name="CommonFrame4" Filename="CommonFrame4.imageset.xml"/>
+	<Imageset Name="CommonFrame5" Filename="CommonFrame5.imageset.xml"/>
+	<Imageset Name="CommonFrame6" Filename="CommonFrame6.imageset.xml"/>
+	<Imageset Name="CommonFrame7" Filename="CommonFrame7.imageset.xml"/>
+	<Imageset Name="CommonItem" Filename="CommonItem.imageset.xml"/>
+	<Imageset Name="MiniMap" Filename="Minimap.imageset.xml"/>
+	<Imageset Name="Menpaishuxing" Filename="Menpaishuxing.imageset.xml"/>
+	<Imageset Name="Button1" Filename="Buttons1.imageset.xml"/>
+	<Imageset Name="Button2" Filename="Buttons2.imageset.xml"/>
+	<Imageset Name="Button3" Filename="Buttons3.imageset.xml"/>
+	<Imageset Name="Button4" Filename="Buttons4.imageset.xml"/>
+	<Imageset Name="Button5" Filename="Buttons5.imageset.xml"/>
+	<Imageset Name="Button6" Filename="Buttons6.imageset.xml"/>
+	<Imageset Name="Button7" Filename="Buttons7.imageset.xml"/>
+	<Imageset Name="Face_04" Filename="face_04.imageset.xml"/>
+	<Imageset Name="Icons0" Filename="Icons0.imageset.xml"/>
+	<Imageset Name="UIIcons" Filename="UIIcons.imageset.xml"/>
+	<Imageset Name="CommonStaticImage" Filename="CommonStaticImage.imageset.xml"/>
+	<Imageset Name="CommonStaticImage3" Filename="CommonStaticImage3.imageset.xml"/>
+	<Imageset Name="CommonStaticImage4" Filename="CommonStaticImage4.imageset.xml"/>
+	<Imageset Name="CommonStaticImage5" Filename="CommonStaticImage5.imageset.xml"/>
+	<Imageset Name="ButtonCampaign1" Filename="ButtonCampaign1.imageset.xml"/>
+	
+	<Imageset Name="Buttons" Filename="Buttons.imageset.xml"/>
+	<Imageset Name="Background1" Filename="background1.imageset.xml"/>
+	<Imageset Name="Background" Filename="background.imageset.xml"/>
+	<Imageset Name="stall07" Filename="stall07.imageset.xml"/>	
+	<Imageset Name="ScrollInfo_1" Filename="ScrollInfo_1.imageset.xml"/>
+	<Imageset Name="FightSkillShaoLin1" Filename="FightSkillShaoLin1.imageset.xml"/>
+	<Imageset Name="FightSkillShaoLin2" Filename="FightSkillShaoLin2.imageset.xml"/>
+    <ImagesetFromImage Name="LoginBack" Filename="../imagesets/common/LoginBack.png"/>
+    <ImagesetFromImage Name="WorldMap" Filename="../imagesets/common/WorldMap.png"/>
+    <ImagesetFromImage Name="FaceBack" Filename="../imagesets/Icons/FightSkillShaoLin1.jpg"/>
+    
+    <Imageset Name="Ring" Filename="Ring.imageset.xml"/>
+    <Imageset Name="Shoulder" Filename="Shoulder.imageset.xml"/>
+    <Imageset Name="Arm" Filename="Arm.imageset.xml"/>
+	<Imageset Name="Cuff1" Filename="Cuff1.imageset.xml"/>
+	<Imageset Name="Girdle2" Filename="Girdle2.imageset.xml"/>
+	<Imageset Name="Shoes1" Filename="Shoes1.imageset.xml"/>
+	<Imageset Name="Amulet1" Filename="Amulet1.imageset.xml"/>
+	<Imageset Name="Hat1" Filename="Hat1.imageset.xml"/>
+	<Imageset Name="Annulus1" Filename="Annulus1.imageset.xml"/>
+	<Imageset Name="Cloth1" Filename="Cloth1.imageset.xml"/>
+	<Imageset Name="Necklace2" Filename="Necklace2.imageset.xml"/>
+	<Imageset Name="Ride1" Filename="Ride1.imageset.xml"/>
+	<Imageset Name="Food2" Filename="Food2.imageset.xml"/>
+	<Imageset Name="GirlProtagonist" Filename="GirlProtagonist.imageset.xml"/>
+	<Imageset Name="ManProtagonist" Filename="ManProtagonist.imageset.xml"/>
+	<Imageset Name="Tools" Filename="Tools.imageset.xml"/>
+	<Imageset Name="NPC" Filename="NPC.imageset.xml"/>
+	<Imageset Name="MiniMap_Arrow2" Filename="MiniMap_Arrow2.imageset.xml"/>
+	
+	<Imageset Name="TempTree" Filename="TempTree.imageset"/>
+	
+</GUIScheme>

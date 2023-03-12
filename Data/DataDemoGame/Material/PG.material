@@ -1,0 +1,115 @@
+import * from "RootMaterial.material"
+
+
+material PG_pizhangpeng01_Shader/ogre_PG_pizhangpeng01_01_Shader : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_pizhangpeng01.dds
+}
+
+
+material PG_pizhangpeng01_Shader/ogre_PG_pizhangpeng01_02_Shader : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_pizhangpeng03.dds
+}
+
+
+material PG_Room/PG_Room_s1 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_shitou_01.dds
+}
+
+
+
+material PG_Room/PG_Room_s2 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_shitou_02.dds
+}
+
+
+material PG_Room/PG_Room_s3 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_shitou_03.dds
+}
+
+
+material PG_Room/PG_Room_s4 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_shitou_04.dds
+}
+
+
+material PG_pizhangpeng02_Shader : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_pizhangpeng02.dds
+}
+
+
+material PG_shengshan_Shader/ogre_PG_shengshan_Shader_01 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_shengshan_01.dds
+}
+
+
+material PG_shengshan_Shader/ogre_PG_shengshan_Shader_02 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_shengshan_04.dds
+}
+
+
+
+material PG_shengshan_Shader/ogre_PG_shengshan_Shader_03 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_shengshan_03.dds
+}
+
+
+material PG_shengshan_Shader/ogre_PG_shengshan_Shader_04 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_shengshan_02.dds
+}
+
+
+
+material PG_shengshan_Shader/ogre_PG_shengshan_Shader_05 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_shengshan_05.dds
+}
+
+
+
+material PG_gutou_Shader : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_gutou_01.dds
+}
+
+
+material PG_Room/PG_Room_s5 : TMasked
+{
+	set_texture_alias <DiffuseMap> PG/PG_shitou_05.dds
+}
+
+
+material PG_pizhangpeng03_Shader_01 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/Room01_Tooch_03.dds
+}
+
+
+material PG_pizhangpeng03_Shader_02 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_pizhangpeng04.dds
+}
+
+
+material PG_pizhangpeng03_Shader_03 : TOpaque
+{
+	set_texture_alias <DiffuseMap> PG/PG_pizhangpeng06.dds
+}
+
+
+material PG_pizhangpeng03_Shader_04 : TMasked
+{
+	set_texture_alias <DiffuseMap> PG/PG_pizhangpeng05.dds
+}
+
+

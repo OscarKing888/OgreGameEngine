@@ -1,0 +1,26 @@
+
+material linghu
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			//ambient 0 0 0 1
+			specular 0 0 0 1 10
+			emissive 0.4 0.4 0.4 1
+			//scene_blend dest_alpha one_minus_src_alpha
+			alpha_rejection greater 180
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture fox_f.tga
+			}
+		}
+
+	}
+
+}

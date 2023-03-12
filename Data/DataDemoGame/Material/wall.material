@@ -1,0 +1,47 @@
+
+material wall4
+{
+	technique
+	{
+		pass
+		{
+			ambient 0.588235 0.588235 0.588235 1
+			diffuse 0.588235 0.588235 0.588235 1
+			specular 0 0 0 1 10
+
+			vertex_program_ref tutorial_BumpMap_vs
+			{
+				param_named_auto view_proj_matrix worldviewproj_matrix
+				param_named_auto light_position light_position_object_space 0
+				param_named_auto eye_position camera_position_object_space
+				param_named_auto inv_view_matrix inverse_worldview_matrix
+			}
+
+			fragment_program_ref tutorial_BumpMap_ps
+			{
+				param_named_auto specular light_specular_colour 0
+				param_named Ka float 0.3
+				param_named Kd float 1
+				param_named Ks float 1
+				param_named specular_power float 64
+				param_named bumpiness float 1
+				param_named_auto ambient ambient_light_colour
+				param_named_auto diffuse light_diffuse_colour 0
+			}
+
+			texture_unit
+			{
+				texture_alias Map #1
+				texture rockwall.tga
+			}
+
+			texture_unit
+			{
+				texture_alias Map #2
+				texture rockwall_NH.tga
+			}
+		}
+
+	}
+
+}

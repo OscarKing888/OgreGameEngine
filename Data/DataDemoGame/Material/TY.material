@@ -1,0 +1,43 @@
+import * from "RootMaterial.material"
+
+
+material XQ_Xiangzi001_Shader : TOpaque
+{
+	set_texture_alias <DiffuseMap> TY/XQ_XiangZi_Tex.dds
+}
+
+
+material XQ_MaTong_Shader : TOpaque
+{
+	set_texture_alias <DiffuseMap> TY/XQ_MaTong.dds
+}
+
+
+material TY_Woods01_Shader : TMasked
+{
+	set_texture_alias <DiffuseMap> TY/TY_Woods01.dds
+}
+
+
+material TY_Gate01_Shader : TOpaque
+{
+	set_texture_alias <DiffuseMap> TY/TY_Gate01.dds
+}
+
+
+material TY_PaiBian01_Shader : TOpaque
+{
+	set_texture_alias <DiffuseMap> TY/TY_PaiBian001_Tex.dds
+}
+
+
+material TY_DiTan01_Shader : TMasked
+{
+	set_texture_alias <DiffuseMap> TY/TY_DiTan001_Tex.dds
+}
+
+
+material TY_QiZi001_Shader : TMasked
+{
+	set_texture_alias <DiffuseMap> TY/TY_QiZi001.dds
+}

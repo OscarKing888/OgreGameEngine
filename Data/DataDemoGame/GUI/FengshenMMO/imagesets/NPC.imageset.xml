@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Imageset Name="NPC" Imagefile="Icons/NPC.Png" NativeHorzRes="1024" NativeVertRes="768" AutoScaled="true">
+	<Image Name="Boss" XPos="1" YPos="1" Width="46" Height="46"/>
+	<Image Name="Fox" XPos="49" YPos="1" Width="46" Height="46"/>
+	<Image Name="Leader" XPos="1" YPos="49" Width="46" Height="46"/>
+	<Image Name="Scorpion" XPos="49" YPos="49" Width="46" Height="46"/>
+	<Image Name="XiaoXue" XPos="1" YPos="97" Width="46" Height="46"/>
+</Imageset>

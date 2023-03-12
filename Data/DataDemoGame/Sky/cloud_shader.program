@@ -1,0 +1,25 @@
+vertex_program cloud_vs hlsl
+{
+	source cloud_shader.hlsl
+	entry_point cloud_vs
+	target vs_2_0
+	
+	default_params
+	{
+		param_named_auto wvp_matrix worldviewproj_matrix
+	}
+}
+
+fragment_program cloud_ps hlsl
+{
+	source cloud_shader.hlsl
+	entry_point cloud_ps
+	target ps_2_0
+	default_params
+	{
+		param_named vCloudDir float3 1.0 0.0 0.0
+		param_named vCloud float4 1 3.0 -1.3 0.0
+		param_named vClr float4 1.0 1.0 1.0 1.0
+		param_named_auto fTime time_0_1 10
+	}
+}

@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="FengshenMMO/MainFrameFrameWindow" Name="SelfEquip_Frame" >
+        <Property Name="FrameEnabled" Value="False" />
+        <Property Name="TitlebarFont" Value="WeiBei" />
+        <Property Name="SizingEnabled" Value="False" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="TitlebarEnabled" Value="True" />
+        <Property Name="Text" Value="装备" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0.12,0},{0,379},{0.12,402}}" />
+        <!--
+        <Window Type="FengshenMMO/Titlebar" Name="SelfEquip_DragTitle" >
+            <Property Name="Font" Value="WeiBei" />
+            <Property Name="Text" Value="装备" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,108},{0,11},{1,-47},{0,31}}" />
+        </Window>-->
+        <Window Type="FengshenMMO/MainFrameWindow3" Name="SelfEquip_MainFrame" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,360},{0,402}}" />
+            <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_Help" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnHelp_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnHelp_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnHelp_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,88},{0,14},{0,102},{0,28}}" />
+            </Window>
+            <Window Type="FengshenMMO/ImageButton" Name="SelfEquip_Close" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnClose_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnClose_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnClose_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-19},{0,14},{1,-5},{0,28}}" />
+            </Window>
+            <Window Type="FengshenMMO/Default" Name="SelfEquip_Frame_Client" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,10},{0,35},{1,-4},{1,-25}}" />
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_1" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Cap" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Cap" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Cap" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,34},{0,34}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_1_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_2" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Shoulder" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Shoulder" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Shoulder" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,34},{0,34},{0,68}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_2_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_3" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Wrist" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Wrist" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Wrist" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,68},{0,34},{0,102}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_3_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_4" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Hand" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Hand" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Hand" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,102},{0,34},{0,136}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_4_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_5" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Sash" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Sash" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Sash" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,136},{0,34},{0,170}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_5_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_6" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Shot" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Shot" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Shot" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,170},{0,34},{0,204}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_6_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_7" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Ring" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Ring" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Ring" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,204},{0,34},{0,238}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_7_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_8" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Ring" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Ring" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Ring" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,238},{0,34},{0,272}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_8_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_9" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Pifeng" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Pifeng" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Pifeng" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,272},{0,34},{0,306}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_9_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_10" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Pifeng" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Pifeng" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Pifeng" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,306},{0,34},{0,340}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_10_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_11" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Weapon" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Weapon" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Weapon" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,34},{0,0},{0,68},{0,34}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_11_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_12" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Armo" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Armo" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Armo" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,68},{0,0},{0,102},{0,34}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_12_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_13" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Nacket" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Nacket" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Nacket" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,102},{0,0},{0,136},{0,34}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_13_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_14" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Rade" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Rade" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Rade" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,136},{0,0},{0,170},{0,34}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_14_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_15" >
+                    <Property Name="HoverImage" Value="set:UIIcons image:Equip_Cloth" />
+                    <Property Name="NormalImage" Value="set:UIIcons image:Equip_Cloth" />
+                    <Property Name="PushedImage" Value="set:UIIcons image:Equip_Cloth" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,189},{0,0},{0,223},{0,34}}" />
+                    <Window Type="FengshenMMO/DragItem" Name="SelfEquip_15_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind_Bak" />
+                        <Property Name="DragAlpha" Value="0.5" />
+                        <Property Name="DragThreshold" Value="8" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ButtonCheck" Name="SelfEquip_Mode" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,174},{0,10},{0,186},{0,22}}" />
+                </Window>
+                <Window Type="FengshenMMO/FramePlayer" Name="SelfEquip_FakeObject_Frame" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,37},{0,35},{0.535,37},{0.78,35}}" />
+                    <Window Type="FengshenMMO/StaticImageNULL" Name="SelfEquip_FakeObject" >
+                        <Property Name="HorzFormatting" Value="CentreAligned" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="VertFormatting" Value="CentreAligned" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.043243,0},{0.041199,0},{0.962162,0},{0.917604,0}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/StaticImageNULL" Name="SelfEquip_IceFastness" >
+                        <Property Name="Image" Value="set:UIIcons image:Ice_Repellency_Normal" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.3,0},{1,-17},{0.3,16},{1,-1}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/StaticImageNULL" Name="SelfEquip_FireFastness" >
+                        <Property Name="Image" Value="set:UIIcons image:Fire_Repellency_Normal" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.4,0},{1,-17},{0.4,16},{1,-1}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/StaticImageNULL" Name="SelfEquip_ThunderFastness" >
+                        <Property Name="Image" Value="set:UIIcons image:Thunder_Repellency_Normal" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.5,0},{1,-17},{0.5,16},{1,-1}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/StaticImageNULL" Name="SelfEquip_PoisonFastness" >
+                        <Property Name="Image" Value="set:UIIcons image:Poison_Repellency_Normal" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.6,0},{1,-17},{0.6,16},{1,-1}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_Model_TurnLeft" >
+                        <Property Name="HoverImage" Value="set:Button1 image:BtnTrunLeft_Hover" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="NormalImage" Value="set:Button1 image:BtnTrunLeft_Normal" />
+                        <Property Name="PushedImage" Value="set:Button1 image:BtnTrunLeft_Pushed" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.05,0},{0.82,0},{0.05,25},{0.82,25}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_Model_TurnRight" >
+                        <Property Name="HoverImage" Value="set:Button1 image:BtnTrunRight_Hover" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="NormalImage" Value="set:Button1 image:BtnTrunRight_Normal" />
+                        <Property Name="PushedImage" Value="set:Button1 image:BtnTrunRight_Pushed" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.81,0},{0.82,0},{0.81,25},{0.82,25}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Level" >
+                        <Property Name="Text" Value="52" />
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.03,0},{0.03,0},{0.203,0},{0.03,18}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_MenPai" >
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0.8,-5},{0.03,0},{1,-5},{0.03,18}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Energy1_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.111,0},{1,-40},{0.401,0},{1,-20}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Energy1Name" >
+                        <Property Name="Text" Value="体力:" />
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-65},{1,0}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Vigor" >
+                        <Property Name="Text" Value="10" />
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{1,-65},{0,0},{1,-5},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Energy2_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.111,0},{1,-20},{0.401,0},{1,0}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Energy2Name" >
+                        <Property Name="Text" Value="精力:" />
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-65},{1,0}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Energy" >
+                        <Property Name="Text" Value="10" />
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{1,-65},{0,0},{1,-5},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Exp1_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.4,2},{1,-40},{0.89,0},{1,-20}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Exp1Name" >
+                        <Property Name="Text" Value="升级经验:" />
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-105},{1,0}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Exp1" >
+                        <Property Name="Text" Value="10" />
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{1,-105},{0,0},{1,-5},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Exp2_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.4,2},{1,-20},{0.89,0},{1,0}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Exp2Name" >
+                        <Property Name="Text" Value="拥有经验:" />
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-105},{1,0}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Exp2" >
+                        <Property Name="Text" Value="10" />
+                        <Property Name="HorzFormat" Value="CentreAligned" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{1,-105},{0,0},{1,-5},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_HP_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0,0},{1,0},{0,20}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_HP_Name" >
+                        <Property Name="Text" Value="血:" />
+                        <Property Name="HorzFormat" Value="LeftCentred" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,25},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_HP" >
+                    <Property Name="Text" Value="80/100" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.73,0},{0,0},{0.98,0},{0,20}}" />
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_MP_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0,20},{1,0},{0,40}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_MP_Name" >
+                        <Property Name="Text" Value="气:" />
+                        <Property Name="HorzFormat" Value="LeftCentred" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,25},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_MP" >
+                    <Property Name="Text" Value="80/100" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.73,0},{0,20},{0.98,0},{0,40}}" />
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_SP_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0,40},{1,0},{0,60}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_SP_Name" >
+                        <Property Name="Text" Value="怒:" />
+                        <Property Name="HorzFormat" Value="LeftCentred" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,25},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_SP" >
+                    <Property Name="Text" Value="80/100" />
+                    <Property Name="HorzFormat" Value="CentreAligned" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.73,0},{0,40},{0.98,0},{0,60}}" />
+                </Window>
+                <Window Type="FengshenMMO/Frame_Lace2" Name="SelfEquip_Bk2" >
+                    <Property Name="Text" Value="80/100" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.9,0},{0,60},{1,0},{0,151}}" />
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Str_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0,60},{0.9,0},{0,78}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Str_Name" >
+                        <Property Name="Text" Value="强壮:" />
+                        <Property Name="HorzFormat" Value="LeftCentred" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,38},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_Str" >
+                    <Property Name="Text" Value="100" />
+                    <Property Name="HorzFormat" Value="RightAligned" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.77,0},{0,60},{0.9,-5},{0,78}}" />
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Nimbus_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0,78},{0.9,0},{0,96}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Nimbus_Name" >
+                        <Property Name="Text" Value="仙骨:" />
+                        <Property Name="HorzFormat" Value="LeftCentred" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,38},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_Nimbus" >
+                    <Property Name="Text" Value="100" />
+                    <Property Name="HorzFormat" Value="RightAligned" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.77,0},{0,78},{0.9,-5},{0,96}}" />
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_PhysicalStrength_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0,96},{0.9,0},{0,114}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_PhysicalStrength_Name" >
+                        <Property Name="Text" Value="体术:" />
+                        <Property Name="HorzFormat" Value="LeftCentred" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,38},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_PhysicalStrength" >
+                    <Property Name="Text" Value="100" />
+                    <Property Name="HorzFormat" Value="RightAligned" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.77,0},{0,96},{0.9,-5},{0,114}}" />
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Stability_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0,114},{0.9,0},{0,132}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Stability_Name" >
+                        <Property Name="Text" Value="忍术:" />
+                        <Property Name="HorzFormat" Value="LeftCentred" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,38},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_Stability" >
+                    <Property Name="Text" Value="100" />
+                    <Property Name="HorzFormat" Value="RightAligned" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.77,0},{0,114},{0.9,-5},{0,132}}" />
+                </Window>
+                <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Footwork_Text_Text" >
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0,132},{0.9,0},{0,150}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_Footwork_Name" >
+                        <Property Name="Text" Value="敏捷:" />
+                        <Property Name="HorzFormat" Value="LeftCentred" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,0},{0,38},{1,0}}" />
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_Footwork" >
+                    <Property Name="Text" Value="100" />
+                    <Property Name="HorzFormat" Value="RightAligned" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.77,0},{0,132},{0.9,-5},{0,150}}" />
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_Potential_Text" >
+                    <Property Name="Text" Value="天资:" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,5},{0,150},{0.77,5},{0,168}}" />
+                </Window>
+                <Window Type="FengshenMMO/Label" Name="SelfEquip_Potential" >
+                    <Property Name="Text" Value="0" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.77,5},{0,150},{0.87,5},{0,168}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonCommon" Name="SelfEquip_Accept" >
+                    <Property Name="Text" Value="确定" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.9,0},{0,151},{1,0},{0,168}}" />
+                </Window>
+                <Window Type="FengshenMMO/Frame_Lace2" Name="SelfEquip_Bk3" >
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.65,0},{0,168},{1,0},{0,300}}" />
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_PerportyText_1" >
+                        <Property Name="Text" Value="攻击强度:" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,2},{0,65},{0,18}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Perporty1_Frame" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,2},{0,119},{0,18}}" />
+                        <Window Type="FengshenMMO/Label" Name="SelfEquip_Perporty1" >
+                            <Property Name="Text" Value="123456" />
+                            <Property Name="HorzFormat" Value="CentreAligned" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-2},{1,0}}" />
+                        </Window>
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_PerportyText_2" >
+                        <Property Name="Text" Value="仙术强度:" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,18},{0,65},{0,34}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Perporty2_Frame" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,18},{0,119},{0,34}}" />
+                        <Window Type="FengshenMMO/Label" Name="SelfEquip_Perporty2" >
+                            <Property Name="Text" Value="123456" />
+                            <Property Name="HorzFormat" Value="CentreAligned" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-2},{1,0}}" />
+                        </Window>
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_PerportyText_3" >
+                        <Property Name="Text" Value="冲击抵抗:" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,34},{0,65},{0,50}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Perporty3_Frame" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,34},{0,119},{0,50}}" />
+                        <Window Type="FengshenMMO/Label" Name="SelfEquip_Perporty3" >
+                            <Property Name="Text" Value="123456" />
+                            <Property Name="HorzFormat" Value="CentreAligned" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-2},{1,0}}" />
+                        </Window>
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_PerportyText_4" >
+                        <Property Name="Text" Value="仙术抵抗:" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,50},{0,65},{0,66}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Perporty4_Frame" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,50},{0,119},{0,66}}" />
+                        <Window Type="FengshenMMO/Label" Name="SelfEquip_Perporty4" >
+                            <Property Name="Text" Value="123456" />
+                            <Property Name="HorzFormat" Value="CentreAligned" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-2},{1,0}}" />
+                        </Window>
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_PerportyText_7" >
+                        <Property Name="Text" Value="命中:" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,66},{0,65},{0,82}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Perporty7_Frame" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,66},{0,119},{0,82}}" />
+                        <Window Type="FengshenMMO/Label" Name="SelfEquip_Perporty7" >
+                            <Property Name="Text" Value="123456" />
+                            <Property Name="HorzFormat" Value="CentreAligned" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-2},{1,0}}" />
+                        </Window>
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_PerportyText_6" >
+                        <Property Name="Text" Value="闪避:" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,82},{0,65},{0,98}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Perporty6_Frame" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,82},{0,119},{0,98}}" />
+                        <Window Type="FengshenMMO/Label" Name="SelfEquip_Perporty6" >
+                            <Property Name="Text" Value="123456" />
+                            <Property Name="HorzFormat" Value="CentreAligned" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-2},{1,0}}" />
+                        </Window>
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_PerportyText_5" >
+                        <Property Name="Text" Value="物理闪避:" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,98},{0,65},{0,114}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Perporty5_Frame" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,98},{0,119},{0,114}}" />
+                        <Window Type="FengshenMMO/Label" Name="SelfEquip_Perporty5" >
+                            <Property Name="Text" Value="123456" />
+                            <Property Name="HorzFormat" Value="CentreAligned" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-2},{1,0}}" />
+                        </Window>
+                    </Window>
+                    <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Perporty8_Frame" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,98},{0,119},{0,114}}" />
+                        <Window Type="FengshenMMO/Label" Name="SelfEquip_Perporty8" >
+                            <Property Name="Text" Value="123456" />
+                            <Property Name="HorzFormat" Value="CentreAligned" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-2},{1,0}}" />
+                        </Window>
+                    </Window>
+                    <Window Type="FengshenMMO/Label" Name="SelfEquip_PerportyText_9" >
+                        <Property Name="Text" Value="技能闪避:" />
+                        <Property Name="AlwaysOnTop" Value="True" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,5},{0,114},{0,65},{0,130}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/SimpleMulitiTextFrame" Name="SelfEquip_Perporty9_Frame" >
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,65},{0,114},{0,119},{0,130}}" />
+                        <Window Type="FengshenMMO/Label" Name="SelfEquip_Perporty9" >
+                            <Property Name="Text" Value="123456" />
+                            <Property Name="HorzFormat" Value="CentreAligned" />
+                            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                            <Property Name="UnifiedAreaRect" Value="{{0,2},{0,0},{1,-2},{1,0}}" />
+                        </Window>
+                    </Window>
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Addition_Button1" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnAdd_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnAdd_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnAdd_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.91,0},{0,62},{0.91,14},{0,78}}" />
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Addition_Button2" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnAdd_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnAdd_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnAdd_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.91,0},{0,80},{0.91,14},{0,94}}" />
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Addition_Button3" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnAdd_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnAdd_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnAdd_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.91,0},{0,98},{0.91,14},{0,112}}" />
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Addition_Button4" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnAdd_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnAdd_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnAdd_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.91,0},{0,116},{0.91,14},{0,130}}" />
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Addition_Button5" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnAdd_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnAdd_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnAdd_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.91,0},{0,134},{0.91,14},{0,148}}" />
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Decrease_Button1" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnSub_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnSub_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnSub_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.96,-2},{0,62},{0.96,12},{0,78}}" />
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Decrease_Button2" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnSub_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnSub_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnSub_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.96,-2},{0,80},{0.96,12},{0,94}}" />
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Decrease_Button3" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnSub_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnSub_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnSub_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.96,-2},{0,98},{0.96,12},{0,112}}" />
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Decrease_Button4" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnSub_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnSub_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnSub_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.96,-2},{0,116},{0.96,12},{0,130}}" />
+                </Window>
+                <Window Type="FengshenMMO/ActionButton" Name="Equip_Decrease_Button5" >
+                    <Property Name="HoverImage" Value="set:Button1 image:BtnSub_Hover" />
+                    <Property Name="AlwaysOnTop" Value="True" />
+                    <Property Name="NormalImage" Value="set:Button1 image:BtnSub_Normal" />
+                    <Property Name="PushedImage" Value="set:Button1 image:BtnSub_Pushed" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0.96,-2},{0,134},{0.96,12},{0,148}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/MainFrameNULL" Name="SelfEquip_Checkbox_Frame" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{1,-25},{0.9,8},{1,-1}}" />
+                <Window Type="FengshenMMO/ButtonPageDown" Name="SelfEquip_SelfEquip" >
+                    <Property Name="Text" Value="装备" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,42},{0,24}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonPageDown" Name="SelfEquip_SelfData" >
+                    <Property Name="Text" Value="资料" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,42},{0,0},{0,84},{0,24}}" />
+                </Window>
+                <Window Type="FengshenMMO/ButtonPageDown" Name="SelfEquip_Blog" >
+                    <Property Name="Text" Value="博客" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,84},{0,0},{0,126},{0,24}}" />
+                </Window>
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/StaticImageNULL" Name="SelfEquip_Levelup_Mask" >
+            <Property Name="Image" Value="set:Button5 image:BtnLevelup_Shine1" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{1,-46},{1,-63},{1,-23},{1,-6}}" />
+        </Window>
+        <Window Type="FengshenMMO/ActionButton" Name="SelfEquip_UpLevel" >
+            <Property Name="HoverImage" Value="set:Button5 image:BtnLevelup_Hover" />
+            <Property Name="AlwaysOnTop" Value="True" />
+            <Property Name="NormalImage" Value="set:Button5 image:BtnLevelup_Normal" />
+            <Property Name="PushedImage" Value="set:Button5 image:BtnLevelup_Pushed" />
+            <Property Name="DisabledImage" Value="set:Button5 image:BtnLevelup_Disabled" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{1,-64},{1,-76},{1,-4},{1,-5}}" />
+        </Window>
+    </Window>
+</GUILayout>

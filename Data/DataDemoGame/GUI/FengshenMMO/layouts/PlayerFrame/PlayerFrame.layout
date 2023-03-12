@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="FengshenMMO/MainFrameNULL" Name="PlayerFrame" >
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,191},{0,93}}" />
+        <Window Type="FengshenMMO/ActionButton" Name="PlayerFrame_ZhenShouZhengYou" >
+            <Property Name="HoverImage" Value="set:Menpaishuxing image:PetIcon_A3" />
+            <Property Name="NormalImage" Value="set:Menpaishuxing image:PetIcon_A1" />
+            <Property Name="PushedImage" Value="set:Menpaishuxing image:PetIcon_A2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,1},{0,64},{0,27},{0,90}}" />
+        </Window>
+        <Window Type="FengshenMMO/ActionButton" Name="PlayerFrame_huodongricheng" >
+            <Property Name="HoverImage" Value="set:Menpaishuxing image:HuoIcon_A3" />
+            <Property Name="NormalImage" Value="set:Menpaishuxing image:HuoIcon_A1" />
+            <Property Name="PushedImage" Value="set:Menpaishuxing image:HuoIcon_A2" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,28},{0,64},{0,54},{0,90}}" />
+        </Window>
+        <Window Type="FengshenMMO/StaticImageNULL" Name="PlayerFrame_Background" >
+            <Property Name="Image" Value="set:CommonFrame2 image:PlayerFrame" />
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,191},{0,63}}" />
+            <Window Type="FengshenMMO/Label" Name="PlayerFrame_Name" >
+                <Property Name="Text" Value="mmo" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,62},{0,10},{0,191},{0,28}}" />
+                <Property Name="HorzFormat" Value="CentreAligned"/>
+            </Window>
+            <Window Type="FengshenMMO/Label" Name="PlayerFrame_Level" >
+                <Property Name="Text" Value="2" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,60},{0,48},{0,98},{0,62}}" />
+                <Property Name="HorzFormat" Value="CentreAligned"/>
+            </Window>
+            <Window Type="FengshenMMO/MainFrameNULL" Name="PlayerFrame_DataBack" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,64},{0,29},{0,188},{0,47}}" />
+                <Window Type="FengshenMMO/ProgressPropertyRed" Name="PlayerFrame_HP" >
+                    <Property Name="StepSize" Value="0.01" />
+                    <Property Name="CurrentProgress" Value="1.0" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="CurrentProgress" Value="0" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{0,5}}" />
+                </Window>
+                <Window Type="FengshenMMO/ProgressPropertyBlue" Name="PlayerFrame_MP" >
+                    <Property Name="StepSize" Value="0.01" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="CurrentProgress" Value="0" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,6},{1,0},{0,11}}" />
+                </Window>
+                <Window Type="FengshenMMO/ProgressPropertyWhite" Name="PlayerFrame_SP" >
+                    <Property Name="StepSize" Value="0.01" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="CurrentProgress" Value="0" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,12},{1,0},{0,17}}" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="PlayerFrame_Icon" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,12},{0,12},{0,60},{0,60}}" />
+                <Window Type="FengshenMMO/ActionButton" Name="PlayerFrame_Icon_Action" >
+                    <Property Name="NormalImage" Value="set:Common image:Dummy" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Window Type="FengshenMMO/StaticImageNULL" Name="PlayerFrame_Mask" >
+                        <Property Name="Image" Value="set:Face_04 image:Remind3_Bak" />
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                    <Window Type="FengshenMMO/StaticImageNULL" Name="PlayerFrame_Captain" >                       
+                        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                        <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    </Window>
+                </Window>
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

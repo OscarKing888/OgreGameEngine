@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout >
+    <Window Type="FengshenMMO/MainFrameNULL" Name="LuggageFrame" >
+        <Property Name="AlwaysOnTop" Value="True" />
+        <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+        <Property Name="UnifiedAreaRect" Value="{{0.7,0},{0.25,0},{0.7,178},{0.25,112}}" />
+        <Window Type="FengshenMMO/MainFrameWindow0" Name="LuggageBK" >
+            <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+            <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,178},{0,112}}" />
+            <Property Name="MousePassThroughEnabled" Value="True" />
+            <Window Type="FengshenMMO/ActionButton" Name="LuggageHelp" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnHelp_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnHelp_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnHelp_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,5},{0,14},{0,19},{0,28}}" />
+            </Window>
+            <Window Type="FengshenMMO/ActionButton" Name="LuggageClose" >
+                <Property Name="HoverImage" Value="set:Button1 image:BtnClose_Hover" />
+                <Property Name="NormalImage" Value="set:Button1 image:BtnClose_Normal" />
+                <Property Name="PushedImage" Value="set:Button1 image:BtnClose_Pushed" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{1,-19},{0,14},{1,-5},{0,28}}" />
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="LuggageSlot" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,62},{0,172},{0,228}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+                <Window Type="FengshenMMO/StaticImageNULL" Name="LuggageSlotSelectIcon" >
+                    <Property Name="Image" Value="set:CommonFrame image:ActionButtonHover" />
+                    <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                    <Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}" />
+                    <Property Name="MousePassThroughEnabled" Value="True" />
+                </Window>
+            </Window>
+            <Window Type="FengshenMMO/StaticImageNULL" Name="LuggageSlotM" >
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,6},{0,62},{0,172},{0,228}}" />
+                <Property Name="MousePassThroughEnabled" Value="True" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonPageUp" Name="LuggageTools" >
+                <Property Name="Text" Value="道具" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,8},{0,36},{0,54},{0,63}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonPageUp" Name="LuggageMaterial" >
+                <Property Name="Text" Value="材料" />
+                <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+                <Property Name="UnifiedAreaRect" Value="{{0,54},{0,36},{0,100},{0,63}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonPageUp" Name="LuggageMission" >
+              <Property Name="Text" Value="任务" />
+              <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,100},{0,36},{0,146},{0,63}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="LuggageSplit" >
+              <Property Name="Text" Value="拆分" />
+              <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,54},{1,-43},{0,100},{1,-20}}" />
+            </Window>
+            <Window Type="FengshenMMO/ButtonCommon" Name="LuggageSort" >
+              <Property Name="Text" Value="整理" />
+              <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}" />
+              <Property Name="UnifiedAreaRect" Value="{{0,8},{1,-43},{0,54},{1,-20}}" />
+            </Window>
+        </Window>
+        <Window Type="FengshenMMO/Titlebar" Name="LuggageText">
+          <Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+          <Property Name="UnifiedAreaRect" Value="{{0,28},{0,12},{0,150},{0,30}}" />
+          <Property Name="Text" Value="包裹"/>
+          <Property Name="Font" Value="WeiBei"/>
+          <Property Name="HorzFormat" Value="CentreAligned" />
+        </Window>
+    </Window>
+</GUILayout>

@@ -1,0 +1,24 @@
+fragment_program Crowd_Pick hlsl
+{
+	source layer_buffer.hlsl
+	entry_point main
+	target ps_2_0
+}
+
+fragment_program Pixel_Out asm
+{
+    source pixel_out.asm 
+    syntax ps_2_0
+
+}
+
+vertex_program PlaneShader hlsl
+{
+    source PlanShader.hlsl
+    entry_point main
+	target vs_2_0
+	default_params
+	{
+		param_named_auto mWVP worldviewproj_matrix 
+	}
+}

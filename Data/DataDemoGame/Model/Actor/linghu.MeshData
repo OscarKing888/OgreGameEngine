@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+    <FrameEvent>
+        <combatidle>
+            <NewFrameEvent Time="0.37037" />
+            <NewFrameEvent2 Time="1.72487" />
+        </combatidle>
+        <idle1>
+            <Down Time="0.812169" />
+            <Up Time="2.2619" />
+        </idle1>
+    </FrameEvent>
+    <AttachPoints>
+        <AttachPoint name="Bip01 Pelvis_AttachPoint" bone="Bip01 Pelvis" positionOffset="0 0 0" scaleOffset="0 0 0" orientationOffset="0 0 0" />
+    </AttachPoints>
+    <BoneGroup />
+    <EffectsGroup>
+        <NewEffectName attachPointName="Bip01 Pelvis_AttachPoint" effectsTemplateName="TRPlayer/Torch" />
+    </EffectsGroup>
+</root>

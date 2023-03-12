@@ -1,0 +1,12 @@
+vertex_program billboard hlsl
+{
+	source billboard.hlsl
+	entry_point main
+	target vs_2_0
+	default_params
+	{
+		param_named_auto mW world_matrix
+		param_named_auto mV view_matrix
+		param_named_auto mP projection_matrix
+ 	}
+}

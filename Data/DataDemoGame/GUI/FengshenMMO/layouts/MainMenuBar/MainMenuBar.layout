@@ -1,0 +1,797 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GUILayout>
+	<Window Type="FengshenMMO/MainFrameNULL" Name="MainMenuBar">
+		<Property Name="InheritsAlpha" Value="False"/>
+		<Property Name="UnifiedMaxSize" Value="{{0,800},{1,0}}"/>
+		<Property Name="UnifiedAreaRect" Value="{{0.5,-400},{1,-71},{1,0},{1,0}}"/>
+		<Window Type="DefaultWindow" Name="MainMenuBar_LeftBack">
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.5,-427},{0,27},{0.5,-220},{0,72}}"/>
+			<Window Type="FengshenMMO/MainMenuBarLeft" Name="MainMenuBar_LeftBar">
+				<Property Name="TitlebarFont" Value="SongTi"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="TitlebarEnabled" Value="False"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,27},{0,0},{0,207},{1,0}}"/>
+				<Property Name="CloseButtonEnabled" Value="False"/>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_Character">
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_Character_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_Character_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_Character_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_Character_Normal"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,2},{0,8},{0,36},{0,42}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_Skills">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_346}"/>
+					<Property Name="HoverImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="NormalImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="PushedImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="DisabledImage" Value="set:MiniMap image:Key_F4"/>
+					<!--
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_Skills_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_Skills_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_Skills_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_Skills_Normal"/>-->
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,37},{0,8},{0,71},{0,42}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_Pet">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_855}"/>
+					<Property Name="HoverImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="NormalImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="PushedImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="DisabledImage" Value="set:MiniMap image:Key_F4"/>
+					<!--
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_Pet_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_Pet_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_Pet_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_Pet_Normal"/>-->
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,72},{0,8},{0,106},{0,42}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_Mission">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_572}"/>
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_Mission_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_Mission_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_Mission_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_Mission_Normal"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,107},{0,8},{0,141},{0,42}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_Exchange">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_368}"/>
+					<!--Property Name="HoverImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="NormalImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="PushedImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="DisabledImage" Value="set:MiniMap image:Key_F4"/-->
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_Exchange_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_Exchange_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_Exchange_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_Exchange_Normal"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,142},{0,8},{0,176},{0,42}}"/>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="FengshenMMO/MainMenuBarCenter" Name="MainMenuBar_Center">
+			<Property Name="TitlebarFont" Value="SongTi"/>
+			<Property Name="SizingEnabled" Value="False"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="TitlebarEnabled" Value="False"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.5,-220},{0,0},{0.5,220},{0,71}}"/>
+			<Property Name="DragMovingEnabled" Value="False"/>
+			<Property Name="CloseButtonEnabled" Value="False"/>
+			<Window Type="DefaultWindow" Name="MainMenuBar_Button_ActionFrame">
+				<Property Name="AbsolutePosition" Value="x:40.000000 y:15.000000"/>
+				<Property Name="AbsoluteSize" Value="w:361.000000 h:36.000000"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedPosition" Value="{{0,40},{0,15}}"/>
+				<Property Name="UnifiedSize" Value="{{0.0,361},{0,36}}"/>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action1_Bak">
+					<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000"/>
+					<Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000"/>
+					<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F1"/>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action1">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F1"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_1"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_1"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_1"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action11">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M10"/>
+						<Property Name="CornerChar" Value="TopRight F1"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_3"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_3"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_3"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action21">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M20"/>
+						<Property Name="CornerChar" Value="TopRight F1"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_4"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_4"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_4"/>
+					</Window>
+				</Window>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action2_Bak">
+					<Property Name="AbsolutePosition" Value="x:0.000000 y:0.000000"/>
+					<Property Name="AbsoluteSize" Value="w:36.000000 h:36.000000"/>
+					<Property Name="UnifiedPosition" Value="{{0,36},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F2"/>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action2">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M01"/>
+						<Property Name="CornerChar" Value="TopRight F1"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_2"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_2"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_2"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action12">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M11"/>
+						<Property Name="CornerChar" Value="TopRight F1"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_4"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_4"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_4"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action22">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M21"/>
+						<Property Name="CornerChar" Value="TopRight F1"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_5"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_5"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_5"/>
+					</Window>
+				</Window>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action3_Bak">
+					<Property Name="UnifiedPosition" Value="{{0,72},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F3"/>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action3">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M02"/>
+						<Property Name="CornerChar" Value="TopRight F1"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_3"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_3"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_3"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action13">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M12"/>
+						<Property Name="CornerChar" Value="TopRight F1"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_5"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_5"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_5"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action23">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M22"/>
+						<Property Name="CornerChar" Value="TopRight F1"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_6"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_6"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_6"/>
+					</Window>
+				</Window>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action4_Bak">
+					<Property Name="UnifiedPosition" Value="{{0,108},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F4"/>					
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action4">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M03"/>
+						<Property Name="CornerChar" Value="TopRight F4"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_4"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_4"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_4"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action14">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M13"/>
+						<Property Name="CornerChar" Value="TopRight F4"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_6"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_6"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_6"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action24">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M23"/>
+						<Property Name="CornerChar" Value="TopRight F4"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_7"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_7"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_7"/>
+					</Window>
+				</Window>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action5_Bak">
+					<Property Name="UnifiedPosition" Value="{{0,144},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F5"/>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action5">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M04"/>
+						<Property Name="CornerChar" Value="TopRight F5"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_5"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_5"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_5"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action15">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M14"/>
+						<Property Name="CornerChar" Value="TopRight F5"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_7"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_7"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_7"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action25">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M24"/>
+						<Property Name="CornerChar" Value="TopRight F5"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_8"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_8"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_8"/>
+					</Window>
+				</Window>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action6_Bak">
+					<Property Name="UnifiedPosition" Value="{{0,180},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F6"/>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action6">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F6"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_6"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_6"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_6"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action16">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F6"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_8"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_8"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_8"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action26">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F6"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_9"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_9"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_9"/>
+					</Window>
+				</Window>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action7_Bak">
+					<Property Name="UnifiedPosition" Value="{{0,216},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F7"/>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action7">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F7"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_7"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_7"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_7"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action17">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F7"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_9"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_9"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_9"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action27">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F7"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_10"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_10"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_10"/>
+					</Window>
+				</Window>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action8_Bak">
+					<Property Name="UnifiedPosition" Value="{{0,252},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F8"/>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action8">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F8"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_8"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_8"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_8"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action18">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F8"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_10"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_10"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_10"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action28">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F8"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_11"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_11"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_11"/>
+					</Window>
+				</Window>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action9_Bak">
+					<Property Name="UnifiedPosition" Value="{{0,288},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F9"/>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action9">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F9"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_9"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_9"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_9"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action19">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F9"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_11"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_11"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_11"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action29">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F9"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_12"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_12"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_12"/>
+					</Window>
+				</Window>
+				<Window Type="FengshenMMO/StaticImageNULL" Name="Button_Action10_Bak">
+					<Property Name="UnifiedPosition" Value="{{0,324},{0,0}}"/>
+					<Property Name="UnifiedSize" Value="{{0.0,36},{0,36}}"/>
+					<Property Name="RiseOnClick" Value="False"/>
+					<Property Name="Image" Value="set:MiniMap image:Key_F10"/>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action10">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F10"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_10"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_10"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_10"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action20">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F10"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_12"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_12"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_12"/>
+					</Window>
+					<Window Type="FengshenMMO/ActionButton" Name="Button_Action30">
+						<Property Name="UnifiedPosition" Value="{{0,0},{0,0}}"/>
+						<Property Name="UnifiedSize" Value="{{1.0,0},{1.0,0}}"/>
+						<Property Name="DraggingEnabled" Value="True"/>
+						<Property Name="DragAcceptName" Value="M00"/>
+						<Property Name="CornerChar" Value="TopRight F10"/>
+						<Event Name="Clicked" Function="MainMenuBar_Clicked(1);"/>
+						<Event Name="RBClicked" Function="MainMenuBar_Clicked(1);"/>
+						<Property Name="HoverImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_13"/>
+						<Property Name="NormalImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_13"/>
+						<Property Name="PushedImage" Value="set:FightSkillShaoLin1 image:FightSkillShaoLin1_13"/>
+					</Window>
+				</Window>
+			</Window>
+			<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_MainMenuBar_On">
+				<Property Name="Tooltip" Value="#{INTERFACE_XML_201}"/>
+				<Property Name="HoverImage" Value="set:Button1 image:BtnUp_Hover"/>
+				<Property Name="NormalImage" Value="set:Button1 image:BtnUp_Normal"/>
+				<Property Name="PushedImage" Value="set:Button1 image:BtnUp_Pushed"/>
+				<Property Name="DisabledImage" Value="set:Button1 image:BtnUp_Disable"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,7},{0,33},{0,22},{0,48}}"/>
+			</Window>
+			<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_MainMenuBar_Off">
+				<Property Name="Tooltip" Value="#{INTERFACE_XML_304}"/>
+				<Property Name="HoverImage" Value="set:Button1 image:BtnDown_Hover"/>
+				<Property Name="NormalImage" Value="set:Button1 image:BtnDown_Normal"/>
+				<Property Name="PushedImage" Value="set:Button1 image:BtnDown_Pushed"/>
+				<Property Name="DisabledImage" Value="set:Button1 image:BtnDown_Disable"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,7},{0,33},{0,22},{0,48}}"/>
+			</Window>
+			<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_ScrollBar_Up">
+				<Property Name="HoverImage" Value="set:Button1 image:BtnUp2_Hover"/>
+				<Property Name="NormalImage" Value="set:Button1 image:BtnUp2_Normal"/>
+				<Property Name="PushedImage" Value="set:Button1 image:BtnUp2_Pushed"/>
+				<Property Name="DisabledImage" Value="set:Button1 image:BtnUp2_Disable"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,421},{0,24},{0,436},{0,36}}"/>
+			</Window>
+			<Window Type="FengshenMMO/Label" Name="MainMenuBar_ScrollBar_Number">
+				<Property Name="Text" Value="1"/>
+				<Property Name="HorzFormat" Value="CentreAligned"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,420},{0,39},{0,436},{0,53}}"/>
+				<Property Name="FrameEnabled" Value="False"/>
+				<Property Name="BackgroundEnabled" Value="False"/>
+			</Window>
+			<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_ScrollBar_Down">
+				<Property Name="HoverImage" Value="set:Button1 image:BtnDown2_Hover"/>
+				<Property Name="NormalImage" Value="set:Button1 image:BtnDown2_Normal"/>
+				<Property Name="PushedImage" Value="set:Button1 image:BtnDown2_Pushed"/>
+				<Property Name="DisabledImage" Value="set:Button1 image:BtnDown2_Disable"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,421},{0,54},{0,436},{0,67}}"/>
+			</Window>
+			<Window Type="FengshenMMO/EditBoxNormal" Name="MainMenuBar_EditBox">
+				<Property Name="MaxTextLength" Value="255"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,93},{0,51},{-0.025,408},{0,69}}"/>
+			</Window>
+			<Window Type="DefaultWindow" Name="MainMenuBar_Button_LeftFrame">
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,4},{0,52},{0,94},{0,69}}"/>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_IME">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_656}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnE_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnE_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnE_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnE_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,17},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_LetterColor">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_714}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnA_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnA_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnA_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnA_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,18},{0,0},{0,35},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_Face">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_144}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnFace_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnFace_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnFace_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnFace_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,36},{0,0},{0,53},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_Action">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_254}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnRun_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnRun_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnRun_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnRun_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,54},{0,0},{0,71},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_ChannelSelecter">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_491}"/>
+					<Property Name="HoverImage" Value="set:Buttons image:ChannelWorld_Hover"/>
+					<Property Name="NormalImage" Value="set:Buttons image:ChannelWorld_Normal"/>
+					<Property Name="PushedImage" Value="set:Buttons image:ChannelWorld_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Buttons image:ChannelWorld_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,72},{0,0},{0,89},{0,17}}"/>
+				</Window>
+			</Window>
+			<Window Type="DefaultWindow" Name="MainMenuBar_Button_RightFrame">
+				<Property Name="AlwaysOnTop" Value="True"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,399},{0,52},{0,417},{0,69}}"/>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_EditEnter">
+					<Property Name="HoverImage" Value="set:Button2 image:BtnBack_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnBack_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnBack_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnBack_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,17},{0,17}}"/>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="FengshenMMO/MainFrameLace2" Name="MainMenuBar_Button_ChatFrame">
+			<Property Name="TitlebarFont" Value="SongTi"/>
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="TitlebarEnabled" Value="False"/>
+			<Property Name="UnifiedAreaRect" Value="{{0,28},{0,5},{0,193},{0,27}}"/>
+			<Property Name="DragMovingEnabled" Value="False"/>
+			<Property Name="CloseButtonEnabled" Value="False"/>
+			<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_SpeakerBtn">
+				<Property Name="Tooltip" Value="#{INTERFACE_XML_1038}"/>
+				<Property Name="HoverImage" Value="set:CommonFrame6 image:Xiaolaba_Hover"/>
+				<Property Name="NormalImage" Value="set:CommonFrame6 image:Xiaolaba_Normal"/>
+				<Property Name="PushedImage" Value="set:CommonFrame6 image:Xiaolaba_Pushed"/>
+				<Property Name="DisabledImage" Value="set:CommonFrame6 image:Xiaolaba_Normal"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,146},{0,3},{0,163},{0,20}}"/>
+			</Window>
+			<Window Type="DefaultWindow" Name="MainMenuBar_Button_Chat">
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,3},{0,3},{0,147},{0,20}}"/>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Save_Reduce">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_140}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnSave_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnSave_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnSave_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnSave_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{0,17},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_Screen">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_492}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnClose_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnClose_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnClose_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnClose_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,18},{0,0},{0,35},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_User">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_884}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnEdit_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnEdit_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnEdit_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnEdit_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,36},{0,0},{0,53},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_Config">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_488}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnRepair_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnRepair_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnRepair_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnRepair_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,54},{0,0},{0,71},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_Extend">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_416}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnAdd_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnAdd_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnAdd_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnAdd_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,72},{0,0},{0,89},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_Reduce">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_670}"/>
+					<Property Name="HoverImage" Value="set:Button2 image:BtnSub_Hover"/>
+					<Property Name="NormalImage" Value="set:Button2 image:BtnSub_Normal"/>
+					<Property Name="PushedImage" Value="set:Button2 image:BtnSub_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button2 image:BtnSub_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,90},{0,0},{0,107},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_AddWidth">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_1051}"/>
+					<Property Name="HoverImage" Value="set:Button7 image:BtnAddWidth_Hover"/>
+					<Property Name="NormalImage" Value="set:Button7 image:BtnAddWidth_Normal"/>
+					<Property Name="PushedImage" Value="set:Button7 image:BtnAddWidth_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button7 image:BtnAddWidth_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,108},{0,0},{0,125},{0,17}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="MainMenuBar_Chat_SubWidth">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_1052}"/>
+					<Property Name="HoverImage" Value="set:Button7 image:BtnSubWidth_Hover"/>
+					<Property Name="NormalImage" Value="set:Button7 image:BtnSubWidth_Normal"/>
+					<Property Name="PushedImage" Value="set:Button7 image:BtnSubWidth_Pushed"/>
+					<Property Name="DisabledImage" Value="set:Button7 image:BtnSubWidth_Disable"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,126},{0,0},{0,144},{0,17}}"/>
+				</Window>
+			</Window>
+		</Window>
+		<Window Type="DefaultWindow" Name="MainMenuBar_RightBack">
+			<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+			<Property Name="UnifiedAreaRect" Value="{{0.5,220},{0,27},{1,0},{1,0}}"/>
+			<Window Type="FengshenMMO/StaticImageNULL" Name="MainMenuBar_RightBar">
+				<Property Name="Image" Value="set:CommonStaticImage image:MainMenuBar_RightBlock"/>
+				<Property Name="HorzFormatting" Value="LeftAligned"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="VertFormatting" Value="TopAligned"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+			</Window>
+			<Window Type="FengshenMMO/MainMenuBarRight" Name="MainMenuBar_Right">
+				<Property Name="TitlebarFont" Value="SongTi"/>
+				<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+				<Property Name="TitlebarEnabled" Value="False"/>
+				<Property Name="UnifiedAreaRect" Value="{{0,0},{0,0},{1,0},{1,0}}"/>
+				<Property Name="DragMovingEnabled" Value="False"/>
+				<Property Name="CloseButtonEnabled" Value="False"/>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_Pack">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_725}"/>
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_Packet_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_Packet_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_Packet_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_Packet_Normal"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,4},{0,9},{0,38},{0,43}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_Friend">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_313}"/>
+					<Property Name="HoverImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="NormalImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="PushedImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="DisabledImage" Value="set:MiniMap image:Key_F4"/>
+					<!--
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_Friend_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_Friend_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_Friend_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_Friend_Normal"/>-->
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,35},{0,8},{0,69},{0,42}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_Team">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_256}"/>
+					<Property Name="HoverImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="NormalImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="PushedImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="DisabledImage" Value="set:MiniMap image:Key_F4"/><!--
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_Team_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_Team_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_Team_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_Team_Normal"/>-->
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,70},{0,8},{0,104},{0,42}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_Reputation">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_125}"/>
+					<Property Name="HoverImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="NormalImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="PushedImage" Value="set:MiniMap image:Key_F4"/>
+					<Property Name="DisabledImage" Value="set:MiniMap image:Key_F4"/>
+					<!--
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_BangHui_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_BangHui_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_BangHui_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_BangHui_Normal"/>-->
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,105},{0,8},{0,139},{0,42}}"/>
+				</Window>
+				<Window Type="FengshenMMO/ImageButton" Name="Button_System">
+					<Property Name="Tooltip" Value="#{INTERFACE_XML_735}"/>
+					<Property Name="HoverImage" Value="set:CommonStaticImage5 image:MainMenuBar_System_Hover"/>
+					<Property Name="NormalImage" Value="set:CommonStaticImage5 image:MainMenuBar_System_Normal"/>
+					<Property Name="PushedImage" Value="set:CommonStaticImage5 image:MainMenuBar_System_Pushed"/>
+					<Property Name="DisabledImage" Value="set:CommonStaticImage5 image:MainMenuBar_System_Normal"/>
+					<Property Name="UnifiedMaxSize" Value="{{1,0},{1,0}}"/>
+					<Property Name="UnifiedAreaRect" Value="{{0,140},{0,8},{0,174},{0,42}}"/>
+				</Window>
+			</Window>
+		</Window>
+	</Window>
+</GUILayout>

@@ -1,0 +1,107 @@
+
+material MAT_PC_dengchanyu_face_meiyan
+{
+	technique
+	{
+		pass
+		{
+			emissive 0.2 0.2 0.2 1
+                        alpha_rejection greater 128
+			cull_hardware none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_dengchanyu_face_meiyan.dds
+			}
+		}
+
+	}
+
+}
+
+material MAT_PC_dengchanyu_hair_qinglan
+{
+	technique
+	{
+		pass
+		{
+			emissive 0.2 0.2 0.2 1
+                        alpha_rejection greater 180
+			cull_hardware none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_dengchanyu_hair_qinglan.dds
+			}
+		}
+
+	}
+
+}
+
+material MAT_PC_dengchanyu_body_zixia
+{
+	technique
+	{
+		pass
+		{
+			cull_hardware none
+			specular 0.2 0.2 0.2 1 10
+                        emissive 0.2 0.2 0.2 1
+                        alpha_rejection greater 128
+			texture_unit
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_dengchanyu_body_zixia.dds
+			}
+		}
+
+	}
+
+}
+
+material MAT_PC_dengchanyu_body_xunying
+{
+	technique
+	{
+		pass
+		{
+			emissive 0.2 0.2 0.2 1
+                        alpha_rejection greater 128
+			cull_hardware none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_dengchanyu_body_xunying.dds
+			}
+		}
+
+	}
+
+}
+
+material MAT_PC_dengchanyu_hair_zixia
+{
+	technique
+	{
+		pass
+		{
+			emissive 0.2 0.2 0.2 1
+                        alpha_rejection greater 180
+			cull_hardware none
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture PC_dengchanyu_hair_zixia.dds
+			}
+		}
+
+	}
+
+}

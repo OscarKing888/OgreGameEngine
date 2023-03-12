@@ -1,0 +1,22 @@
+
+material MAT_Weapon03
+{
+	technique
+	{
+		pass
+		{
+			ambient 0 0 0 1
+			specular 0.588235 0.588235 0.588235 1 10
+			emissive 0.501961 0.501961 0.501961 1
+			alpha_rejection greater 128
+
+			texture_unit
+			{
+				texture_alias textureUnit_0
+				texture wuqi_jian03.dds
+			}
+		}
+
+	}
+
+}

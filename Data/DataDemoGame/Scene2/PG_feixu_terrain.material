@@ -1,0 +1,80 @@
+
+material PG_feixu_terrain
+{
+	technique Default
+	{
+		pass
+		{
+
+			texture_unit
+			{
+				texture KL_songlin__base.tga
+				colour_op_ex source1 src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+			}
+
+			texture_unit
+			{
+				texture PG_feixu__PG_feixu_S3__Mask.tga
+				tex_address_mode clamp
+				colour_op_ex source2 src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+				alpha_op_ex source1 src_texture src_current
+			}
+
+			texture_unit
+			{
+				texture PG_feixu_S3.dds
+				colour_op_ex blend_current_alpha src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+				alpha_op_ex source2 src_texture src_current
+				scale 0.015 0.015
+			}
+
+			texture_unit
+			{
+				texture PG_feixu__PG_feixu_S2__Mask.tga
+				tex_address_mode clamp
+				colour_op_ex source2 src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+				alpha_op_ex source1 src_texture src_current
+			}
+
+			texture_unit
+			{
+				texture PG_feixu_S2.dds
+				colour_op_ex blend_current_alpha src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+				alpha_op_ex source2 src_texture src_current
+				scale 0.0055 0.0055
+			}
+
+			texture_unit
+			{
+				texture PG_feixu__PG_feixu_S1__Mask.tga
+				tex_address_mode clamp
+				colour_op_ex source2 src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+				alpha_op_ex source1 src_texture src_current
+			}
+
+			texture_unit
+			{
+				texture PG_feixu_S1.dds
+				colour_op_ex blend_current_alpha src_texture src_current
+				colour_op_multipass_fallback dest_colour zero
+				alpha_op_ex source2 src_texture src_current
+				scale 0.015 0.015
+			}
+
+			texture_unit
+			{
+				colour_op_ex modulate src_current src_diffuse
+				colour_op_multipass_fallback dest_colour zero
+				alpha_op_ex source2 src_texture src_current
+			}
+		}
+
+	}
+
+}
